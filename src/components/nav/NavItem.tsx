@@ -86,7 +86,7 @@ const Wrapper = styled.li`
   height: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 0 0 24px;
+  margin: 0 0 0 26px;
 
   &:first-child {
     margin-left: 0;

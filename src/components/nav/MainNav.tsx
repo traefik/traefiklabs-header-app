@@ -160,8 +160,8 @@ const MainNav: React.FC = () => {
           </Grid>
         </NavItem>
 
-        <NavItem name="Solutions" hasSubmenu position={{ right: '20%' }}>
-          <Grid sx={{ gridTemplateColumns: '380px 288px', p: '40px', gap: '93px' }}>
+        <NavItem name="Solutions" hasSubmenu position={{ right: '25%' }}>
+          <Grid sx={{ gridTemplateColumns: '380px 288px', p: '40px', gap: '40px' }}>
             <MenuColumn.Column title="Solutions">
               <MenuColumn.Item
                 href="https://traefik.io/solutions/kubernetes-ingress/"
@@ -191,12 +191,13 @@ const MainNav: React.FC = () => {
         </NavItem>
 
         <NavItem name="Learn" hasSubmenu position={{ right: '25px' }}>
-          <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '40px', gap: '93px' }}>
+          <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '40px', gap: '93px', lineHeight: 1.6 }}>
             <MenuColumn.Column title="Learn">
               <MenuColumn.Item title="Blog" href="https://traefik.io/blog/" external />
               <MenuColumn.Item title="Resource Library" href="https://traefik.io/resources/" external />
               <MenuColumn.Item title="Traefik Academy" href="https://academy.traefik.io/" external />
               <MenuColumn.Item title="Success Stories" href="https://traefik.io/success-stories/" external />
+              <MenuColumn.Item title="Glossary" href="https://traefik.io/glossary/" external />
               <MenuColumn.Item title="Events" href="https://traefik.io/events/" external />
             </MenuColumn.Column>
 
@@ -248,6 +249,7 @@ const MainNav: React.FC = () => {
                 href="https://traefik.io/traefik-hub/"
                 external
               />
+              <MenuColumn.Item title="Plugin Catalog" href="https://plugins.traefik.io/" external></MenuColumn.Item>
             </MenuColumn.Column>
 
             <MenuColumn.Column title="Community">

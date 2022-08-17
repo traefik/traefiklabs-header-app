@@ -11,6 +11,7 @@ const ChevronDown = () => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="feather feather-chevron-down"
+      style={{ display: 'initial' }}
     >
       <polyline points="6 9 12 15 18 9"></polyline>
     </svg>

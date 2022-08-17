@@ -47,7 +47,17 @@ const PostCard: React.FC<MenuPostCard> = ({ post }) => {
           {post?.feature_image && <CustomImage src={post.feature_image} alt={post.title} />}
         </Box>
         <Flex sx={{ p: '16px', flexDirection: 'column' }}>
-          <Heading as="p" sx={{ mb: '16px', flex: 1, color: theme.colors.dark, fontWeight: 'medium' }}>
+          <Heading
+            as="p"
+            sx={{
+              mb: '16px',
+              fontSize: '18px',
+              lineHeight: 1.33,
+              flex: 1,
+              color: theme.colors.dark,
+              fontWeight: 'medium',
+            }}
+          >
             {post.title}
           </Heading>
           <CustomArrowLink as="div" icon="arrow" color={theme.colors.dark} sx={{ boxShadow: 'none' }}>
