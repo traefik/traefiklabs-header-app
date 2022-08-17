@@ -4,12 +4,15 @@ import { StyledLink } from 'components/Link'
 
 const StyledSkipLink = styled(StyledLink)`
   position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateY(-100%);
+  pointer-events: none;
+  opacity: 0;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: black;
 
   &:focus {
-    transform: translateY(0%);
+    opacity: 1;
+    z-index: 1000;
   }
 `
 
