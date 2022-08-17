@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from 'components/nav/Header'
+import React, { ReactNode, ComponentProps } from 'react'
+import { Provider } from '@containous/faency'
+import { SWRConfig } from 'swr'
+import fetcher from 'utils/fetcher'
+import 'components/nav/drawer.css'
+
+const FaencyProvider = Provider as React.FC<ComponentProps<typeof Provider> & { children: ReactNode }>
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <SWRConfig
+      value={{
+        refreshInterval: process.env.POLLING_INTERVAL ? parseInt(process.env.POLLING_INTERVAL, 10) : 300000, // default 5min
+        fetcher,
+      }}
+    >
+      <FaencyProvider>
+        <Header />
+      </FaencyProvider>
+    </SWRConfig>
+  )
 }
 
-export default App;
+export default App

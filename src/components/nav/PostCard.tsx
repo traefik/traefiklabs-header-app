@@ -1,0 +1,59 @@
+import React from 'react'
+import Link from 'components/Link'
+import { Box, Flex, Heading, theme } from '@containous/faency'
+import ArrowLink from './ArrowLink'
+
+const CustomArrowLink = ArrowLink as any
+const CustomImage = (props: any) => <image {...props} />
+
+type MenuPostCard = {
+  post: {
+    id: string
+    title: string
+    slug: string
+    featured: boolean
+    feature_image: string
+    excerpt: string
+    custom_excerpt: string
+    visibility: string
+    published_at: string
+    published_at_pretty: string
+    primary_tag: {
+      slug: string
+      name: string
+      visibility: string
+      feature_image: string
+      description: string
+      meta_title: string
+      meta_description: string
+    }
+  }
+}
+
+const PostCard: React.FC<MenuPostCard> = ({ post }) => {
+  return (
+    <Box sx={{ backgroundColor: '#f4f5f6', minHeight: '280px', borderRadius: '8px', overflow: 'hidden' }}>
+      <Link
+        style={{ textDecoration: 'none' }}
+        href={`https://traefik.io/${post.primary_tag.slug}/${post.slug}/`}
+        target="_self"
+      >
+        <Box sx={{ height: '162px', position: 'relative' }}>
+          {post?.feature_image && (
+            <CustomImage src={post.feature_image} alt={post.title} objectFit="cover" layout="fill" />
+          )}
+        </Box>
+        <Flex sx={{ p: '16px', flexDirection: 'column' }}>
+          <Heading as="p" sx={{ mb: '16px', flex: 1, color: theme.colors.dark, fontWeight: 'medium' }}>
+            {post.title}
+          </Heading>
+          <CustomArrowLink as="div" icon="arrow" color={theme.colors.dark} sx={{ boxShadow: 'none' }}>
+            Read more
+          </CustomArrowLink>
+        </Flex>
+      </Link>
+    </Box>
+  )
+}
+
+export default PostCard
