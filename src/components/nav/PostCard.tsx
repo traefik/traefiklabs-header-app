@@ -2,9 +2,14 @@ import React from 'react'
 import Link from 'components/Link'
 import { Box, Flex, Heading, theme } from '@containous/faency'
 import ArrowLink from './ArrowLink'
+import styled from 'styled-components'
 
 const CustomArrowLink = ArrowLink as any
-const CustomImage = (props: any) => <image {...props} />
+const CustomImage = styled.img`
+  object-fit: cover;
+  width: 100%;
+  layout: fill;
+`
 
 type MenuPostCard = {
   post: {
@@ -39,9 +44,7 @@ const PostCard: React.FC<MenuPostCard> = ({ post }) => {
         target="_self"
       >
         <Box sx={{ height: '162px', position: 'relative' }}>
-          {post?.feature_image && (
-            <CustomImage src={post.feature_image} alt={post.title} objectFit="cover" layout="fill" />
-          )}
+          {post?.feature_image && <CustomImage src={post.feature_image} alt={post.title} />}
         </Box>
         <Flex sx={{ p: '16px', flexDirection: 'column' }}>
           <Heading as="p" sx={{ mb: '16px', flex: 1, color: theme.colors.dark, fontWeight: 'medium' }}>

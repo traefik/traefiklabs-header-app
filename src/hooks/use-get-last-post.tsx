@@ -1,9 +1,9 @@
 import useSWR, { SWRConfiguration } from 'swr'
 import qs from 'query-string'
 
-const useGetLastPost = (tag: string, options?: SWRConfiguration) => {
-  const endpoint = process.env.GHOST_URL
+const endpoint = 'https://containous.ghost.io/ghost/api/v3/content/posts/?key=ae2233e58f413de14de94b7837'
 
+const useGetLastPost = (tag: string, options?: SWRConfiguration) => {
   const queryParams = {
     filter: `primary_tag:${tag}`,
     limit: '1',
