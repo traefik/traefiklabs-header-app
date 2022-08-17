@@ -3,7 +3,7 @@ import React, { ReactNode, ComponentProps } from 'react'
 import { Provider } from '@containous/faency'
 import { SWRConfig } from 'swr'
 import fetcher from 'utils/fetcher'
-import 'components/nav/drawer.css'
+import DrawerGlobalStyle from 'components/nav/DrawerGlobalStyle'
 
 const FaencyProvider = Provider as React.FC<ComponentProps<typeof Provider> & { children: ReactNode }>
 
@@ -16,6 +16,7 @@ function App() {
       }}
     >
       <FaencyProvider>
+        <DrawerGlobalStyle />
         <Header />
       </FaencyProvider>
     </SWRConfig>

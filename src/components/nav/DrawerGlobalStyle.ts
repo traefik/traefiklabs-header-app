@@ -1,3 +1,6 @@
+import { createGlobalStyle } from 'styled-components'
+
+const DrawerGlobalStyle = createGlobalStyle`
 .drawer-handle {
   position: relative;
   z-index: 501;
@@ -185,3 +188,6 @@
     display: none;
   }
 }
+`
+
+export default DrawerGlobalStyle
