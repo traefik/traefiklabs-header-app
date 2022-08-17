@@ -23,7 +23,7 @@ const NavContainer = styled(FaencyNavContainer)<{ scrolled?: boolean }>`
   align-items: center;
   margin: 0;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: ${theme.colors.menuBg};
   box-shadow: 0 0 7px 0 #00000021;
   height: ${({ scrolled }) => (scrolled ? '52px' : '64px')};
