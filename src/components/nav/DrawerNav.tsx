@@ -50,12 +50,12 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
         </div>
 
         <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
-          <a className="menu-item menu-item--with-icon">
+          <span className="menu-item menu-item--with-icon">
             <span className="title">Solutions</span>
             <span className="icon">
               <Chevron />
             </span>
-          </a>
+          </span>
           <div className="sub-menu">
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
@@ -64,12 +64,12 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
         </div>
 
         <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
-          <a className="menu-item menu-item--with-icon">
+          <span className="menu-item menu-item--with-icon">
             <span className="title">Learn</span>
             <span className="icon">
               <Chevron />
             </span>
-          </a>
+          </span>
           <div className="sub-menu">
             <SubLink href="https://traefik.io/blog/">Blog</SubLink>
             <SubLink href="https://traefik.io/resources/">Resource Library</SubLink>

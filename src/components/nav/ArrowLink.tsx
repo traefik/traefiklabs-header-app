@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css, StyledComponentInnerAttrs, StyledComponentProps } from 'styled-components'
+import styled, { css } from 'styled-components'
 import {
   space,
   color,
