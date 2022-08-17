@@ -46,6 +46,10 @@ const NavButton = styled.a`
     border-color: ${theme.colors.blues[7]};
     color: ${theme.colors.menuBg};
   }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 // HACK: Menu component is adding inline styles to the body avoiding to use onMouseEnter event correctly
@@ -112,7 +116,8 @@ const Header = () => {
               <MainNav />
             </Flex>
             <Flex sx={{ alignItems: 'center', height: '100%' }}>
-              <Flex>
+              <Flex sx={{ alignItems: 'center' }}>
+                <slot></slot>
                 <NavButton href="https://info.traefik.io/en/request-demo-traefik-enterprise">Get a Demo</NavButton>
               </Flex>
               <Hamburger className="drawer">
