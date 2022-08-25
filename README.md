@@ -23,9 +23,12 @@ Check the page that opens if the Header is properly rendered and if the latest p
 
 It will create a `build` folder with the compiled assets.
 
+## URL
+
+https://traefik.github.io/traefiklabs-header-app/main-v1.js
+
 ## Next steps
 
-- Find the best way to publish the JS component definition file to import where we need.
 - Update the related repositories accordingly
   - Traefik/doc: overview and each product
   - Company Website
