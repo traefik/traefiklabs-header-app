@@ -1,0 +1,38 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  doc:
+    name: Build and publish assets
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: make deps
+
+      - name: Build
+        run: make build
+
+      - name: Generate assets
+        run: make static-assets
+
+      # https://github.com/marketplace/actions/github-pages
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,28 @@
+name: Pull request
+
+on:
+  pull_request:
+
+jobs:
+
+  doc:
+    name: Build assets
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: make deps
+
+      - name: Build
+        run: make build
+
+      - name: Generate assets
+        run: make static-assets
+
