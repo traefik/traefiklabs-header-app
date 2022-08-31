@@ -65,7 +65,16 @@ const MainNav: React.FC = () => {
               title="Traefik Hub"
               titleHtml={
                 <Flex sx={{ alignItems: 'center', mt: '12px' }}>
-                  <Heading as="h2" sx={{ fontSize: '20px' }}>
+                  <Heading
+                    as="h2"
+                    sx={{
+                      fontSize: '20px',
+                      fontWeight: 700,
+                      lineHeight: 1.33,
+                      letterSpacing: 0,
+                      fontFamily: 'inherit',
+                    }}
+                  >
                     Traefik Hub
                   </Heading>
                   <Flex
@@ -87,7 +96,7 @@ const MainNav: React.FC = () => {
                         lineHeight: '14px',
                         color: theme.colors.white,
                         fontWeight: 500,
-                        letterSpacing: '2.75px',
+                        letterSpacing: '3.5px',
                       }}
                     >
                       BETA
@@ -160,7 +169,7 @@ const MainNav: React.FC = () => {
           </Grid>
         </NavItem>
 
-        <NavItem name="Solutions" hasSubmenu position={{ right: '25%' }}>
+        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }}>
           <Grid sx={{ gridTemplateColumns: '380px 288px', p: '40px', gap: '40px' }}>
             <MenuColumn.Column title="Solutions">
               <MenuColumn.Item

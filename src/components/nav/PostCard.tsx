@@ -8,6 +8,7 @@ const CustomArrowLink = ArrowLink as any
 const CustomImage = styled.img`
   object-fit: cover;
   width: 100%;
+  height: 162px;
   layout: fill;
 `
 
@@ -53,9 +54,10 @@ const PostCard: React.FC<MenuPostCard> = ({ post }) => {
               mb: '16px',
               fontSize: '18px',
               lineHeight: 1.33,
-              flex: 1,
+              letterSpacing: 'normal',
               color: theme.colors.dark,
-              fontWeight: 'medium',
+              fontFamily: 'inherit',
+              fontWeight: 500,
             }}
           >
             {post.title}

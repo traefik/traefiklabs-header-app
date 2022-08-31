@@ -41,7 +41,6 @@ const Links = styled.ul`
 
   span {
     font-size: 16px;
-    line-height: 24px;
     font-weight: normal;
     color: #677581;
   }
@@ -54,7 +53,17 @@ type MenuColumnProps = {
 
 export const Column: React.FC<MenuColumnProps> = ({ title, children }) => (
   <Box>
-    <Text as="p" sx={{ mb: '18px', fontSize: '11px', fontWeight: 500, color: '#7e89a7', letterSpacing: '2.75px' }}>
+    <Text
+      as="p"
+      sx={{
+        mb: '14px',
+        fontSize: '11px',
+        fontWeight: 500,
+        lineHeight: 1.33,
+        color: '#7e89a7',
+        letterSpacing: '2.75px',
+      }}
+    >
       {title.toUpperCase()}
     </Text>
     <Links>{children}</Links>
@@ -74,7 +83,7 @@ export const Item: React.FC<MenuColumnLinkProps> = ({ href, external, title, log
     {external ? (
       <Link href={href} target="_self" {...props}>
         {logo ? (
-          <Box sx={{ display: 'flex' }}>
+          <Box sx={{ display: 'flex', paddingTop: '5px' }}>
             {logo}
             <Box sx={{ ml: '15px', maxWidth: '290px' }}>
               <Text as="p">{title}</Text>
