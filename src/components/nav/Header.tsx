@@ -52,6 +52,22 @@ const NavButton = styled.a`
   }
 `
 
+const NavIconButton = styled.a`
+  margin: 0 24px;
+  padding: 7px;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: ${theme.colors.dark};
+
+  &:hover {
+    color: rgb(3, 25, 45);
+    background: rgb(248, 250, 255);
+  }
+`
+
 // HACK: Menu component is adding inline styles to the body avoiding to use onMouseEnter event correctly
 // Side effect: Menu component is now stateless, DropdownMenu is not working anymore (stateful component)
 const GlobalStyle = createGlobalStyle`
@@ -117,7 +133,25 @@ const Header = () => {
             </Flex>
             <Flex sx={{ alignItems: 'center', height: '100%' }}>
               <Flex sx={{ alignItems: 'center' }}>
-                <slot></slot>
+                <NavIconButton href="https://traefik.io/search/">
+                  <svg
+                    height="22"
+                    width="22"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    className="StyledIconBase-ea9ulj-0 jZGNBW"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                  </svg>
+                </NavIconButton>
                 <NavButton href="https://info.traefik.io/en/request-demo-traefik-enterprise">Get a Demo</NavButton>
               </Flex>
               <Hamburger className="drawer">
