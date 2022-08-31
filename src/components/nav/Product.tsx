@@ -24,11 +24,21 @@ const Product: React.FC<NavProductProps> = ({ logo, title, titleHtml, descriptio
   <Box sx={{ p: 40, backgroundColor: bgColor || '#fff' }}>
     <Box>{logo}</Box>
     {titleHtml || (
-      <Heading as="h2" sx={{ fontSize: '20px', mt: '12px', fontWeight: 700 }}>
+      <Heading
+        as="h2"
+        sx={{
+          fontSize: '20px',
+          mt: '12px',
+          lineHeight: 1.33,
+          letterSpacing: 0,
+          fontWeight: 700,
+          fontFamily: 'inherit',
+        }}
+      >
         {title}
       </Heading>
     )}
-    <Text as="p" sx={{ fontSize: '16px', mt: 1, color: '#677581' }}>
+    <Text as="p" sx={{ fontSize: '16px', mt: 1, lineHeight: 1.33, color: '#677581' }}>
       {description}
     </Text>
     <ArrowLink url={url} icon="arrow" iconHoverTransform={true} color={color} mt={`10px`}>
