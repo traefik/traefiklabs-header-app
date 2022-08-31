@@ -29,18 +29,10 @@ export default function registerCustomElement<P extends BaseProps>({
 
     constructor() {
       super()
-      let style = document.createElement('style')
 
       this.styleHost = document.createElement('head')
       this.mountPoint = document.createElement('div')
-      const shadowRoot = this.attachShadow({ mode: 'open' })
-      shadowRoot.appendChild(style)
-
-      style.textContent = `
-        ::slotted(*) {
-          opacity: 1 !important
-        }
-      `
+      this.attachShadow({ mode: 'open' })
     }
 
     connectedCallback() {
