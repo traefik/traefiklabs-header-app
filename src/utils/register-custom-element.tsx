@@ -29,6 +29,7 @@ export default function registerCustomElement<P extends BaseProps>({
 
     constructor() {
       super()
+
       this.styleHost = document.createElement('head')
       this.mountPoint = document.createElement('div')
       this.attachShadow({ mode: 'open' })
