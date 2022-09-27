@@ -264,6 +264,7 @@ const MainNav: React.FC = () => {
             <MenuColumn.Column title="Community">
               <MenuColumn.Item title="Community Overview" href="https://traefik.io/community/" external />
               <MenuColumn.Item title="Forum" href="https://community.traefik.io/" external />
+              <MenuColumn.Item title="Community Voices" href="https://traefik.io/traefik-community-voices/" external />
               <MenuColumn.Item
                 title="Traefik Ambassadors"
                 href="https://traefik.io/traefik-ambassador-program/"

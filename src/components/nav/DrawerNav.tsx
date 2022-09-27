@@ -78,6 +78,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/events/">Events</SubLink>
             <SubLink href="https://doc.traefik.io">Docs</SubLink>
             <SubLink href="https://traefik.io/community/">Community</SubLink>
+            <SubLink href="https://traefik.io/traefik-community-voices/">Community Voices</SubLink>
             <SubLink href="https://community.traefik.io/">Forum</SubLink>
           </div>
         </div>
