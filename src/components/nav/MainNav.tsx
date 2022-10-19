@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Flex, Grid, Heading } from '@containous/faency'
+import { Flex, Grid, Heading, Text, theme } from '@containous/faency'
 import NavItem from './NavItem'
 import Product from './Product'
 import * as MenuColumn from './MenuColumn'
@@ -77,6 +77,31 @@ const MainNav: React.FC = () => {
                   >
                     Traefik Hub
                   </Heading>
+                  <Flex
+                    sx={{
+                      backgroundColor: '#7f8c2b',
+                      borderRadius: '6px',
+                      textAlign: 'center',
+                      p: '1px 5px 0 8px',
+                      ml: '10px',
+                      height: '24px',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Text
+                      as="div"
+                      sx={{
+                        fontSize: '14px',
+                        lineHeight: '14px',
+                        color: theme.colors.white,
+                        fontWeight: 500,
+                        letterSpacing: '3.5px',
+                      }}
+                    >
+                      BETA
+                    </Text>
+                  </Flex>
                 </Flex>
               }
               description="Your Cloud Native Networking Platform"
@@ -85,12 +110,6 @@ const MainNav: React.FC = () => {
               color="#7f8c2b"
               bgColor="#f4f5f6"
               links={[
-                {
-                  title: 'Pricing',
-                  url: 'https://traefik.io/traefik-hub/pricing/',
-                  external: true,
-                  icon: <PriceTagIcon aria-hidden="true" />,
-                },
                 {
                   title: 'Sign Up for Free',
                   url: 'https://hub.traefik.io/',
@@ -203,7 +222,42 @@ const MainNav: React.FC = () => {
                 href="https://doc.traefik.io/traefik-enterprise/"
                 external
               ></MenuColumn.Item>
-              <MenuColumn.Item title="Traefik Hub" href="https://traefik.io/traefik-hub/" external />
+              <MenuColumn.Item
+                title={
+                  <>
+                    Traefik Hub{' '}
+                    <Flex
+                      sx={{
+                        position: 'relative',
+                        top: '-2px',
+                        display: 'inline-flex',
+                        background: '#7f8c2b',
+                        borderRadius: '6px',
+                        textAlign: 'center',
+                        p: '1px 5px 0 8px',
+                        ml: '4px',
+                        height: '18px',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Text
+                        as="div"
+                        sx={{
+                          fontSize: '11px',
+                          lineHeight: '11px',
+                          color: theme.colors.white,
+                          letterSpacing: '2.75px',
+                        }}
+                      >
+                        BETA
+                      </Text>
+                    </Flex>
+                  </>
+                }
+                href="https://traefik.io/traefik-hub/"
+                external
+              />
               <MenuColumn.Item title="Plugin Catalog" href="https://plugins.traefik.io/" external></MenuColumn.Item>
             </MenuColumn.Column>
 

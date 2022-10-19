@@ -40,33 +40,6 @@ const NavButton = styled.a`
   text-align: center;
   font-size: 16px;
   line-height: 16px;
-  margin-left: 16px;
-
-  &:hover {
-    background-color: ${theme.colors.blues[7]};
-    border-color: ${theme.colors.blues[7]};
-    color: ${theme.colors.menuBg};
-  }
-
-  @media (max-width: 700px) {
-    display: none;
-  }
-`
-
-const NavButtonPrimary = styled.a`
-  background-color: ${theme.colors.blues[7]};
-  color: ${theme.colors.menuBg};
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid;
-  border-color: ${theme.colors.blues[7]};
-  transition: all 0.2s;
-  padding: 7px 15px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 16px;
-  margin-left: 16px;
 
   &:hover {
     background-color: ${theme.colors.blues[7]};
@@ -80,6 +53,7 @@ const NavButtonPrimary = styled.a`
 `
 
 const NavIconButton = styled.a`
+  margin: 0 24px;
   padding: 7px;
   border: none;
   background: none;
@@ -178,10 +152,7 @@ const Header = () => {
                     <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
                   </svg>
                 </NavIconButton>
-                <NavButton href="https://hub.traefik.io">Sign In</NavButton>
-                <NavButtonPrimary href="https://info.traefik.io/en/request-demo-traefik-enterprise">
-                  Get a Demo
-                </NavButtonPrimary>
+                <NavButton href="https://info.traefik.io/en/request-demo-traefik-enterprise">Get a Demo</NavButton>
               </Flex>
               <Hamburger className="drawer">
                 <Box
