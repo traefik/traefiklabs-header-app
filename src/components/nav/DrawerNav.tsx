@@ -32,7 +32,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           </div>
           <div className="sub-menu">
             <SubLink href="https://traefik.io/traefik-enterprise/">Traefik Enterprise</SubLink>
-            <SubLink href="https://traefik.io/traefik-hub/">Traefik Hub (Beta)</SubLink>
+            <SubLink href="https://traefik.io/traefik-hub/">Traefik Hub</SubLink>
           </div>
         </div>
 
