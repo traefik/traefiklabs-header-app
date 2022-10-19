@@ -3,7 +3,6 @@ import TraefikEnterpriseLogo from 'images/TraefikEnterpriseLogo'
 import TraefikProxyLogo from 'images/TraefikProxyLogo'
 import TraefikMeshLogo from 'images/TraefikMeshLogo'
 import RocketIcon from 'images/RocketIcon'
-import TagIcon from 'images/TagIcon'
 import GithubIcon from 'images/GithubIcon'
 import DocsIcon from 'images/DocsIcon'
 import PriceTagIcon from 'images/PriceTagIcon'
@@ -19,7 +18,6 @@ export {
   TraefikProxyLogo,
   TraefikMeshLogo,
   RocketIcon,
-  TagIcon,
   GithubIcon,
   DocsIcon,
   PriceTagIcon,

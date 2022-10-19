@@ -13,7 +13,6 @@ import {
   TraefikProxyLogo,
   TraefikMeshLogo,
   RocketIcon,
-  TagIcon,
   GithubIcon,
   DocsIcon,
   PriceTagIcon,
@@ -90,7 +89,7 @@ const MainNav: React.FC = () => {
                   title: 'Pricing',
                   url: 'https://traefik.io/traefik-hub/pricing/',
                   external: true,
-                  icon: <TagIcon aria-hidden="true" />,
+                  icon: <PriceTagIcon aria-hidden="true" />,
                 },
                 {
                   title: 'Sign Up for Free',
