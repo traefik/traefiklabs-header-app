@@ -203,7 +203,7 @@ const MainNav: React.FC = () => {
                 href="https://doc.traefik.io/traefik-enterprise/"
                 external
               ></MenuColumn.Item>
-              <MenuColumn.Item title="Traefik Hub" href="https://traefik.io/traefik-hub/" external />
+              <MenuColumn.Item title="Traefik Hub" href="https://doc.traefik.io/traefik-hub/" external />
               <MenuColumn.Item title="Plugin Catalog" href="https://plugins.traefik.io/" external></MenuColumn.Item>
             </MenuColumn.Column>
 
