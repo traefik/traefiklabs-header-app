@@ -42,7 +42,7 @@ const MainNav: React.FC = () => {
           <Grid sx={{ gridTemplateColumns: 'repeat(2, 364px)' }}>
             <Product
               title="Traefik Enterprise"
-              description="All-in-one ingress, API management, and service mesh"
+              description="All-in-one ingress, API gateway, and service mesh"
               logo={<TraefikEnterpriseLogo />}
               url="https://traefik.io/traefik-enterprise/"
               color="#337fe6"
