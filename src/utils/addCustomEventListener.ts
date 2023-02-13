@@ -27,12 +27,14 @@ export const addCustomClickEventListener = (eventName: string) => {
 
       window.dataLayer.push({
         event: eventName,
-        custom_event: {
+        gtm: {
           element: targetElement,
           elementId: targetElement.id || '',
           elementClasses: targetElement.className || '',
           elementUrl: targetElement.href || targetElement.action || '',
           elementTarget: targetElement.target || '',
+          clickUrl: targetElement.href || targetElement.action || '',
+          clickText: targetElement.textContent || '',
           originalEvent: event,
           inShadowDom: shadowFound,
         },
