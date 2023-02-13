@@ -169,9 +169,9 @@ const Header = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     className="StyledIconBase-ea9ulj-0 jZGNBW"
                   >
                     <circle cx="11" cy="11" r="8"></circle>
