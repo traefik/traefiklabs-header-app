@@ -28,13 +28,14 @@ export const addCustomClickEventListener = (eventName: string) => {
       window.dataLayer.push({
         event: eventName,
         gtm: {
-          'gtm.element': targetElement,
-          'gtm.elementId': targetElement.id || '',
-          'gtm.elementClasses': targetElement.className || '',
-          'gtm.elementUrl': targetElement.href || targetElement.action || '',
-          'gtm.elementTarget': targetElement.target || '',
-          'gtm.elementText': targetElement.textContent || '',
-          'gtm.originalEvent': event,
+          element: targetElement,
+          elementId: targetElement.id || '',
+          elementClasses: targetElement.className || '',
+          'elementUrl': targetElement.href || targetElement.action || '',
+          'elementURL': targetElement.href || targetElement.action || '',
+          elementTarget: targetElement.target || '',
+          elementText: targetElement.textContent || '',
+          originalEvent: event,
           inShadowDom: shadowFound,
         },
       })
