@@ -34,10 +34,20 @@ export const addCustomClickEventListener = (eventName: string) => {
           'elementUrl': targetElement.href || targetElement.action || '',
           'elementURL': targetElement.href || targetElement.action || '',
           elementTarget: targetElement.target || '',
+          clickUrl: targetElement.href || targetElement.action || '',
+          clickURL: targetElement.href || targetElement.action || '',
           elementText: targetElement.textContent || '',
           originalEvent: event,
           inShadowDom: shadowFound,
         },
+        custom_event: {
+          clickUrl: targetElement.href || targetElement.action || '',
+          clickURL: targetElement.href || targetElement.action || '',
+          'elementUrl': targetElement.href || targetElement.action || '',
+          'elementURL': targetElement.href || targetElement.action || '',
+          elementTarget: targetElement.target || '',
+          elementText: targetElement.textContent || '',
+        }
       })
     }
   }
