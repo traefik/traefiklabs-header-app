@@ -31,8 +31,8 @@ export const addCustomClickEventListener = (eventName: string) => {
           element: targetElement,
           elementId: targetElement.id || '',
           elementClasses: targetElement.className || '',
-          'elementUrl': targetElement.href || targetElement.action || '',
-          'elementURL': targetElement.href || targetElement.action || '',
+          elementUrl: targetElement.href || targetElement.action || '',
+          elementURL: targetElement.href || targetElement.action || '',
           elementTarget: targetElement.target || '',
           clickUrl: targetElement.href || targetElement.action || '',
           clickURL: targetElement.href || targetElement.action || '',
@@ -40,14 +40,6 @@ export const addCustomClickEventListener = (eventName: string) => {
           originalEvent: event,
           inShadowDom: shadowFound,
         },
-        custom_event: {
-          clickUrl: targetElement.href || targetElement.action || '',
-          clickURL: targetElement.href || targetElement.action || '',
-          'elementUrl': targetElement.href || targetElement.action || '',
-          'elementURL': targetElement.href || targetElement.action || '',
-          elementTarget: targetElement.target || '',
-          elementText: targetElement.textContent || '',
-        }
       })
     }
   }

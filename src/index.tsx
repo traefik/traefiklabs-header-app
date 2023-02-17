@@ -7,4 +7,4 @@ registerCustomElement({
   component: App,
 })
 
-addCustomClickEventListener('doc_nav_click')
+addCustomClickEventListener('gtm.doc_nav_click')
