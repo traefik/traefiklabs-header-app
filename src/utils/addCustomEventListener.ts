@@ -17,6 +17,9 @@ export const addCustomClickEventListener = (eventName: string) => {
       // Try to get the first element with href or action, falls back to the first layer of the clicked element
       const targetElement = path.find((el) => !!el.href || !!el.action) || path[0]
 
+      // If the element doesn't have href or action we don't need to send it to dataLayer
+      if (!targetElement.href && !targetElement.action) return
+
       if (!window.dataLayer) {
         window.dataLayer = []
       }
