@@ -8,18 +8,14 @@ export const addCustomClickEventListener = (eventName: string) => {
       // [span, div, div, section, body]
       const path = event.composedPath() as (HTMLElement & HTMLAnchorElement & HTMLFormElement)[]
 
-      // Fetch reference to the element that was actually clicked
-      const targetElement = path[0]
-
       // Check if the element is WITHIN the shadow DOM (ignoring the root)
-      const shadowFound = path.length
-        ? path.filter(function (i) {
-            return !targetElement.shadowRoot && !!i.shadowRoot
-          }).length > 0
-        : false
+      const shadowFound = path.length ? path.filter((i) => !!i.shadowRoot).length > 0 : false
 
       // If only shadow DOM events should be tracked and the element is not within one, return
       if (trackOnlyShadowDom && !shadowFound) return // Push to dataLayer
+
+      // Try to get the first element with href or action, falls back to the first layer of the clicked element
+      const targetElement = path.find((el) => !!el.href || !!el.action) || path[0]
 
       if (!window.dataLayer) {
         window.dataLayer = []
