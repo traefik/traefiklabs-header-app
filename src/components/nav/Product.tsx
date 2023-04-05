@@ -20,7 +20,7 @@ type NavProductProps = {
   }[]
 }
 
-const Product: React.FC<NavProductProps> = ({ logo, title, titleHtml, description, url, links, color, bgColor }) => (
+const Product = ({ logo, title, titleHtml, description, url, links, color, bgColor }: NavProductProps) => (
   <Box sx={{ p: 40, backgroundColor: bgColor || '#fff' }}>
     <Box>{logo}</Box>
     {titleHtml || (
@@ -38,7 +38,7 @@ const Product: React.FC<NavProductProps> = ({ logo, title, titleHtml, descriptio
         {title}
       </Heading>
     )}
-    <Text as="p" sx={{ fontSize: '16px', mt: 1, lineHeight: 1.33, color: '#677581' }}>
+    <Text as="p" sx={{ fontSize: '16px', mt: 1, lineHeight: 1.33, color: '#677581', whiteSpace: 'nowrap' }}>
       {description}
     </Text>
     <ArrowLink url={url} icon="arrow" iconHoverTransform={true} color={color} mt={`10px`}>
