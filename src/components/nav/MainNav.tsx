@@ -79,21 +79,15 @@ const MainNav: React.FC = () => {
                   </Heading>
                 </Flex>
               }
-              description="Your Cloud Native Networking Platform"
+              description="Your APIs deserve better"
               logo={<TraefikHubLogo />}
               url="https://traefik.io/traefik-hub/"
               color="#7f8c2b"
               bgColor="#f4f5f6"
               links={[
                 {
-                  title: 'Pricing',
-                  url: 'https://traefik.io/traefik-hub/pricing/',
-                  external: true,
-                  icon: <PriceTagIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Sign Up for Free',
-                  url: 'https://hub.traefik.io/',
+                  title: 'Sign up for early access',
+                  url: 'http://traefik.io/traefik-hub-signup',
                   external: true,
                   icon: <RocketIcon aria-hidden="true" />,
                 },
