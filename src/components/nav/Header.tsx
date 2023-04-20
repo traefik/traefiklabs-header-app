@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { Nav as FaencyNav, NavContainer as FaencyNavContainer, theme, Flex, Box } from '@containous/faency'
 import styled, { createGlobalStyle } from 'styled-components'
 import Logo from 'components/Logo'
@@ -113,9 +113,15 @@ const Hamburger = styled.div`
   }
 `
 
-const Header = () => {
+const Header = ({ product }: { product?: string }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [isHeaderScrolled, setHeaderScrolled] = useState(false)
+
+  const demoLink = useMemo(() => {
+    if (product === 'hub') return 'https://info.traefik.io/traefik-hub-signup'
+
+    return 'https://info.traefik.io/en/request-demo-traefik-enterprise'
+  }, [product])
 
   useEffect(() => {
     const adjustHeaderHeight = function () {
@@ -179,7 +185,7 @@ const Header = () => {
                   </svg>
                 </NavIconButton>
                 <NavButton href="https://info.traefik.io/speak-with-an-expert">Speak with an expert</NavButton>
-                <NavButtonPrimary href="https://info.traefik.io/en/request-demo-traefik-enterprise">
+                <NavButtonPrimary href={demoLink}>
                   Get a Demo
                 </NavButtonPrimary>
               </Flex>
