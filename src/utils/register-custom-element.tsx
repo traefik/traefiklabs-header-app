@@ -15,13 +15,11 @@ type Args<P extends BaseProps> = {
  * Register a custom element that wraps a React component.
  *
  * @param name       - the name of the custom element
- * @param attributes - the names of the custom element's attributes
  * @param component  - the React component
  */
 export default function registerCustomElement<P extends BaseProps>({
   name,
   component: Component,
-  attributes = [],
 }: Args<P>) {
   const webComponentClass = class extends HTMLElement {
     private readonly styleHost: HTMLElement
@@ -37,13 +35,7 @@ export default function registerCustomElement<P extends BaseProps>({
 
     connectedCallback() {
       if (this.isConnected) {
-        const attrs = attributes?.reduce(
-          (acc, key) =>
-            Object.assign(acc, {
-              [key]: this.getAttribute(key) ?? undefined,
-            }),
-          {} as P,
-        )
+        const attrs = Object.assign({}, ...Array.from(this.attributes, ({ name, value }) => ({ [name]: value })))
 
         this.shadowRoot?.appendChild(this.styleHost)
         this.shadowRoot?.appendChild(this.mountPoint)
