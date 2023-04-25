@@ -8,7 +8,7 @@ import FontGlobalStyle from 'components/nav/FontGlobalStyle'
 
 const FaencyProvider = Provider as React.FC<ComponentProps<typeof Provider> & { children: ReactNode }>
 
-function App() {
+function App({ product }: { product?: string }) {
   return (
     <SWRConfig
       value={{
@@ -19,7 +19,7 @@ function App() {
       <FaencyProvider>
         <DrawerGlobalStyle />
         <FontGlobalStyle />
-        <Header />
+        <Header product={product} />
       </FaencyProvider>
     </SWRConfig>
   )
