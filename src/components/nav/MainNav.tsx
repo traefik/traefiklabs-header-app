@@ -86,7 +86,7 @@ const MainNav: React.FC = () => {
               bgColor="#f4f5f6"
               links={[
                 {
-                  title: 'Sign up for early access',
+                  title: 'Free Trial',
                   url: 'http://traefik.io/traefik-hub-signup',
                   external: true,
                   icon: <RocketIcon aria-hidden="true" />,
