@@ -41,27 +41,6 @@ const MainNav: React.FC = () => {
         <NavItem name="Products" hasSubmenu>
           <Grid sx={{ gridTemplateColumns: 'repeat(2, 364px)' }}>
             <Product
-              title="Traefik Enterprise"
-              description="The API Gateway Cloud Natives Trust"
-              logo={<TraefikEnterpriseLogo />}
-              url="https://traefik.io/traefik-enterprise/"
-              color="#337fe6"
-              links={[
-                {
-                  title: 'Pricing',
-                  url: 'https://traefik.io/pricing/',
-                  external: true,
-                  icon: <PriceTagIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Free Trial',
-                  url: 'https://info.traefik.io/get-traefik-enterprise-free-for-30-days',
-                  external: true,
-                  icon: <LaptopIcon aria-hidden="true" />,
-                },
-              ]}
-            />
-            <Product
               title="Traefik Hub"
               titleHtml={
                 <Flex sx={{ alignItems: 'center', mt: '12px' }}>
@@ -79,17 +58,44 @@ const MainNav: React.FC = () => {
                   </Heading>
                 </Flex>
               }
-              description="Your APIs deserve better"
+              description="Kubernetes-Native API Management"
               logo={<TraefikHubLogo />}
               url="https://traefik.io/traefik-hub/"
               color="#7f8c2b"
-              bgColor="#f4f5f6"
               links={[
+                {
+                  title: 'Pricing',
+                  url: 'https://traefik.io/pricing/',
+                  external: true,
+                  icon: <PriceTagIcon aria-hidden="true" />,
+                },
                 {
                   title: 'Free Trial',
                   url: 'http://traefik.io/traefik-hub-signup',
                   external: true,
                   icon: <RocketIcon aria-hidden="true" />,
+                },
+              ]}
+            />
+            <Product
+              title="Traefik Enterprise"
+              description="The API Gateway Cloud Natives Trust"
+              logo={<TraefikEnterpriseLogo />}
+              url="https://traefik.io/traefik-enterprise/"
+              color="#337fe6"
+              bgColor="#f4f5f6"
+              links={[
+                {
+                  title: 'Pricing',
+                  url: 'https://traefik.io/pricing/',
+                  external: true,
+                  icon: <PriceTagIcon aria-hidden="true" />,
+                },
+                {
+                  title: 'Free Trial',
+                  url: 'https://info.traefik.io/get-traefik-enterprise-free-for-30-days',
+                  external: true,
+                  icon: <LaptopIcon aria-hidden="true" />,
                 },
               ]}
             />
