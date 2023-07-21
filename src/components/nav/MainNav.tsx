@@ -20,6 +20,7 @@ import {
   APIIcon,
   KubernetesIcon,
   DockerSwarmIcon,
+  APIManagementIcon,
 } from 'images'
 import PostCard from './PostCard'
 
@@ -154,6 +155,20 @@ const MainNav: React.FC = () => {
           <Grid sx={{ gridTemplateColumns: '380px 288px', p: '40px', gap: '40px' }}>
             <MenuColumn.Column title="Solutions">
               <MenuColumn.Item
+                href="https://traefik.io/solutions/api-management/"
+                title="API Management"
+                logo={<APIManagementIcon />}
+                description="Simplify and accelerate API lifecycle management"
+                external
+              />
+              <MenuColumn.Item
+                href="https://traefik.io/solutions/api-gateway/"
+                title="API Gateway"
+                logo={<APIIcon />}
+                description="Act as a single entry point for microservices deployments"
+                external
+              />
+              <MenuColumn.Item
                 href="https://traefik.io/solutions/kubernetes-ingress/"
                 title="Kubernetes Ingress"
                 logo={<KubernetesIcon />}
@@ -165,13 +180,6 @@ const MainNav: React.FC = () => {
                 title="Docker Swarm Ingress"
                 logo={<DockerSwarmIcon />}
                 description="Powerful traffic management for your Docker Swarm deployment"
-                external
-              />
-              <MenuColumn.Item
-                href="https://traefik.io/solutions/api-gateway/"
-                title="API Gateway"
-                logo={<APIIcon />}
-                description="Act as a single entry point for microservices deployments"
                 external
               />
             </MenuColumn.Column>

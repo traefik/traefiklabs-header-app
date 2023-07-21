@@ -44,6 +44,10 @@ const Links = styled.ul`
     font-weight: normal;
     color: #677581;
   }
+
+  svg {
+    overflow: visible;
+  }
 `
 
 type MenuColumnProps = {
