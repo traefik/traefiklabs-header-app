@@ -11,6 +11,7 @@ import ArrowRightIcon from 'images/ArrowRightIcon'
 import APIIcon from 'images/APIIcon'
 import DockerSwarmIcon from 'images/DockerSwarmIcon'
 import KubernetesIcon from 'images/KubernetesIcon'
+import APIManagementIcon from 'images/APIManagementIcon'
 
 export {
   TraefikHubLogo,
@@ -26,4 +27,5 @@ export {
   APIIcon,
   DockerSwarmIcon,
   KubernetesIcon,
+  APIManagementIcon,
 }
