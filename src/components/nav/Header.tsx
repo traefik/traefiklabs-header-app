@@ -120,7 +120,7 @@ const Header = ({ product }: { product?: string }) => {
   const demoLink = useMemo(() => {
     if (product === 'hub') return 'https://info.traefik.io/traefik-hub-signup'
 
-    return 'https://info.traefik.io/en/request-demo-traefik-enterprise'
+    return 'https://info.traefik.io/en/request-demo'
   }, [product])
 
   useEffect(() => {
@@ -185,9 +185,7 @@ const Header = ({ product }: { product?: string }) => {
                   </svg>
                 </NavIconButton>
                 <NavButton href="https://info.traefik.io/speak-with-an-expert">Speak with an expert</NavButton>
-                <NavButtonPrimary href={demoLink}>
-                  Get a Demo
-                </NavButtonPrimary>
+                <NavButtonPrimary href={demoLink}>Get a Demo</NavButtonPrimary>
               </Flex>
               <Hamburger className="drawer">
                 <Box
