@@ -79,6 +79,8 @@ const NavButtonPrimary = styled.a`
   }
 `
 
+/* Temporary disabled */
+/*
 const NavIconButton = styled.a`
   padding: 7px;
   border: none;
@@ -93,6 +95,7 @@ const NavIconButton = styled.a`
     background: rgb(248, 250, 255);
   }
 `
+*/
 
 // HACK: Menu component is adding inline styles to the body avoiding to use onMouseEnter event correctly
 // Side effect: Menu component is now stateless, DropdownMenu is not working anymore (stateful component)
