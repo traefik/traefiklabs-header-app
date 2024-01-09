@@ -165,7 +165,7 @@ const Header = ({ product }: { product?: string }) => {
             </Flex>
             <Flex sx={{ alignItems: 'center', height: '100%' }}>
               <Flex sx={{ alignItems: 'center' }}>
-                <NavIconButton href="https://traefik.io/search/">
+                {/* <NavIconButton href="https://traefik.io/search/">
                   <svg
                     height="22"
                     width="22"
@@ -183,7 +183,7 @@ const Header = ({ product }: { product?: string }) => {
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
                   </svg>
-                </NavIconButton>
+                </NavIconButton> */}
                 <NavButton href="https://info.traefik.io/contact-us">Contact Us</NavButton>
                 <NavButtonPrimary href={demoLink}>Get a Demo</NavButtonPrimary>
               </Flex>
