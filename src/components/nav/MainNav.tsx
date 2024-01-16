@@ -124,6 +124,12 @@ const MainNav: React.FC = () => {
                   external: true,
                   icon: <DocsIcon aria-hidden="true" />,
                 },
+                {
+                  title: 'Get Commercial Support',
+                  url: 'https://info.traefik.io/request-commercial-support',
+                  external: true,
+                  icon: <RocketIcon aria-hidden="true" />,
+                },
               ]}
             />
             <Product
