@@ -3,7 +3,7 @@ import { useEffect, useMemo } from 'react'
 const WHITELISTED_HOSTNAME = ['localhost', 'doc.traefik.io']
 
 const useDocWhizzScript = () => {
-  const {pathname, hostname} = window.location
+  const { pathname, hostname } = window.location
   const product = pathname.split('/')[1]
 
   const clientId = useMemo(() => {
