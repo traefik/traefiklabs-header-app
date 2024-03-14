@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=8000 && react-scripts start",
     "build": "react-scripts build",
     "gen-assets": "rimraf static-assets && mkdir -p static-assets && cp build/static/js/*.js static-assets/main-v1.js",
     "test": "react-scripts test",
