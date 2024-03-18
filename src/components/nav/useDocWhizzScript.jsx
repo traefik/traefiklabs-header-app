@@ -5,7 +5,7 @@ const WHITELISTED_HOSTNAME = ['localhost', 'doc.traefik.io']
 const useDocWhizzScript = () => {
   const { pathname, hostname } = window.location
   const product = pathname.split('/')[1]
-console.log(process.env.REACT_APP_DOCWHIZZ_TRAEFIK_PROXY_USER_ID)
+  
   const clientId = useMemo(() => {
     if (WHITELISTED_HOSTNAME.includes(hostname)) {
       if (product === 'traefik') return process.env.REACT_APP_DOCWHIZZ_TRAEFIK_PROXY_USER_ID
