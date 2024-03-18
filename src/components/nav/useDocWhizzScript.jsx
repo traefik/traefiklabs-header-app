@@ -8,7 +8,7 @@ const useDocWhizzScript = () => {
 
   const clientId = useMemo(() => {
     if (WHITELISTED_HOSTNAME.includes(hostname)) {
-      // if (product === 'traefik') return '65e8267d7714e3b11a5ce139'
+      if (product === 'traefik') return '65e8267d7714e3b11a5ce139'
       if (product === 'traefik-enterprise') return '65f0e20984bd4dfcfe7e58a6'
 
       return null
