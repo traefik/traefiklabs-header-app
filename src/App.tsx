@@ -12,7 +12,7 @@ function App({ product }: { product?: string }) {
   return (
     <SWRConfig
       value={{
-        refreshInterval: process.env.POLLING_INTERVAL ? parseInt(process.env.POLLING_INTERVAL, 10) : 300000, // default 5min
+        refreshInterval: process.env.REACT_APP_POLLING_INTERVAL ? parseInt(process.env.REACT_APP_POLLING_INTERVAL, 10) : 300000, // default 5min
         fetcher,
       }}
     >
