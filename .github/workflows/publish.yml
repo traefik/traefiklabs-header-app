@@ -5,12 +5,15 @@ on:
     branches:
       - main
 
-jobs:
+env:
+  REACT_APP_POLLING_INTERVAL: 300000
+  REACT_APP_DOCWHIZZ_TRAEFIK_EE_USER_ID: "${{ secrets.DOCWHIZZ_TRAEFIK_EE_USER_ID }}"
+  REACT_APP_DOCWHIZZ_TRAEFIK_PROXY_USER_ID: "${{ secrets.DOCWHIZZ_TRAEFIK_PROXY_USER_ID }}"
 
+jobs:
   doc:
     name: Build and publish assets
     runs-on: ubuntu-latest
-
     steps:
 
       - name: Setup Node.js
