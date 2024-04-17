@@ -3,7 +3,7 @@
 default: deps build static-assets
 
 deps:
-	yarn install
+	yarn install --frozen-lockfile --production
 
 build:
 	yarn build
