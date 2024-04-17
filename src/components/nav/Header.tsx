@@ -6,7 +6,6 @@ import Link from 'components/Link'
 import SkipLink from 'components/Link/Skip'
 import MainNav from 'components/nav/MainNav'
 import DrawerNav from 'components/nav/DrawerNav'
-import useDocWhizzScript from './useDocWhizzScript'
 
 const Nav = styled(FaencyNav)`
   position: fixed;
@@ -121,7 +120,6 @@ const Header = ({ product }: { product?: string }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
   const [isHeaderScrolled, setHeaderScrolled] = useState(false)
 
-  useDocWhizzScript()
   const demoLink = useMemo(() => {
     if (product === 'hub') return 'https://info.traefik.io/traefik-hub-signup'
 
