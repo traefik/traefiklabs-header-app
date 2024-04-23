@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { Flex, Grid, Heading } from '@containous/faency'
+import { Box, Flex, Grid, Heading } from '@containous/faency'
 import NavItem from './NavItem'
 import Product from './Product'
 import * as MenuColumn from './MenuColumn'
@@ -11,7 +11,6 @@ import {
   TraefikHubLogo,
   TraefikEnterpriseLogo,
   TraefikProxyLogo,
-  TraefikMeshLogo,
   RocketIcon,
   GithubIcon,
   DocsIcon,
@@ -32,7 +31,7 @@ const Wrapper = styled(Flex)`
   }
 `
 
-const MainNav: React.FC = () => {
+const MainNav = () => {
   const lastPost = useGetLastPost('blog')
   const lastResource = useGetLastPost('resources')
 
@@ -104,7 +103,7 @@ const MainNav: React.FC = () => {
         </NavItem>
 
         <NavItem name="Open Source" hasSubmenu>
-          <Grid sx={{ gridTemplateColumns: 'repeat(2, 364px)' }}>
+          <Box>
             <Product
               title="Traefik Proxy"
               description="The Cloud-Native application proxy"
@@ -132,29 +131,7 @@ const MainNav: React.FC = () => {
                 },
               ]}
             />
-            <Product
-              title="Traefik Mesh"
-              description="The simplest service mesh"
-              logo={<TraefikMeshLogo />}
-              url="https://traefik.io/traefik-mesh/"
-              color="#be46dd"
-              bgColor="#f4f5f6"
-              links={[
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/traefik/mesh',
-                  external: true,
-                  icon: <GithubIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Documentation',
-                  url: 'https://doc.traefik.io/traefik-mesh/',
-                  external: true,
-                  icon: <DocsIcon aria-hidden="true" />,
-                },
-              ]}
-            />
-          </Grid>
+          </Box>
         </NavItem>
 
         <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }}>
@@ -207,11 +184,6 @@ const MainNav: React.FC = () => {
 
             <MenuColumn.Column title="Documentation">
               <MenuColumn.Item title="Traefik Proxy" href="https://doc.traefik.io/traefik/" external />
-              <MenuColumn.Item
-                title="Traefik Mesh"
-                href="https://doc.traefik.io/traefik-mesh/"
-                external
-              ></MenuColumn.Item>
               <MenuColumn.Item
                 title="Traefik Enterprise"
                 href="https://doc.traefik.io/traefik-enterprise/"
