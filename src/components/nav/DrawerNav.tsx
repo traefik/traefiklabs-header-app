@@ -45,7 +45,6 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           </div>
           <div className="sub-menu">
             <SubLink href="https://traefik.io/traefik/">Traefik Proxy</SubLink>
-            <SubLink href="https://traefik.io/traefik-mesh/">Traefik Mesh</SubLink>
           </div>
         </div>
 
