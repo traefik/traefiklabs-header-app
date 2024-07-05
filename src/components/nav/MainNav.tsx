@@ -1,26 +1,33 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import { Box, Flex, Grid, Heading } from '@containous/faency'
 import NavItem from './NavItem'
 import Product from './Product'
 import * as MenuColumn from './MenuColumn'
 import useGetLastPost from 'hooks/use-get-last-post'
-
-import {
-  TraefikHubLogo,
-  TraefikEnterpriseLogo,
-  TraefikProxyLogo,
-  RocketIcon,
-  GithubIcon,
-  DocsIcon,
-  PriceTagIcon,
-  LaptopIcon,
-  APIIcon,
-  KubernetesIcon,
-  DockerSwarmIcon,
-  APIManagementIcon,
-} from 'images'
+import Traefikhubicon from '../../images/Traefikhub.svg'
+import Traefikicon from '../../images/Traefik-Hub.svg'
+import Traefikproxyicon from '../../images/TraefikProxy.svg'
+import TraefikEnterpriseicon from '../../images/TraefikEnterprise.svg'
+import ApiGatewayIcon from '../../images/APIGateway.svg'
+import APIManagementIcon from '../../images/APIManagement.svg'
+import DockerSwarmIcon from '../../images/DockerSwarmIngress.svg'
+import KubernetesIcon from '../../images/KubernetesIngress.svg'
+import { ReactComponent as BlogIcon } from '../../images/menu_icons_blog.svg'
+import { ReactComponent as ResourcesIcon } from '../../images/menu_icons_resources.svg'
+import { ReactComponent as TraefikAcademyIcon } from '../../images/menu_icons_academy.svg'
+import { ReactComponent as EventsIcon } from '../../images/menu_icons_events.svg'
+import { ReactComponent as GlossaryIcon } from '../../images/menu_icons_list.svg'
+import { ReactComponent as StarIcon } from '../../images/menu_icons_star.svg'
+import { ReactComponent as ForumIcon } from '../../images/menu_icons_forum.svg'
+import { ReactComponent as PluginIcon } from '../../images/menu_icons_plugin.svg'
+import { ReactComponent as CommunityIcon } from '../../images/menu_icons_community.svg'
+import { ReactComponent as ProxyIcon } from '../../images/menu_icons_traefik_proxy.svg'
+import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefik_enterprise.svg'
+import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
+import BgImg1 from '../../images/PatternBG-1@3x.png'
+import BgImg2 from '../../images/PatternBG-2@3x.png'
+import BgImg3 from '../../images/PatternBG-3@3x.png'
 import PostCard from './PostCard'
 
 const Wrapper = styled(Flex)`
@@ -38,168 +45,186 @@ const MainNav = () => {
   return (
     <Wrapper as="nav" style={{ height: '100%', alignItems: 'center', marginLeft: '65px' }} aria-label="Main menu">
       <Flex as="ul" sx={{ height: '100%', alignItems: 'center', p: 0, m: 0, listStyle: 'none' }}>
-        <NavItem name="Products" hasSubmenu>
-          <Grid sx={{ gridTemplateColumns: 'repeat(2, 364px)' }}>
+        
+        {/* Products */}
+        <NavItem
+          name="Products"
+          hasSubmenu
+          position={{ marginLeft: '-15%' }}
+        >
+          <Grid sx={{ gridTemplateColumns: '1fr 1fr 1fr', maxWidth: '1160px' }}>
             <Product
-              title="Traefik Hub"
-              titleHtml={
-                <Flex sx={{ alignItems: 'center', mt: '12px' }}>
-                  <Heading
-                    as="h2"
-                    sx={{
-                      fontSize: '20px',
-                      fontWeight: 700,
-                      lineHeight: 1.33,
-                      letterSpacing: 0,
-                      fontFamily: 'inherit',
-                    }}
-                  >
-                    Traefik Hub
-                  </Heading>
-                </Flex>
-              }
-              description="Kubernetes-Native API Management"
-              logo={<TraefikHubLogo />}
-              url="https://traefik.io/traefik-hub/"
-              color="#7f8c2b"
+              title="Application Proxy"
+              description="Simplify microservice discovery, routing, & load balancing."
               links={[
                 {
-                  title: 'Pricing',
-                  url: 'https://traefik.io/pricing/',
+                  title: 'Taefik Proxy',
+                  url: '/traefik/',
                   external: true,
-                  icon: <PriceTagIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Free Trial',
-                  url: 'http://traefik.io/traefik-hub-signup',
-                  external: true,
-                  icon: <RocketIcon aria-hidden="true" />,
+                  description: 'OSS Cloud-Native Application Proxy',
+                  icon: Traefikproxyicon,
                 },
               ]}
+              bgImage={BgImg3}
             />
             <Product
-              title="Traefik Enterprise"
-              description="The API Gateway Cloud Natives Trust"
-              logo={<TraefikEnterpriseLogo />}
-              url="https://traefik.io/traefik-enterprise/"
-              color="#337fe6"
-              bgColor="#f4f5f6"
+              title="API Gateway"
+              description="Enhance security & centralize control of your APIs and microservices."
               links={[
                 {
-                  title: 'Pricing',
-                  url: 'https://traefik.io/pricing/',
+                  title: 'Traefik Hub',
+                  url: '/traefik-hub-api-gateway/',
+                  tag: 'API Gateway',
                   external: true,
-                  icon: <PriceTagIcon aria-hidden="true" />,
+                  description: 'Seamless Upgrade from Traefik Proxy',
+                  tagColor: 'rgb(177,64,245)',
+                  icon: Traefikicon,
                 },
                 {
-                  title: 'Free Trial',
-                  url: 'https://info.traefik.io/get-traefik-enterprise-free-for-30-days',
+                  title: 'Traefik Enterprise',
+                  url: '/traefik-enterprise/',
                   external: true,
-                  icon: <LaptopIcon aria-hidden="true" />,
+                  description: 'Standalone General-Purpose API Gateway',
+                  icon: TraefikEnterpriseicon,
                 },
               ]}
+              bgImage={BgImg1}
+            />
+            <Product
+              title="API Management"
+              description="Simplify & accelerate API lifecycle management in Kubernetes."
+              links={[
+                {
+                  title: 'Traefik Hub',
+                  url: '/traefik-hub/',
+                  external: true,
+                  tag: 'API Management',
+                  description: 'Kubernetes-Native API Management',
+                  // icon: PriceTagIcon,
+                  icon: Traefikhubicon,
+                },
+              ]}
+              bgImage={BgImg2}
+            />
+          </Grid>
+        </NavItem>
+        
+        {/* Solutions */}
+        <NavItem
+          name="Solutions"
+          hasSubmenu
+          position={{ marginLeft: '-25%' }}
+        >
+          <Grid
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 360px)',
+            }}
+          >
+            <Product
+              title="Application Proxy"
+              links={[
+                {
+                  title: 'Kubernetes Ingress',
+                  url: '/solutions/kubernetes-ingress/',
+                  external: false,
+                  description: 'A centralized routing solution for your Kubernetes deployment.',
+                  icon: KubernetesIcon,
+                },
+                {
+                  title: 'Docker Swarm Ingress',
+                  url: '/solutions/docker-swarm-ingress/',
+                  external: false,
+                  description: 'Manage incoming network traffic across your cluster',
+                  icon: DockerSwarmIcon,
+                },
+              ]}
+              bgImage={BgImg3}
+            />
+            <Product
+              title="API Gateway"
+              links={[
+                {
+                  title: 'Modern API Gateway',
+                  url: '/solutions/api-gateway/',
+                  external: false,
+                  description: 'Centralize security and routing in a single entry point for microservices deployments.',
+                  icon: ApiGatewayIcon,
+                },
+              ]}
+              bgImage={BgImg1}
+            />
+            <Product
+              title="API Management"
+              links={[
+                {
+                  title: 'GitOps-Driven API Management',
+                  url: '/solutions/api-management/',
+                  external: false,
+                  description: 'Simplifies and Accelerates API lifecycle management.',
+                  icon: APIManagementIcon,
+                },
+              ]}
+              bgImage={BgImg2}
             />
           </Grid>
         </NavItem>
 
-        <NavItem name="Open Source" hasSubmenu>
-          <Box>
-            <Product
-              title="Traefik Proxy"
-              description="The Cloud-Native application proxy"
-              logo={<TraefikProxyLogo />}
-              url="https://traefik.io/traefik/"
-              color="#2aa2c1"
-              links={[
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/traefik/traefik',
-                  external: true,
-                  icon: <GithubIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Documentation',
-                  url: 'https://doc.traefik.io/traefik/',
-                  external: true,
-                  icon: <DocsIcon aria-hidden="true" />,
-                },
-                {
-                  title: 'Get Commercial Support',
-                  url: 'https://info.traefik.io/request-commercial-support',
-                  external: true,
-                  icon: <RocketIcon aria-hidden="true" />,
-                },
-              ]}
-            />
-          </Box>
-        </NavItem>
-
-        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }}>
-          <Grid sx={{ gridTemplateColumns: '380px 288px', p: '40px', gap: '40px' }}>
-            <MenuColumn.Column title="Solutions">
-              <MenuColumn.Item
-                href="https://traefik.io/solutions/api-management/"
-                title="API Management"
-                logo={<APIManagementIcon />}
-                description="Simplify and accelerate API lifecycle management"
-                external
-              />
-              <MenuColumn.Item
-                href="https://traefik.io/solutions/api-gateway/"
-                title="API Gateway"
-                logo={<APIIcon />}
-                description="Act as a single entry point for microservices deployments"
-                external
-              />
-              <MenuColumn.Item
-                href="https://traefik.io/solutions/kubernetes-ingress/"
-                title="Kubernetes Ingress"
-                logo={<KubernetesIcon />}
-                description="A centralized routing solution for your Kubernetes deployment"
-                external
-              />
-              <MenuColumn.Item
-                href="https://traefik.io/solutions/docker-swarm-ingress/"
-                title="Docker Swarm Ingress"
-                logo={<DockerSwarmIcon />}
-                description="Powerful traffic management for your Docker Swarm deployment"
-                external
-              />
-            </MenuColumn.Column>
-
-            {lastResource && <PostCard post={lastResource} />}
-          </Grid>
-        </NavItem>
-
+        {/* Learn */}
         <NavItem name="Learn" hasSubmenu position={{ right: '25px' }}>
           <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '40px', gap: '93px', lineHeight: 1.6 }}>
             <MenuColumn.Column title="Learn">
-              <MenuColumn.Item title="Blog" href="https://traefik.io/blog/" external />
-              <MenuColumn.Item title="Resource Library" href="https://traefik.io/resources/" external />
-              <MenuColumn.Item title="Traefik Academy" href="https://academy.traefik.io/" external />
-              <MenuColumn.Item title="Success Stories" href="https://traefik.io/success-stories/" external />
-              <MenuColumn.Item title="Glossary" href="https://traefik.io/glossary/" external />
-              <MenuColumn.Item title="Events" href="https://traefik.io/events/" external />
+              <MenuColumn.Item title="Blog" logo={<BlogIcon />} href="https://traefik.io/blog/" external />
+              <MenuColumn.Item
+                title="Resource Library"
+                logo={<ResourcesIcon />}
+                href="https://traefik.io/resources/"
+                external
+              />
+              <MenuColumn.Item
+                title="Traefik Academy"
+                logo={<TraefikAcademyIcon />}
+                href="https://academy.traefik.io/"
+                external
+              />
+              <MenuColumn.Item
+                title="Success Stories"
+                logo={<StarIcon />}
+                href="https://traefik.io/success-stories/"
+                external
+              />
+              <MenuColumn.Item title="Glossary" logo={<GlossaryIcon />} href="https://traefik.io/glossary/" external />
+              <MenuColumn.Item title="Events" logo={<EventsIcon />} href="https://traefik.io/events/" external />
+            </MenuColumn.Column>
+
+            <MenuColumn.Column title="Open Source">
+              <MenuColumn.Item
+                title="Plugin Catalog"
+                logo={<PluginIcon />}
+                href="https://plugins.traefik.io"
+                external
+              />
+              <MenuColumn.Item title="Forum" logo={<ForumIcon />} href="https://community.traefik.io/" external />
+              <MenuColumn.Item title="Join the Community" logo={<CommunityIcon />} href="/community/" external />
             </MenuColumn.Column>
 
             <MenuColumn.Column title="Documentation">
-              <MenuColumn.Item title="Traefik Proxy" href="https://doc.traefik.io/traefik/" external />
+              <MenuColumn.Item
+                title="Traefik Proxy"
+                logo={<ProxyIcon />}
+                href="https://doc.traefik.io/traefik/"
+                external
+              />
               <MenuColumn.Item
                 title="Traefik Enterprise"
+                logo={<EnterpriseIcon />}
                 href="https://doc.traefik.io/traefik-enterprise/"
                 external
-              ></MenuColumn.Item>
-              <MenuColumn.Item title="Traefik Hub" href="https://doc.traefik.io/traefik-hub/" external />
-              <MenuColumn.Item title="Plugin Catalog" href="https://plugins.traefik.io/" external></MenuColumn.Item>
-            </MenuColumn.Column>
-
-            <MenuColumn.Column title="Community">
-              <MenuColumn.Item title="Community Overview" href="https://traefik.io/community/" external />
-              <MenuColumn.Item title="Forum" href="https://community.traefik.io/" external />
-              <MenuColumn.Item title="Community Voices" href="https://traefik.io/traefik-community-voices/" external />
+              />
               <MenuColumn.Item
-                title="Traefik Ambassadors"
-                href="https://traefik.io/traefik-ambassador-program/"
+                title="Traefik Hub"
+                logo={<HubIcon />}
+                href="https://doc.traefik.io/traefik-hub/"
                 external
               />
             </MenuColumn.Column>
@@ -207,8 +232,12 @@ const MainNav = () => {
             {lastPost && <PostCard post={lastPost} />}
           </Grid>
         </NavItem>
-
-        <NavItem name="Pricing" pr="40px" url="https://traefik.io/pricing/" />
+        
+        {/* Pricing */}
+        <NavItem name="Pricing" url="/pricing/" />
+        
+        {/* Docs */}
+        <NavItem name="Docs" url="https://doc.traefik.io/" />
       </Flex>
     </Wrapper>
   )
