@@ -26,6 +26,18 @@ type NavbarLinkProps = {
 
 const Product = ({ bgImage, title, description, links }: NavProductProps) => (
   <Box sx={{ p: '24px', backgroundColor: '#fff', position: 'relative' }}>
+    <img
+      src={bgImage}
+      width={320}
+      height={84}
+      style={{
+        position: 'absolute',
+        paddingBottom: '0px',
+        bottom: '0',
+        left: '0',
+        right: '0',
+      }}
+    />
     <Heading
       as="span"
       sx={{
@@ -63,18 +75,6 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
           </li>
         ))}
     </Links>
-    <img
-      src={bgImage}
-      width={320}
-      height={84}
-      style={{
-        position: 'absolute',
-        paddingBottom: '0px',
-        bottom: '0',
-        left: '0',
-        right: '0',
-      }}
-    />
   </Box>
 )
 
@@ -107,9 +107,10 @@ const Links = styled.ul`
       margin: 0;
     }
   }
+
   a {
     display: flex;
-    align-items: center;
+    align-items: start;
     font-size: 1px;
     font-weight: 500;
     line-height: 1.14;

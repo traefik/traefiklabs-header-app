@@ -40,18 +40,12 @@ const Wrapper = styled(Flex)`
 
 const MainNav = () => {
   const lastPost = useGetLastPost('blog')
-  const lastResource = useGetLastPost('resources')
 
   return (
     <Wrapper as="nav" style={{ height: '100%', alignItems: 'center', marginLeft: '65px' }} aria-label="Main menu">
       <Flex as="ul" sx={{ height: '100%', alignItems: 'center', p: 0, m: 0, listStyle: 'none' }}>
-        
         {/* Products */}
-        <NavItem
-          name="Products"
-          hasSubmenu
-          position={{ marginLeft: '-15%' }}
-        >
+        <NavItem name="Products" hasSubmenu position={{ marginLeft: '-15%' }}>
           <Grid sx={{ gridTemplateColumns: '1fr 1fr 1fr', maxWidth: '1160px' }}>
             <Product
               title="Application Proxy"
@@ -59,7 +53,7 @@ const MainNav = () => {
               links={[
                 {
                   title: 'Taefik Proxy',
-                  url: '/traefik/',
+                  url: 'https://traefik.io/traefik/',
                   external: true,
                   description: 'OSS Cloud-Native Application Proxy',
                   icon: Traefikproxyicon,
@@ -73,7 +67,7 @@ const MainNav = () => {
               links={[
                 {
                   title: 'Traefik Hub',
-                  url: '/traefik-hub-api-gateway/',
+                  url: 'https://traefik.io/traefik-hub-api-gateway/',
                   tag: 'API Gateway',
                   external: true,
                   description: 'Seamless Upgrade from Traefik Proxy',
@@ -82,7 +76,7 @@ const MainNav = () => {
                 },
                 {
                   title: 'Traefik Enterprise',
-                  url: '/traefik-enterprise/',
+                  url: 'https://traefik.io/traefik-enterprise/',
                   external: true,
                   description: 'Standalone General-Purpose API Gateway',
                   icon: TraefikEnterpriseicon,
@@ -96,11 +90,10 @@ const MainNav = () => {
               links={[
                 {
                   title: 'Traefik Hub',
-                  url: '/traefik-hub/',
+                  url: 'https://traefik.io/traefik-hub/',
                   external: true,
                   tag: 'API Management',
                   description: 'Kubernetes-Native API Management',
-                  // icon: PriceTagIcon,
                   icon: Traefikhubicon,
                 },
               ]}
@@ -108,13 +101,9 @@ const MainNav = () => {
             />
           </Grid>
         </NavItem>
-        
+
         {/* Solutions */}
-        <NavItem
-          name="Solutions"
-          hasSubmenu
-          position={{ marginLeft: '-25%' }}
-        >
+        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }}>
           <Grid
             sx={{
               display: 'grid',
@@ -126,15 +115,15 @@ const MainNav = () => {
               links={[
                 {
                   title: 'Kubernetes Ingress',
-                  url: '/solutions/kubernetes-ingress/',
-                  external: false,
+                  url: 'https://traefik.io/solutions/kubernetes-ingress/',
+                  external: true,
                   description: 'A centralized routing solution for your Kubernetes deployment.',
                   icon: KubernetesIcon,
                 },
                 {
                   title: 'Docker Swarm Ingress',
-                  url: '/solutions/docker-swarm-ingress/',
-                  external: false,
+                  url: 'https://traefik.io/solutions/docker-swarm-ingress/',
+                  external: true,
                   description: 'Manage incoming network traffic across your cluster',
                   icon: DockerSwarmIcon,
                 },
@@ -146,10 +135,10 @@ const MainNav = () => {
               links={[
                 {
                   title: 'Modern API Gateway',
-                  url: '/solutions/api-gateway/',
-                  external: false,
+                  url: 'https://traefik.io/solutions/api-gateway/',
+                  external: true,
                   description: 'Centralize security and routing in a single entry point for microservices deployments.',
-                  icon: ApiGatewayIcon,
+                  icon: APIManagementIcon,
                 },
               ]}
               bgImage={BgImg1}
@@ -159,10 +148,10 @@ const MainNav = () => {
               links={[
                 {
                   title: 'GitOps-Driven API Management',
-                  url: '/solutions/api-management/',
-                  external: false,
+                  url: 'https://traefik.io/solutions/api-management/',
+                  external: true,
                   description: 'Simplifies and Accelerates API lifecycle management.',
-                  icon: APIManagementIcon,
+                  icon: ApiGatewayIcon,
                 },
               ]}
               bgImage={BgImg2}
@@ -172,7 +161,7 @@ const MainNav = () => {
 
         {/* Learn */}
         <NavItem name="Learn" hasSubmenu position={{ right: '25px' }}>
-          <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '40px', gap: '93px', lineHeight: 1.6 }}>
+          <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '24px', gap: '93px', lineHeight: 1.6 }}>
             <MenuColumn.Column title="Learn">
               <MenuColumn.Item title="Blog" logo={<BlogIcon />} href="https://traefik.io/blog/" external />
               <MenuColumn.Item
@@ -232,10 +221,10 @@ const MainNav = () => {
             {lastPost && <PostCard post={lastPost} />}
           </Grid>
         </NavItem>
-        
+
         {/* Pricing */}
-        <NavItem name="Pricing" url="/pricing/" />
-        
+        <NavItem name="Pricing" url="https://traefik.io/pricing/" />
+
         {/* Docs */}
         <NavItem name="Docs" url="https://doc.traefik.io/" />
       </Flex>
