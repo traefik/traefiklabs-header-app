@@ -9,7 +9,7 @@ const Links = styled.ul`
   margin: 0;
 
   li {
-    margin: 0 0 18px;
+    margin: 0 0 13px;
     padding: 0;
 
     &:last-child {

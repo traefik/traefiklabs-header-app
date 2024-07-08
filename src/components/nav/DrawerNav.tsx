@@ -31,20 +31,10 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </span>
           </div>
           <div className="sub-menu">
-            <SubLink href="https://traefik.io/traefik-enterprise/">Traefik Enterprise</SubLink>
-            <SubLink href="https://traefik.io/traefik-hub/">Traefik Hub</SubLink>
-          </div>
-        </div>
-
-        <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
-          <div className="menu-item menu-item--with-icon">
-            <span className="title">Open Source</span>
-            <span className="icon">
-              <Chevron />
-            </span>
-          </div>
-          <div className="sub-menu">
             <SubLink href="https://traefik.io/traefik/">Traefik Proxy</SubLink>
+            <SubLink href="https://traefik.io/traefik-hub-api-gateway/">Traefik Hub API Gateway</SubLink>
+            <SubLink href="https://traefik.io/traefik-enterprise/">Traefik Enterprise</SubLink>
+            <SubLink href="https://traefik.io/traefik-hub/">Traefik Hub API Management</SubLink>
           </div>
         </div>
 
@@ -58,6 +48,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           <div className="sub-menu">
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-management/">API Management</SubLink>
             <SubLink href="https://traefik.io/solutions/api-gateway/">API Gateway</SubLink>
           </div>
         </div>
@@ -74,11 +65,12 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/resources/">Resource Library</SubLink>
             <SubLink href="https://academy.traefik.io/">Traefik Academy</SubLink>
             <SubLink href="https://traefik.io/success-stories/">Success Stories</SubLink>
+            <SubLink href="https://traefik.io/glossary/">Glossary</SubLink>
             <SubLink href="https://traefik.io/events/">Events</SubLink>
             <SubLink href="https://doc.traefik.io">Docs</SubLink>
-            <SubLink href="https://traefik.io/community/">Community</SubLink>
-            <SubLink href="https://traefik.io/traefik-community-voices/">Community Voices</SubLink>
+            <SubLink href="https://plugins.traefik.io/">Plugin Catalog</SubLink>
             <SubLink href="https://community.traefik.io/">Forum</SubLink>
+            <SubLink href="https://traefik.io/community/">Community</SubLink>
           </div>
         </div>
 
