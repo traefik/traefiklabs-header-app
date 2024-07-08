@@ -30,6 +30,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
       src={bgImage}
       width={320}
       height={84}
+      alt=""
       style={{
         position: 'absolute',
         paddingBottom: '0px',
