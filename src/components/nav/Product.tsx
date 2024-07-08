@@ -63,7 +63,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
           <li key={title + link.title}>
             <NavbarLink external={link.external} url={link.url}>
               <NavLinkIcon>
-                <img src={link.icon} aria-hidden="true" width={24} height={24} />
+                <img src={link.icon} aria-hidden="true" width={24} height={24} alt="" />
               </NavLinkIcon>
               <div>
                 <NavLinkTitle>
