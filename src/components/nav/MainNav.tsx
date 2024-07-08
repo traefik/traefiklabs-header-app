@@ -5,14 +5,14 @@ import NavItem from './NavItem'
 import Product from './Product'
 import * as MenuColumn from './MenuColumn'
 import useGetLastPost from 'hooks/use-get-last-post'
-import Traefikhubicon from '../../images/Traefikhub.svg'
-import Traefikicon from '../../images/Traefik-Hub.svg'
-import Traefikproxyicon from '../../images/TraefikProxy.svg'
-import TraefikEnterpriseicon from '../../images/TraefikEnterprise.svg'
-import ApiGatewayIcon from '../../images/APIGateway.svg'
-import APIManagementIcon from '../../images/APIManagement.svg'
-import DockerSwarmIcon from '../../images/DockerSwarmIngress.svg'
-import KubernetesIcon from '../../images/KubernetesIngress.svg'
+import { ReactComponent as TraefikHubIcon } from '../../images/Traefikhub.svg'
+import { ReactComponent as TraefikIcon } from '../../images/Traefik-Hub.svg'
+import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.svg'
+import { ReactComponent as TraefikEnterpriseIcon } from '../../images/TraefikEnterprise.svg'
+import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
+import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
+import { ReactComponent as DockerSwarmIcon } from '../../images/DockerSwarmIngress.svg'
+import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress.svg'
 import { ReactComponent as BlogIcon } from '../../images/menu_icons_blog.svg'
 import { ReactComponent as ResourcesIcon } from '../../images/menu_icons_resources.svg'
 import { ReactComponent as TraefikAcademyIcon } from '../../images/menu_icons_academy.svg'
@@ -25,9 +25,6 @@ import { ReactComponent as CommunityIcon } from '../../images/menu_icons_communi
 import { ReactComponent as ProxyIcon } from '../../images/menu_icons_traefik_proxy.svg'
 import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefik_enterprise.svg'
 import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
-import BgImg1 from '../../images/PatternBG-1@3x.png'
-import BgImg2 from '../../images/PatternBG-2@3x.png'
-import BgImg3 from '../../images/PatternBG-3@3x.png'
 import PostCard from './PostCard'
 
 const Wrapper = styled(Flex)`
@@ -56,10 +53,10 @@ const MainNav = () => {
                   url: 'https://traefik.io/traefik/',
                   external: true,
                   description: 'OSS Cloud-Native Application Proxy',
-                  icon: Traefikproxyicon,
+                  icon: <TraefikProxyIcon />,
                 },
               ]}
-              bgImage={BgImg3}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-3@3x.png'}
             />
             <Product
               title="API Gateway"
@@ -72,17 +69,17 @@ const MainNav = () => {
                   external: true,
                   description: 'Seamless Upgrade from Traefik Proxy',
                   tagColor: 'rgb(177,64,245)',
-                  icon: Traefikicon,
+                  icon: <TraefikIcon />,
                 },
                 {
                   title: 'Traefik Enterprise',
                   url: 'https://traefik.io/traefik-enterprise/',
                   external: true,
                   description: 'Standalone General-Purpose API Gateway',
-                  icon: TraefikEnterpriseicon,
+                  icon: <TraefikEnterpriseIcon />,
                 },
               ]}
-              bgImage={BgImg1}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}
             />
             <Product
               title="API Management"
@@ -94,10 +91,10 @@ const MainNav = () => {
                   external: true,
                   tag: 'API Management',
                   description: 'Kubernetes-Native API Management',
-                  icon: Traefikhubicon,
+                  icon: <TraefikHubIcon />,
                 },
               ]}
-              bgImage={BgImg2}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-2@3x.png'}
             />
           </Grid>
         </NavItem>
@@ -118,17 +115,17 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/kubernetes-ingress/',
                   external: true,
                   description: 'A centralized routing solution for your Kubernetes deployment.',
-                  icon: KubernetesIcon,
+                  icon: <KubernetesIcon />,
                 },
                 {
                   title: 'Docker Swarm Ingress',
                   url: 'https://traefik.io/solutions/docker-swarm-ingress/',
                   external: true,
                   description: 'Manage incoming network traffic across your cluster',
-                  icon: DockerSwarmIcon,
+                  icon: <DockerSwarmIcon />,
                 },
               ]}
-              bgImage={BgImg3}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-3@3x.png'}
             />
             <Product
               title="API Gateway"
@@ -138,10 +135,10 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/api-gateway/',
                   external: true,
                   description: 'Centralize security and routing in a single entry point for microservices deployments.',
-                  icon: APIManagementIcon,
+                  icon: <APIManagementIcon />,
                 },
               ]}
-              bgImage={BgImg1}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}
             />
             <Product
               title="API Management"
@@ -151,10 +148,10 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/api-management/',
                   external: true,
                   description: 'Simplifies and Accelerates API lifecycle management.',
-                  icon: ApiGatewayIcon,
+                  icon: <ApiGatewayIcon />,
                 },
               ]}
-              bgImage={BgImg2}
+              bgImage={'https://traefik.io/images/site-nav/PatternBG-2@3x.png'}
             />
           </Grid>
         </NavItem>

@@ -9,7 +9,7 @@ type NavProductProps = {
   links?: {
     title: string
     url: string
-    icon: string
+    icon: any
     description: string
     tagColor?: string
     tag?: string
@@ -62,9 +62,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
         links.map((link) => (
           <li key={title + link.title}>
             <NavbarLink external={link.external} url={link.url}>
-              <NavLinkIcon>
-                <img src={link.icon} aria-hidden="true" width={24} height={24} alt="" />
-              </NavLinkIcon>
+              <NavLinkIcon>{link.icon}</NavLinkIcon>
               <div>
                 <NavLinkTitle>
                   <span>{link.title}</span>
@@ -120,10 +118,6 @@ const Links = styled.ul`
 
     &:hover {
       background-color: #f4f5f6;
-    }
-
-    svg {
-      margin-right: 8px;
     }
   }
 `
