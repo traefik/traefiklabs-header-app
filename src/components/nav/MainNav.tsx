@@ -49,7 +49,7 @@ const MainNav = () => {
               description="Simplify microservice discovery, routing, & load balancing."
               links={[
                 {
-                  title: 'Taefik Proxy',
+                  title: 'Traefik Proxy',
                   url: 'https://traefik.io/traefik/',
                   external: true,
                   description: 'OSS Cloud-Native Application Proxy',
