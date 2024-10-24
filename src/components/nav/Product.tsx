@@ -54,7 +54,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
     >
       {title}
     </Heading>
-    <Text as="p" sx={{ fontSize: '14px', lineHeight: '1.14', color: '#4e5e6c', margin: '8px 0px 16px' }}>
+    <Text as="p" sx={{ fontSize: '14px', lineHeight: '1.14', color: '#677581', margin: '8px 0px 16px' }}>
       {description}
     </Text>
     <Links>
@@ -113,7 +113,7 @@ const Links = styled.ul`
     font-size: 1px;
     font-weight: 500;
     line-height: 1.14;
-    color: #66747f;
+    color: #4e5e6c;
     text-decoration: none;
 
     &:hover {
@@ -141,7 +141,7 @@ const NavLinkTitle = styled.div`
 `
 
 const NavLinkDescription = styled.span`
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.14;
   display: block;
   font-weight: 400;
