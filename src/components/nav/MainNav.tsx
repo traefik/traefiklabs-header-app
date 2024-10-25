@@ -141,17 +141,17 @@ const MainNav = () => {
                 },
                 {
                   title: 'Web Application Firewall',
-                  url: '/solutions/waf',
-                  external: false,
+                  url: 'https://traefik.io/solutions/waf/',
+                  external: true,
                   description: 'Protect your APIs from threats with speed and efficiency',
                   icon: <WafIcon />,
                 },
                 {
                   title: 'Traefik & HashiCorp',
-                  url: '/solutions/hashicorp-and-traefik/',
-                  external: false,
+                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+                  external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <HashicorpIcon/>,
+                  icon: <HashicorpIcon />,
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}

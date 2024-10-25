@@ -54,7 +54,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
     >
       {title}
     </Heading>
-    <Text as="p" sx={{ fontSize: '14px', lineHeight: '1.14', color: '#677581', margin: '8px 0px 16px' }}>
+    <Text as="p" sx={{ fontSize: '14px', lineHeight: '1.14', color: '#4e5e6c', margin: '8px 0px 16px' }}>
       {description}
     </Text>
     <Links>
