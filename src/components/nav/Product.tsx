@@ -113,7 +113,7 @@ const Links = styled.ul`
     font-size: 1px;
     font-weight: 500;
     line-height: 1.14;
-    color: #4e5e6c;
+    color: #66747f;
     text-decoration: none;
 
     &:hover {
@@ -141,7 +141,7 @@ const NavLinkTitle = styled.div`
 `
 
 const NavLinkDescription = styled.span`
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.14;
   display: block;
   font-weight: 400;
