@@ -25,6 +25,8 @@ import { ReactComponent as CommunityIcon } from '../../images/menu_icons_communi
 import { ReactComponent as ProxyIcon } from '../../images/menu_icons_traefik_proxy.svg'
 import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefik_enterprise.svg'
 import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
+import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
+import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
 import PostCard from './PostCard'
 
 const Wrapper = styled(Flex)`
@@ -136,6 +138,20 @@ const MainNav = () => {
                   external: true,
                   description: 'Centralize security and routing in a single entry point for microservices deployments.',
                   icon: <APIManagementIcon />,
+                },
+                {
+                  title: 'Web Application Firewall',
+                  url: 'https://traefik.io/solutions/waf/',
+                  external: true,
+                  description: 'Protect your APIs from threats with speed and efficiency',
+                  icon: <WafIcon />,
+                },
+                {
+                  title: 'Traefik & HashiCorp',
+                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+                  external: true,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <HashicorpIcon />,
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}

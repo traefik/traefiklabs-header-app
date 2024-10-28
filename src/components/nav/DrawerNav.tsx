@@ -48,7 +48,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           <div className="sub-menu">
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
+            <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCrop</SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">API Management</SubLink>
+            <SubLink href="https://traefik.io/solutions/waf/">Web Application Firewall</SubLink>
             <SubLink href="https://traefik.io/solutions/api-gateway/">API Gateway</SubLink>
           </div>
         </div>

@@ -1,0 +1,36 @@
+<svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="aixa9inh2c">
+            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
+            <stop stop-color="#818C96" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="lzd71hghbb">
+            <stop stop-color="#03192D" offset="0%"/>
+            <stop stop-color="#03192D" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="ovm30ukjzd">
+            <stop stop-color="#E5E8EA" offset="0%"/>
+            <stop stop-color="#B3BAC0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="9541thvxge">
+            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
+            <stop stop-color="#818C96" offset="100%"/>
+        </linearGradient>
+        <filter x="-16.8%" y="-10.4%" width="133.7%" height="129.2%" filterUnits="objectBoundingBox" id="782en721la">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M1 1h24v24H1z"/>
+        <g filter="url(#782en721la)" transform="translate(2.5 1)" fill="url(#lzd71hghbb)" fill-rule="nonzero" stroke="url(#aixa9inh2c)" stroke-width=".4">
+            <path d="m10.4.23 10.192 5.885v11.77l-10.2 5.884L.2 17.885V6.115L10.4.23z"/>
+        </g>
+        <path d="m8.949.348 1.948 1.135v8.679L8.95 11.297v-2.43H6.05v6.784l-1.948-1.138V5.838L6.05 4.703v2.448H8.95V.348zm3.902 2.274L14.8 3.753v8.498l-5.851 3.401v-2.264l3.902-2.27V2.622zM6.051.348v2.269L2.15 4.887v8.495L.2 12.247V3.749L6.051.348z" transform="translate(5.415 5.13)" fill="url(#ovm30ukjzd)" fill-rule="nonzero" stroke="url(#9541thvxge)" stroke-width=".4"/>
+    </g>
+</svg>
