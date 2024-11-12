@@ -52,6 +52,8 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/api-management/">API Management</SubLink>
             <SubLink href="https://traefik.io/solutions/waf/">Web Application Firewall</SubLink>
             <SubLink href="https://traefik.io/solutions/api-gateway/">API Gateway</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-mocking/">API Mocking</SubLink>
           </div>
         </div>
 

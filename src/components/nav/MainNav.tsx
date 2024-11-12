@@ -169,7 +169,7 @@ const MainNav = () => {
                   icon: <ApiGatewayIcon />,
                 },
                 {
-                  title: 'API Runtime Governance',
+                  title: 'Runtime API Governance',
                   url: 'https://traefik.io/solutions/api-governance/',
                   external: true,
                   description: 'Enforce critical runtime API policies for secure, reliable, and compliant API management.',
