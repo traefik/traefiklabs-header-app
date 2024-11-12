@@ -10,6 +10,8 @@ import { ReactComponent as TraefikIcon } from '../../images/Traefik-Hub.svg'
 import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.svg'
 import { ReactComponent as TraefikEnterpriseIcon } from '../../images/TraefikEnterprise.svg'
 import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
+import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
+import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as DockerSwarmIcon } from '../../images/DockerSwarmIngress.svg'
 import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress.svg'
@@ -165,6 +167,20 @@ const MainNav = () => {
                   external: true,
                   description: 'Simplifies and Accelerates API lifecycle management.',
                   icon: <ApiGatewayIcon />,
+                },
+                {
+                  title: 'API Runtime Governance',
+                  url: 'https://traefik.io/solutions/api-governance/',
+                  external: true,
+                  description: 'Enforce critical runtime API policies for secure, reliable, and compliant API management.',
+                  icon: <ApiGovernanceIcon />,
+                },
+                {
+                  title: 'API Mocking',
+                  url: 'https://traefik.io/solutions/api-mocking/',
+                  external: true,
+                  description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
+                  icon: <ApiMockingIcon/>,
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-2@3x.png'}
