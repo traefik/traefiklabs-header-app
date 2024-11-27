@@ -29,6 +29,7 @@ import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefi
 import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
+import { ReactComponent as AIGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import PostCard from './PostCard'
 
 const Wrapper = styled(Flex)`
@@ -154,6 +155,13 @@ const MainNav = () => {
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <HashicorpIcon />,
+                },
+                {
+                  title: 'AI Gateway',
+                  url: 'https://traefik.io/solutions/ai-gateway/',
+                  external: true,
+                  description: 'Tranform Traefik into a flexible egress AI proxy & egress AI gateway.',
+                  icon: <AIGatewayIcon />,
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}
