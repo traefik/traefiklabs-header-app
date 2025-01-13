@@ -19,6 +19,17 @@ const SubLink = styled(Link)`
   }
 `
 
+const Badge = styled.p`
+  padding: 1px 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #d5ea48;
+  border-radius: 9999px;
+  display: inline;
+  margin-left: 8px;
+`
+
 const DrawerNav = ({ isDrawerOpen }: Props) => {
   return (
     <div className={'drawer-menu pull-left ' + (isDrawerOpen ? 'open' : '')}>
@@ -39,21 +50,44 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
         </div>
 
         <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
-          <span className="menu-item menu-item--with-icon">
-            <span className="title">Solutions</span>
+          <div className="menu-item menu-item--with-icon">
+            <div className="menu-item__title">
+              <span className="title">Solutions</span>
+              <div className="icon-wrapper">
+                <svg width="10" height="10" viewBox="0 0 10 10">
+                  <g transform="translate(-502 -16)" stroke="#AABB39" fill="none" fill-rule="evenodd">
+                    <circle stroke-opacity=".5" stroke-width="2" fill="#D5EA48" cx="507" cy="21" r="4"></circle>
+                    <circle cx="507" cy="21" r="3.5"></circle>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
             <span className="icon">
               <Chevron />
             </span>
-          </span>
+          </div>
           <div className="sub-menu">
+            <SubLink href="https://traefik.io/solutions/ai-gateway/">
+              AI Gateway
+              <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/api-gateway/">Modern API Gateway</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-mocking/">
+              API Mocking <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
+            <SubLink href="https://traefik.io/solutions/waf/">
+              Web Application Firewall <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/api-governance/">
+              Runtime API Governance <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-gateway/">Modern API Gateway</SubLink>
-            <SubLink href="https://traefik.io/solutions/waf/">Web Application Firewall</SubLink>
-            <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCrop</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-mocking/">API Mocking</SubLink>
+            <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">
+              Traefik & HashiCrop <Badge>New!</Badge>
+            </SubLink>
           </div>
         </div>
 
