@@ -10,14 +10,27 @@ type NavItemProps = SpaceProps & {
   url?: string
   position?: React.CSSProperties
   children?: React.ReactNode
+  heighlight?: boolean
 }
 
-const NavItem = ({ name, hasSubmenu, url, children, position, ...props }: NavItemProps) => {
+const NavItem = ({ name, hasSubmenu, url, children, position, heighlight, ...props }: NavItemProps) => {
   if (hasSubmenu) {
     return (
       <Wrapper {...props}>
         <Title aria-haspopup="menu" aria-expanded={false}>
-          <Text sx={{ fontSize: '14.5px', lineHeight: '14.5px', fontWeight: '500' }}>{name}</Text>
+          <TitleWrapper>
+            <Text sx={{ fontSize: '14.5px', lineHeight: '14.5px', fontWeight: '500' }}>{name}</Text>
+            {heighlight && (
+              <IconDot>
+                <svg width="10" height="10" viewBox="0 0 10 10">
+                  <g transform="translate(-502 -16)" stroke="#AABB39" fill="none" fill-rule="evenodd">
+                    <circle stroke-opacity=".5" stroke-width="2" fill="#D5EA48" cx="507" cy="21" r="4"></circle>
+                    <circle cx="507" cy="21" r="3.5"></circle>
+                  </g>
+                </svg>
+              </IconDot>
+            )}
+          </TitleWrapper>
           <Box
             as="span"
             sx={{
@@ -47,6 +60,19 @@ const NavItem = ({ name, hasSubmenu, url, children, position, ...props }: NavIte
     </Wrapper>
   )
 }
+
+const TitleWrapper = styled.div`
+  position: relative;
+`
+
+const IconDot = styled.div`
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 8px;
+  height: 8px;
+}
+`
 
 const Title = styled.button`
   color: ${theme.colors.dark};

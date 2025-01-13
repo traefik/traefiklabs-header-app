@@ -29,7 +29,7 @@ import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefi
 import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
-import { ReactComponent as AIGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import PostCard from './PostCard'
 
 const Wrapper = styled(Flex)`
@@ -105,7 +105,7 @@ const MainNav = () => {
         </NavItem>
 
         {/* Solutions */}
-        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }}>
+        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }} heighlight={true}>
           <Grid
             sx={{
               display: 'grid',
@@ -148,6 +148,7 @@ const MainNav = () => {
                   external: true,
                   description: 'Protect your APIs from threats with speed and efficiency',
                   icon: <WafIcon />,
+                  badge: 'New!',
                 },
                 {
                   title: 'Traefik & HashiCorp',
@@ -155,13 +156,15 @@ const MainNav = () => {
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <HashicorpIcon />,
+                  badge: 'New!',
                 },
                 {
                   title: 'AI Gateway',
                   url: 'https://traefik.io/solutions/ai-gateway/',
                   external: true,
-                  description: 'Tranform Traefik into a flexible egress AI proxy & egress AI gateway.',
-                  icon: <AIGatewayIcon />,
+                  description: 'Transform Traefik into a flexible egress gateway.',
+                  icon: <AiGatewayIcon />,
+                  badge: 'New!',
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}
@@ -182,13 +185,15 @@ const MainNav = () => {
                   external: true,
                   description: 'Enforce critical runtime API policies for secure, reliable, and compliant API management.',
                   icon: <ApiGovernanceIcon />,
+                  badge: 'New!',
                 },
                 {
                   title: 'API Mocking',
                   url: 'https://traefik.io/solutions/api-mocking/',
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
-                  icon: <ApiMockingIcon/>,
+                  icon: <ApiMockingIcon />,
+                  badge: 'New!',
                 },
               ]}
               bgImage={'https://traefik.io/images/site-nav/PatternBG-2@3x.png'}

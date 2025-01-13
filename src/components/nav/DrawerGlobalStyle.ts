@@ -111,6 +111,18 @@ const DrawerGlobalStyle = createGlobalStyle`
   font-weight: 500;
 }
 
+.menu-item .menu-item__title{
+  position: relative;
+}
+
+.menu-item .menu-item__title .icon-wrapper{
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+}
+
 .drawer-menu .menu-item:hover {
   background: #efefef;
 }

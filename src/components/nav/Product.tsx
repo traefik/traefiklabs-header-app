@@ -14,6 +14,7 @@ type NavProductProps = {
     tagColor?: string
     tag?: string
     external: boolean
+    badge?: string
   }[]
   bgImage: string
 }
@@ -67,6 +68,7 @@ const Product = ({ bgImage, title, description, links }: NavProductProps) => (
                 <NavLinkTitle>
                   <span>{link.title}</span>
                   {link.tag && <NavLinkTag tagColor={link.tagColor}>{link.tag}</NavLinkTag>}
+                  {link.badge && <NavLinkBadge>{link.badge}</NavLinkBadge>}
                 </NavLinkTitle>
                 <NavLinkDescription>{link.description}</NavLinkDescription>
               </div>
@@ -128,6 +130,16 @@ const NavLinkIcon = styled.div`
   padding: 4px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+`
+
+const NavLinkBadge = styled.p`
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(10, 25, 46);
+  background-color: rgb(213, 234, 72);
+  padding: 1px 5px;
+  border-radius: 20px;
+  margin: 0 0 0 8px;
 `
 
 const NavLinkTitle = styled.div`
