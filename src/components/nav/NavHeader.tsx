@@ -13,10 +13,9 @@ const NavHeader = (props: Props) => {
         src="https://traefik.io/images/site-nav/PatternBg-4@3x.png"
         style={{
           position: 'absolute',
-          paddingBottom: '0px',
-          bottom: '0',
-          left: '0',
-          right: '0',
+          inset: 0,
+          width: '100%',
+          height: '100%',
         }}
       />
     </Wrapper>
