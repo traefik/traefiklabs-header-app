@@ -113,6 +113,20 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           </div>
         </div>
 
+        <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
+          <span className="menu-item menu-item--with-icon">
+            <span className="title">Compare</span>
+            <span className="icon">
+              <Chevron />
+            </span>
+          </span>
+          <div className="sub-menu">
+            <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-aws-api-gateway/">vs AWS API Gateway</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs AWS API Gateway</SubLink>
+          </div>
+        </div>
+
         <div className="menu-item-wrapper">
           <SubLink href="https://traefik.io/pricing/" className="menu-item">
             Pricing

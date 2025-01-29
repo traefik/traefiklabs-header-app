@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'components/Link'
 import { Box, Text, theme } from '@containous/faency'
+import { ReactComponent as ArrowRight } from '../../images/arrow-right.svg'
 
 const Links = styled.ul`
   list-style: none;
@@ -21,16 +22,28 @@ const Links = styled.ul`
     font-size: 16px;
     line-height: 1.38;
     font-weight: 500;
-    color: ${theme.colors.dark};
+    color: #354757;
     text-decoration: none;
 
+    svg {
+      color: #677581;
+    }
+
+    i svg {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
     &:hover {
-      color: #1f56d6;
+      color: #000;
       text-decoration: none;
 
-      p:first-of-type {
-        color: #1f56d6;
-        text-decoration: none;
+      svg {
+        color: #000;
+      }
+
+      i svg {
+        opacity: 1;
       }
 
       span: {
@@ -60,11 +73,11 @@ export const Column: React.FC<MenuColumnProps> = ({ title, children }) => (
     <Text
       as="p"
       sx={{
-        mb: '14px',
+        mb: '24px',
         fontSize: '11px',
         fontWeight: 500,
         lineHeight: 1.33,
-        color: '#7e89a7',
+        color: '#03192d',
         letterSpacing: '2.75px',
       }}
     >
@@ -87,7 +100,7 @@ export const Item: React.FC<MenuColumnLinkProps> = ({ href, external, title, log
     {external ? (
       <Link href={href} target="_self" {...props}>
         {logo ? (
-          <Box sx={{ display: 'flex', paddingTop: '5px' }}>
+          <Box sx={{ display: 'inline-flex', paddingTop: '5px' }}>
             {logo}
             <Box sx={{ ml: '15px', maxWidth: '290px' }}>
               <Text as="p">{title}</Text>
@@ -97,6 +110,9 @@ export const Item: React.FC<MenuColumnLinkProps> = ({ href, external, title, log
         ) : (
           title
         )}
+        <i>
+          <ArrowRight style={{ marginLeft: 4, display: 'inline-block', width: 16 }} />
+        </i>
       </Link>
     ) : (
       <Link href={href} {...props}>

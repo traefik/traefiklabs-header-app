@@ -297,6 +297,28 @@ const MainNav = () => {
           </Grid>
         </NavItem>
 
+        <NavItem name="Compare" hasSubmenu>
+          <Grid sx={{ gridTemplateColumns: '1fr', width: '304px', p: '24px' }}>
+            <MenuColumn.Column title="Compare Traefik Hub">
+              <MenuColumn.Item
+                title="vs Kong Konnect"
+                href="https://traefik.io/compare/traefik-vs-kong-konnect/"
+                external
+              />
+              <MenuColumn.Item
+                title="vs AWS API Gateway"
+                href="https://traefik.io/compare/traefik-vs-aws-api-gateway/"
+                external
+              />
+              <MenuColumn.Item
+                title="vs Azure APIM"
+                href="https://traefik.io/compare/traefik-vs-azure-api-management/"
+                external
+              />
+            </MenuColumn.Column>
+          </Grid>
+        </NavItem>
+
         {/* Pricing */}
         <NavItem name="Pricing" url="https://traefik.io/pricing/" />
 
