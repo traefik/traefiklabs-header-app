@@ -315,6 +315,7 @@ const MainNav = () => {
                 href="https://traefik.io/compare/traefik-vs-azure-api-management/"
                 external
               />
+              <MenuColumn.Item title="vs Tyk" href="https://traefik.io/compare/compare/traefik-vs-tyk" external />
             </MenuColumn.Column>
           </Grid>
         </NavItem>

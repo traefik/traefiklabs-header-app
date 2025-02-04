@@ -124,6 +124,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-aws-api-gateway/">vs AWS API Gateway</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs AWS API Gateway</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
           </div>
         </div>
 
