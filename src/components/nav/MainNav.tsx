@@ -315,7 +315,14 @@ const MainNav = () => {
                 href="https://traefik.io/compare/traefik-vs-azure-api-management/"
                 external
               />
+              <MenuColumn.Item title="vs NGINX" href="https://traefik.io/compare/traefik-vs-nginx/" external />
+              <MenuColumn.Item
+                title="vs Solo.io Gloo Gateway"
+                href="https://traefik.io/compare/traefik-vs-nginx/"
+                external
+              />
               <MenuColumn.Item title="vs Tyk" href="https://traefik.io/compare/compare/traefik-vs-tyk" external />
+              <MenuColumn.Item title="vs Gravitee" href="https://traefik.io/compare/traefik-vs-gravitee/" external />
             </MenuColumn.Column>
           </Grid>
         </NavItem>

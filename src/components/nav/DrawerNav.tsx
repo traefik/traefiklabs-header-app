@@ -123,8 +123,11 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           <div className="sub-menu">
             <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-aws-api-gateway/">vs AWS API Gateway</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs AWS API Gateway</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs Azure APIM</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-nginx/">vs NGINX</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-solo-gloo-gateway/">vs Solo.io Gloo Gateway</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-gravitee/">vs Gravitee</SubLink>
           </div>
         </div>
 
