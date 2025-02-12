@@ -128,6 +128,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/compare/traefik-vs-solo-gloo-gateway/">vs Solo.io Gloo Gateway</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-gravitee/">vs Gravitee</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-envoy-gateway">vs Envoy Gateway</SubLink>
           </div>
         </div>
 
