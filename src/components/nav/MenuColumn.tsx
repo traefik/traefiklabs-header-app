@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'components/Link'
-import { Box, Text, theme } from '@containous/faency'
+import { Box, Text } from '@containous/faency'
 import { ReactComponent as ArrowRight } from '../../images/arrow-right.svg'
 
 const Links = styled.ul`
