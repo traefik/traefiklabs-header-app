@@ -44,8 +44,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           <div className="sub-menu">
             <SubLink href="https://traefik.io/traefik/">Traefik Proxy</SubLink>
             <SubLink href="https://traefik.io/traefik-hub-api-gateway/">Traefik Hub API Gateway</SubLink>
-            <SubLink href="https://traefik.io/traefik-enterprise/">Traefik Enterprise</SubLink>
             <SubLink href="https://traefik.io/traefik-hub/">Traefik Hub API Management</SubLink>
+            <SubLink href="https://traefik.io/solutions/ai-gateway">AI Gateway</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-mocking">API Mocking</SubLink>
           </div>
         </div>
 
@@ -109,6 +110,25 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://plugins.traefik.io/">Plugin Catalog</SubLink>
             <SubLink href="https://community.traefik.io/">Forum</SubLink>
             <SubLink href="https://traefik.io/community/">Community</SubLink>
+          </div>
+        </div>
+
+        <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
+          <span className="menu-item menu-item--with-icon">
+            <span className="title">Compare</span>
+            <span className="icon">
+              <Chevron />
+            </span>
+          </span>
+          <div className="sub-menu">
+            <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-aws-api-gateway/">vs AWS API Gateway</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs Azure APIM</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-nginx/">vs NGINX</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-solo-gloo-gateway/">vs Solo.io Gloo Gateway</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-gravitee/">vs Gravitee</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-envoy-gateway">vs Envoy Gateway</SubLink>
           </div>
         </div>
 
