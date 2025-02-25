@@ -328,6 +328,11 @@ const MainNav = () => {
                 href="https://traefik.io/compare/traefik-vs-envoy-gateway/"
                 external
               />
+              <MenuColumn.Item
+                title="vs Ambassador Edge Stack"
+                href="https://traefik.io/compare/traefik-vs-ambassador-edge-stack/"
+                external
+              />
             </MenuColumn.Column>
           </Grid>
         </NavItem>
