@@ -152,7 +152,6 @@ const Header = ({ product }: { product?: string }) => {
               alignItems: 'center',
               justifyContent: 'space-between',
               height: '100%',
-              position: 'relative',
               width: '100%',
               maxWidth: '1274px',
               padding: ['0 20px', '0 25px'],
