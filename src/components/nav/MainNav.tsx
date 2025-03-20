@@ -34,6 +34,7 @@ import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefi
 import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
+import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
@@ -53,8 +54,12 @@ const MainNav = () => {
     <Wrapper as="nav" style={{ height: '100%', alignItems: 'center', marginLeft: '65px' }} aria-label="Main menu">
       <Flex as="ul" sx={{ height: '100%', alignItems: 'center', p: 0, m: 0, listStyle: 'none' }}>
         {/* Products */}
-        <NavItem name="Products" hasSubmenu position={{ marginLeft: '-15%' }}>
-          <Grid sx={{ gridTemplateColumns: '1fr', maxWidth: '1160px' }}>
+        <NavItem
+          name="Products"
+          hasSubmenu
+          position={{ left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '1050px' }}
+        >
+          <Grid>
             <NavHeader title="Traefik Runtime Platform" />
             <Grid sx={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
               <Product
@@ -140,12 +145,15 @@ const MainNav = () => {
         <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }} heighlight={true}>
           <Grid
             sx={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(3, 360px)',
+              maxWidth: '1353px',
+              gap: '24px',
+              padding: '0 16px',
+              gridTemplateColumns: 'repeat(4, 1fr)',
             }}
           >
             <Product
               title="Application Proxy"
+              padding="24px 0"
               links={[
                 {
                   title: 'Kubernetes Ingress',
@@ -162,10 +170,10 @@ const MainNav = () => {
                   icon: <DockerSwarmIcon />,
                 },
               ]}
-              bgImage={'https://traefik.io/images/site-nav/PatternBG-3@3x.png'}
             />
             <Product
               title="API Gateway"
+              padding="24px 0"
               links={[
                 {
                   title: 'Modern API Gateway',
@@ -182,14 +190,7 @@ const MainNav = () => {
                   icon: <WafIcon />,
                   badge: 'New!',
                 },
-                {
-                  title: 'Traefik & HashiCorp',
-                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
-                  external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <HashicorpIcon />,
-                  badge: 'New!',
-                },
+
                 {
                   title: 'AI Gateway',
                   url: 'https://traefik.io/solutions/ai-gateway/',
@@ -199,10 +200,10 @@ const MainNav = () => {
                   badge: 'New!',
                 },
               ]}
-              bgImage={'https://traefik.io/images/site-nav/PatternBG-1@3x.png'}
             />
             <Product
               title="API Management"
+              padding="24px 0"
               links={[
                 {
                   title: 'GitOps-Driven API Management',
@@ -229,13 +230,37 @@ const MainNav = () => {
                   badge: 'New!',
                 },
               ]}
-              bgImage={'https://traefik.io/images/site-nav/PatternBG-2@3x.png'}
+            />
+            <Product
+              title="BETTER TOGETHER"
+              padding="24px 0"
+              links={[
+                {
+                  title: 'Traefik & HashiCorp',
+                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+                  external: true,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <HashicorpIcon />,
+                },
+                {
+                  title: 'Traefik & Nutanix',
+                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+                  external: true,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <NutanixIcon />,
+                  badge: 'New!',
+                },
+              ]}
             />
           </Grid>
         </NavItem>
 
         {/* Learn */}
-        <NavItem name="Learn" hasSubmenu position={{ right: '25px' }}>
+        <NavItem
+          name="Learn"
+          hasSubmenu
+          position={{ width: '100%', maxWidth: '1192px', left: '50%', transform: 'translateX(-50%)' }}
+        >
           <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '24px', gap: '93px', lineHeight: 1.6 }}>
             <MenuColumn.Column title="Learn">
               <MenuColumn.Item title="Blog" logo={<BlogIcon />} href="https://traefik.io/blog/" external />

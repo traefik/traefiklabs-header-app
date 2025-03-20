@@ -97,7 +97,7 @@ const Menu = styled(Box)`
   margin: 0;
   display: none;
   background: transparent;
-  padding-top: 16px;
+  padding-top: 8px;
 `
 
 const MenuInner = styled(Box)`

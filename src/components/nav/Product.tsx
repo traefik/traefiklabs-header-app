@@ -6,6 +6,7 @@ import Link from 'components/Link'
 type NavProductProps = {
   title?: string
   description?: string
+  padding?: string
   links?: {
     title: string
     url: string
@@ -31,8 +32,8 @@ type NavbarLinkProps = {
   styles?: any
 }
 
-const Product = ({ bgImage, title, description, links, subLinks = [] }: NavProductProps) => (
-  <Box sx={{ p: title ? '24px' : '16px 16px 48px', backgroundColor: '#fff', position: 'relative' }}>
+const Product = ({ bgImage, title, description, padding, links, subLinks = [] }: NavProductProps) => (
+  <Box sx={{ p: padding ? padding : title ? '24px' : '16px 16px 48px', backgroundColor: '#fff', position: 'relative' }}>
     {bgImage && (
       <img
         src={bgImage}
