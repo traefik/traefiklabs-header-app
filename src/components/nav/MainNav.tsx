@@ -236,19 +236,19 @@ const MainNav = () => {
               padding="24px 0"
               links={[
                 {
+                  title: 'Traefik & HashiCorp',
+                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+                  external: true,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <HashicorpIcon />,
+                },
+                {
                   title: 'Traefik & Nutanix',
                   url: 'https://traefik.io/solutions/nutanix-and-traefik/',
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <NutanixIcon />,
                   badge: 'New!',
-                },
-                {
-                  title: 'Traefik & HashiCorp',
-                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
-                  external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <HashicorpIcon />,
                 },
               ]}
             />
