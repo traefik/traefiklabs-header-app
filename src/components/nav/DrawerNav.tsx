@@ -90,6 +90,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">
               Traefik & Nutanix <Badge>New!</Badge>
             </SubLink>
+            <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">
+              Traefik & Oracle <Badge>New!</Badge>
+            </SubLink>
           </div>
         </div>
 
