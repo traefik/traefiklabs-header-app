@@ -142,7 +142,7 @@ const MainNav = () => {
         </NavItem>
 
         {/* Solutions */}
-        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }} heighlight={true}>
+        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-21%' }} heighlight={true}>
           <Grid
             sx={{
               maxWidth: '1353px',
