@@ -86,6 +86,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </SubLink>
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
+            <SubLink href="https://traefik.io/choose-traefik-oss/">
+              Replace Ingress-NGINX <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCorp</SubLink>
             <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">
               Traefik & Nutanix <Badge>New!</Badge>
