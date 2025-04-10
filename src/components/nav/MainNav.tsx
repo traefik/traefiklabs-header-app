@@ -35,6 +35,7 @@ import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.s
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
+import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
@@ -248,6 +249,14 @@ const MainNav = () => {
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <NutanixIcon />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'Traefik & Oracle',
+                  url: 'https://traefik.io/solutions/oracle-and-traefik/',
+                  external: true,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <OracleIcon />,
                   badge: 'New!',
                 },
               ]}
