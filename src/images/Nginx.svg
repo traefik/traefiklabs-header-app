@@ -1,0 +1,33 @@
+<svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="bhpt4569yb">
+      <stop stop-color="#E5E8EA" offset="0%" />
+      <stop stop-color="#B3BAC0" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="1dq5qtngac">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <filter x="-16.7%" y="-10.4%" width="133.3%" height="129.2%" filterUnits="objectBoundingBox" id="2nktlcddha">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M1 1h24v24H1z" />
+    <g filter="url(#2nktlcddha)" transform="translate(2.5 1)" fill="#03192D" fill-rule="nonzero">
+      <path
+        d="M10.454 0h.056c.285.136.563.287.832.453l9.3 5.354a.68.68 0 0 1 .354.675c-.007 3.763 0 7.524-.005 11.285a.697.697 0 0 1-.305.435c-3.296 1.9-6.592 3.798-9.889 5.695a.502.502 0 0 1-.562.032c-3.3-1.894-6.597-3.792-9.891-5.692a.6.6 0 0 1-.343-.571V6.382a.594.594 0 0 1 .332-.574C3.429 4.026 6.524 2.243 9.62.458c.276-.157.546-.324.834-.458" />
+    </g>
+    <path
+      d="M10.815.2a1.151 1.151 0 0 1 1.15 1.048c.004 3.159.004 6.319 0 9.478a1.137 1.137 0 0 1-.913.99 2.224 2.224 0 0 1-2.04-.612A2788.493 2788.493 0 0 1 2.87 3.769l-.352-.422-.001.55c-.003 1.497-.002 2.995-.001 4.492v2.246c0 .378-.186.73-.495.941a1.207 1.207 0 0 1-1.512-.148 1.097 1.097 0 0 1-.309-.793v-9.3A1.152 1.152 0 0 1 1.232.234a2.209 2.209 0 0 1 2.085.833C4.103 2 4.886 2.937 5.67 3.872a898.693 898.693 0 0 0 4 4.758l-.004-.55c-.009-1.52-.006-3.04-.003-4.56.002-.757.003-1.515.003-2.273A1.154 1.154 0 0 1 10.815.2z"
+      transform="translate(6.804 6.993)" fill="url(#bhpt4569yb)" fill-rule="nonzero" stroke="url(#1dq5qtngac)"
+      stroke-width=".4" />
+  </g>
+</svg>

@@ -18,6 +18,7 @@ import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
 import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
 import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
+import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
 import { ReactComponent as DockerSwarmIcon } from '../../images/DockerSwarmIngress.svg'
 import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress.svg'
 import { ReactComponent as BlogIcon } from '../../images/menu_icons_blog.svg'
@@ -169,6 +170,13 @@ const MainNav = () => {
                   external: true,
                   description: 'Manage incoming network traffic across your cluster',
                   icon: <DockerSwarmIcon />,
+                },
+                {
+                  title: 'Replace Ingress-NGINX',
+                  url: 'https://traefik.io/choose-traefik-oss/',
+                  external: true,
+                  description: 'Don’t wait for the next vulnerability. Migrate now!',
+                  icon: <NginxIcon />,
                 },
               ]}
             />
