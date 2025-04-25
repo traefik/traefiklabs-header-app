@@ -52,6 +52,20 @@ const Links = styled.ul`
     }
   }
 
+  .menu-item-button {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgb(244, 245, 246);
+
+    i svg {
+      opacity: 1;
+    }
+  }
+
   span {
     font-size: 16px;
     font-weight: normal;
@@ -93,12 +107,21 @@ type MenuColumnLinkProps = {
   title: string | React.ReactNode
   logo?: React.ReactNode
   description?: string
+  className?: string
 }
 
-export const Item: React.FC<MenuColumnLinkProps> = ({ href, external, title, logo, description, ...props }) => (
+export const Item: React.FC<MenuColumnLinkProps> = ({
+  href,
+  external,
+  title,
+  logo,
+  description,
+  className,
+  ...props
+}) => (
   <li>
     {external ? (
-      <Link href={href} target="_self" {...props}>
+      <Link href={href} target="_self" className={className} {...props}>
         {logo ? (
           <Box sx={{ display: 'inline-flex', paddingTop: '5px' }}>
             {logo}
@@ -115,7 +138,7 @@ export const Item: React.FC<MenuColumnLinkProps> = ({ href, external, title, log
         </i>
       </Link>
     ) : (
-      <Link href={href} {...props}>
+      <Link href={href} className={className} {...props}>
         {title}
       </Link>
     )}

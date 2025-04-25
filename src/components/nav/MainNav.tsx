@@ -342,11 +342,7 @@ const MainNav = () => {
         <NavItem name="Compare" hasSubmenu>
           <Grid sx={{ gridTemplateColumns: '1fr', width: '304px', p: '24px' }}>
             <MenuColumn.Column title="Compare Traefik Hub">
-              <MenuColumn.Item
-                title="vs Kong Konnect"
-                href="https://traefik.io/compare/traefik-vs-kong-konnect/"
-                external
-              />
+              <MenuColumn.Item title="vs Apigee" href="https://traefik.io/compare/traefik-vs-apigee/" external />
               <MenuColumn.Item
                 title="vs AWS API Gateway"
                 href="https://traefik.io/compare/traefik-vs-aws-api-gateway/"
@@ -357,31 +353,19 @@ const MainNav = () => {
                 href="https://traefik.io/compare/traefik-vs-azure-api-management/"
                 external
               />
-              <MenuColumn.Item title="vs NGINX" href="https://traefik.io/compare/traefik-vs-nginx/" external />
-              <MenuColumn.Item
-                title="vs Solo.io Gloo Gateway"
-                href="https://traefik.io/compare/traefik-vs-nginx/"
-                external
-              />
-              <MenuColumn.Item title="vs Tyk" href="https://traefik.io/compare/compare/traefik-vs-tyk" external />
               <MenuColumn.Item title="vs Gravitee" href="https://traefik.io/compare/traefik-vs-gravitee/" external />
               <MenuColumn.Item
-                title="vs Envoy Gateway"
-                href="https://traefik.io/compare/traefik-vs-envoy-gateway/"
+                title="vs Kong Konnect"
+                href="https://traefik.io/compare/traefik-vs-kong-konnect/"
                 external
               />
+              <MenuColumn.Item title="vs Tyk" href="https://traefik.io/compare/traefik-vs-tyk/" external />
               <MenuColumn.Item
-                title="vs Ambassador Edge Stack"
-                href="https://traefik.io/compare/traefik-vs-ambassador-edge-stack/"
+                title="See more comparisons"
+                href="https://traefik.io/compare/"
                 external
+                className="menu-item-button"
               />
-              <MenuColumn.Item
-                title="vs API7 Enterprise"
-                href="https://traefik.io/compare/traefik-vs-api7-enterprise/"
-                external
-              />
-              <MenuColumn.Item title="vs Akana" href="https://traefik.io/compare/traefik-vs-akana/" external />
-              <MenuColumn.Item title="vs Zuplo" href="https://traefik.io/compare/traefik-vs-zuplo/" external />
             </MenuColumn.Column>
           </Grid>
         </NavItem>
