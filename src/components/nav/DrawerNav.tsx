@@ -128,20 +128,13 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </span>
           </span>
           <div className="sub-menu">
-            <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-apigee/">vs Apigee</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-aws-api-gateway/">vs AWS API Gateway</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-azure-api-management/">vs Azure APIM</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-nginx/">vs NGINX</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-solo-gloo-gateway/">vs Solo.io Gloo Gateway</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
             <SubLink href="https://traefik.io/compare/traefik-vs-gravitee/">vs Gravitee</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-envoy-gateway">vs Envoy Gateway</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-ambassador-edge-stack/">
-              vs Ambassador Edge Stack
-            </SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-api7-enterprise/">vs API7 Enterprise</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-akana/">vs Akana</SubLink>
-            <SubLink href="https://traefik.io/compare/traefik-vs-zuplo/">vs Zuplo</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-kong-konnect/">vs Kong Konnect</SubLink>
+            <SubLink href="https://traefik.io/compare/traefik-vs-tyk">vs Tyk</SubLink>
+            <SubLink href="https://traefik.io/compare/">See more comparisons</SubLink>
           </div>
         </div>
 
