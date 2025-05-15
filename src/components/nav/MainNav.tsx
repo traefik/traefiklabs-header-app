@@ -37,6 +37,7 @@ import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
+import { ReactComponent as MicrosoftIcon } from '../../images/icons-duotone-light-microsoft.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
@@ -252,12 +253,19 @@ const MainNav = () => {
                   icon: <HashicorpIcon />,
                 },
                 {
+                  title: 'Traefik & Microsoft',
+                  url: 'https://traefik.io/solutions/microsoft-and-traefik/',
+                  external: true,
+                  description: 'Run your APIs and AI across any infrastructure, any Kubernetes.',
+                  icon: <MicrosoftIcon />,
+                  badge: 'New!',
+                },
+                {
                   title: 'Traefik & Nutanix',
                   url: 'https://traefik.io/solutions/nutanix-and-traefik/',
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <NutanixIcon />,
-                  badge: 'New!',
                 },
                 {
                   title: 'Traefik & Oracle',
@@ -265,7 +273,6 @@ const MainNav = () => {
                   external: true,
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <OracleIcon />,
-                  badge: 'New!',
                 },
               ]}
             />
