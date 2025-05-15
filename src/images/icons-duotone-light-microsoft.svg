@@ -1,0 +1,36 @@
+<svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="0jpqwv2mic">
+            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
+            <stop stop-color="#818C96" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="o75qkb3n1b">
+            <stop stop-color="#03192D" offset="0%"/>
+            <stop stop-color="#03192D" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="6cz9km5kde">
+            <stop stop-color="#E5E8EA" offset="0%"/>
+            <stop stop-color="#B3BAC0" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="hdi9vz7czd">
+            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
+            <stop stop-color="#818C96" offset="100%"/>
+        </linearGradient>
+        <filter x="-16.8%" y="-10.4%" width="133.7%" height="129.2%" filterUnits="objectBoundingBox" id="u7tmajjmka">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+            <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M1 1h24v24H1z"/>
+        <g filter="url(#u7tmajjmka)" transform="translate(2.5 1)" fill="url(#o75qkb3n1b)" fill-rule="nonzero" stroke="url(#0jpqwv2mic)" stroke-width=".4">
+            <path d="m10.4.23 10.192 5.885v11.77l-10.2 5.884L.2 17.885V6.115L10.4.23z"/>
+        </g>
+        <path d="M11.48 12.52v5.26H6.22v-5.26h5.26zm6.3 0v5.26h-5.26v-5.26h5.26zm-6.3-6.3v5.26H6.22V6.22h5.26zm1.04 0h5.26v5.26h-5.26V6.22z" stroke="url(#hdi9vz7czd)" stroke-width=".44" fill="url(#6cz9km5kde)" fill-rule="nonzero" transform="translate(1 1)"/>
+    </g>
+</svg>
