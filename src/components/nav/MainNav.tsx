@@ -39,7 +39,6 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
-import ColumnBg from '../../images/gradient-left-glow.png'
 
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
