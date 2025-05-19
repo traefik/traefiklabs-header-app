@@ -25,6 +25,7 @@ import { ReactComponent as BlogIcon } from '../../images/menu_icons_blog.svg'
 import { ReactComponent as ResourcesIcon } from '../../images/menu_icons_resources.svg'
 import { ReactComponent as TraefikAcademyIcon } from '../../images/menu_icons_academy.svg'
 import { ReactComponent as EventsIcon } from '../../images/menu_icons_events.svg'
+import { ReactComponent as MicrosoftIcon } from '../../images/menu_icons_microsoft.svg'
 import { ReactComponent as GlossaryIcon } from '../../images/menu_icons_list.svg'
 import { ReactComponent as StarIcon } from '../../images/menu_icons_star.svg'
 import { ReactComponent as ForumIcon } from '../../images/menu_icons_forum.svg'
@@ -38,6 +39,8 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import ColumnBg from '../../images/gradient-left-glow.png'
+
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
 
@@ -147,10 +150,10 @@ const MainNav = () => {
         <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }} heighlight={true}>
           <Grid
             sx={{
-              maxWidth: '1353px',
+              maxWidth: '1368px',
               gap: '24px',
-              padding: '0 16px',
-              gridTemplateColumns: 'repeat(4, 1fr)',
+              paddingLeft: '16px',
+              gridTemplateColumns: 'repeat(3, 312px) 344px',
             }}
           >
             <Product
@@ -242,8 +245,30 @@ const MainNav = () => {
             />
             <Product
               title="BETTER TOGETHER"
-              padding="24px 0"
+              padding="24px 16px"
               links={[
+                {
+                  title: 'Traefik & Nutanix',
+                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+                  external: true,
+                  description: 'A holistic solution for modern AI & API management.',
+                  icon: <NutanixIcon />,
+                },
+                {
+                  title: 'Traefik & Microsoft',
+                  url: 'https://traefik.io/solutions/microsoft-and-traefik/',
+                  external: true,
+                  description: 'Run your APIs and AI across any infrastructure, any Kubernetes.',
+                  icon: <MicrosoftIcon />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'Traefik & Oracle',
+                  url: 'https://traefik.io/solutions/oracle-and-traefik/',
+                  external: true,
+                  description: 'Unmatched & modern API management without boundaries.',
+                  icon: <OracleIcon />,
+                },
                 {
                   title: 'Traefik & HashiCorp',
                   url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
@@ -251,23 +276,13 @@ const MainNav = () => {
                   description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
                   icon: <HashicorpIcon />,
                 },
-                {
-                  title: 'Traefik & Nutanix',
-                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
-                  external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <NutanixIcon />,
-                  badge: 'New!',
-                },
-                {
-                  title: 'Traefik & Oracle',
-                  url: 'https://traefik.io/solutions/oracle-and-traefik/',
-                  external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <OracleIcon />,
-                  badge: 'New!',
-                },
               ]}
+              bgImage={ColumnBg}
+              colors={{
+                heading: '#f9fafa',
+                text: '#b3bac0',
+                bgColor: '#f4f5f659',
+              }}
             />
           </Grid>
         </NavItem>

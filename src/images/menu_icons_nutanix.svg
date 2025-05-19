@@ -1,36 +1,32 @@
 <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="m8t7iqiybc">
-            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
-            <stop stop-color="#818C96" offset="100%"/>
+        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="qe21r9yf3c">
+            <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+            <stop stop-color="#818C96" offset="100%" />
         </linearGradient>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="urgk9njk2b">
-            <stop stop-color="#03192D" offset="0%"/>
-            <stop stop-color="#03192D" offset="100%"/>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="zy9rg3wklb">
+            <stop stop-color="#03192D" offset="0%" />
+            <stop stop-color="#03192D" offset="100%" />
         </linearGradient>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="w7fuww1yhd">
-            <stop stop-color="#E5E8EA" offset="0%"/>
-            <stop stop-color="#B3BAC0" offset="100%"/>
-        </linearGradient>
-        <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="zj5xhwhoqe">
-            <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
-            <stop stop-color="#818C96" offset="100%"/>
-        </linearGradient>
-        <filter x="-16.8%" y="-10.4%" width="133.7%" height="129.2%" filterUnits="objectBoundingBox" id="ixs6a0bu1a">
-            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
-            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
-            <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+        <filter x="-16.8%" y="-10.4%" width="133.7%" height="129.2%" filterUnits="objectBoundingBox" id="fexpyel79a">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+            <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+                in="shadowBlurOuter1" result="shadowMatrixOuter1" />
             <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"/>
-                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="shadowMatrixOuter1" />
+                <feMergeNode in="SourceGraphic" />
             </feMerge>
         </filter>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <path d="M1 1h24v24H1z"/>
-        <g filter="url(#ixs6a0bu1a)" transform="translate(2.5 1)" fill="url(#urgk9njk2b)" fill-rule="nonzero" stroke="url(#m8t7iqiybc)" stroke-width=".4">
-            <path d="m10.4.23 10.192 5.885v11.77l-10.2 5.884L.2 17.885V6.115L10.4.23z"/>
+        <path d="M1 1h24v24H1z" />
+        <g filter="url(#fexpyel79a)" transform="translate(2.5 1)" fill="url(#zy9rg3wklb)" fill-rule="nonzero"
+            stroke="url(#qe21r9yf3c)" stroke-width=".4">
+            <path d="m10.4.23 10.192 5.885v11.77l-10.2 5.884L.2 17.885V6.115L10.4.23z" />
         </g>
-        <path d="m10.498 6.467 4.94 4.105-2.816.221-3.487-2.96 1.363-1.366zM3.377.207l6.065 5.181-5.976 5.376-2.795.03 5.744-5.293L.545.43 3.378.207zM15.333.206 10.675 4.54 9.15 3.37 12.536.236l2.797-.03z" transform="translate(5 7.5)" fill="url(#w7fuww1yhd)" fill-rule="nonzero" stroke="url(#zj5xhwhoqe)" stroke-width=".4"/>
+        <path
+            d="M20.946 18.232a.152.152 0 0 1-.1.267h-3.29a.155.155 0 0 1-.1-.037l-3.616-3.117a.15.15 0 0 1 0-.23l1.645-1.418a.153.153 0 0 1 .2 0l5.26 4.536.001-.001zm-5.46-5.929a.154.154 0 0 0 .201 0l5.26-4.536a.152.152 0 0 0-.1-.267h-3.29a.155.155 0 0 0-.1.037l-3.616 3.117a.15.15 0 0 0 0 .23l1.645 1.418v.001zm-.688.696a.15.15 0 0 0-.053-.114L8.544 7.538a.152.152 0 0 0-.1-.037H5.153a.152.152 0 0 0-.1.267l6.062 5.227s.003.007 0 .01l-6.062 5.228a.152.152 0 0 0 .1.267h3.29a.155.155 0 0 0 .1-.037l6.202-5.348a.153.153 0 0 0 .053-.114v-.002z"
+            fill="#FFF" fill-rule="nonzero" />
     </g>
 </svg>

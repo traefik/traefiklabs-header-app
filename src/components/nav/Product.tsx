@@ -23,6 +23,9 @@ type NavProductProps = {
     badge?: string
   }[]
   bgImage?: string
+  colors?: {
+    [color: string]: string
+  }
 }
 
 type NavbarLinkProps = {
@@ -32,20 +35,21 @@ type NavbarLinkProps = {
   styles?: any
 }
 
-const Product = ({ bgImage, title, description, padding, links, subLinks = [] }: NavProductProps) => (
+const Product = ({ bgImage, title, description, padding, links, colors = {}, subLinks = [] }: NavProductProps) => (
   <Box sx={{ p: padding ? padding : title ? '24px' : '16px 16px 48px', backgroundColor: '#fff', position: 'relative' }}>
     {bgImage && (
       <img
         src={bgImage}
-        width={320}
-        height={84}
+        width={344}
+        height={372}
         alt=""
         style={{
           position: 'absolute',
-          paddingBottom: '0px',
-          bottom: '0',
-          left: '0',
-          right: '0',
+          inset: '0',
+          width: '100%',
+          height: '100%',
+          userSelect: 'none',
+          pointerEvents: 'none',
         }}
       />
     )}
@@ -56,10 +60,12 @@ const Product = ({ bgImage, title, description, padding, links, subLinks = [] }:
           fontSize: '13px',
           variant: 'default',
           lineHeight: '1.23',
-          color: '03192d',
+          color: colors.heading || '#03192d',
           letterSpacing: '2.36px',
           fontWeight: '500',
           textTransform: 'uppercase',
+          position: 'relative',
+          zIndex: 1,
           fontFamily: 'Rubik',
           marginBottom: '16px',
         }}
@@ -72,18 +78,18 @@ const Product = ({ bgImage, title, description, padding, links, subLinks = [] }:
         {description}
       </Text>
     )}
-    <Links>
+    <Links bgColor={colors.bgColor}>
       {links &&
         links.map((link) => (
           <li key={title + link.title}>
             <NavbarLink external={link.external} url={link.url}>
               <NavLinkIcon>{link.icon}</NavLinkIcon>
               <div>
-                <NavLinkTitle>
+                <NavLinkTitle color={colors.heading}>
                   <span>{link.title}</span>
                   {link.badge && <NavLinkBadge>{link.badge}</NavLinkBadge>}
                 </NavLinkTitle>
-                <NavLinkDescription>{link.description}</NavLinkDescription>
+                <NavLinkDescription color={colors.text}>{link.description}</NavLinkDescription>
               </div>
             </NavbarLink>
           </li>
@@ -124,14 +130,14 @@ const NavbarLink: React.FC<NavbarLinkProps> = ({ children, external, url, styles
   )
 }
 
-const Links = styled.ul`
+const Links = styled.ul<{ bgColor?: string }>`
   list-style: none;
   padding: 0;
   margin: 0;
   position: relative;
-  margin li {
+  li {
     padding: 0;
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 
     &:last-child {
       margin: 0;
@@ -148,7 +154,7 @@ const Links = styled.ul`
     text-decoration: none;
 
     &:hover {
-      background-color: #f4f5f6;
+      background-color: ${(props) => props.bgColor || '#f4f5f6'};
     }
   }
 `
@@ -201,22 +207,22 @@ const NavLinkBadge = styled.p`
   margin: 0 0 0 8px;
 `
 
-const NavLinkTitle = styled.div`
+const NavLinkTitle = styled.div<{ color?: string }>`
   display: flex;
   gap: 2px;
   align-items: center;
   font-size: 16px;
   line-height: 1.38;
   font-weight: 500;
-  color: #03192d;
+  color: ${(props) => props.color || '#03192d'};
 `
 
-const NavLinkDescription = styled.span`
+const NavLinkDescription = styled.span<{ color?: string }>`
   font-size: 13px;
   line-height: 1.14;
   display: block;
   font-weight: 400;
-  color: '#4e5e6c';
+  color: ${(props) => props.color || '#4e5e6c'};
 `
 
 export default Product
