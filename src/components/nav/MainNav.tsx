@@ -277,7 +277,7 @@ const MainNav = () => {
                   icon: <HashicorpIcon />,
                 },
               ]}
-              bgImage={ColumnBg}
+              bgImage={'https://containous.ghost.io/content/images/2025/05/gradient-left-glow.png'}
               colors={{
                 heading: '#f9fafa',
                 text: '#b3bac0',
