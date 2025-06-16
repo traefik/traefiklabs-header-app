@@ -247,11 +247,11 @@ const MainNav = () => {
               padding="24px 16px"
               links={[
                 {
-                  title: 'Traefik & Nutanix',
-                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+                  title: 'Traefik & HashiCorp',
+                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
                   external: true,
-                  description: 'A holistic solution for modern AI & API management.',
-                  icon: <NutanixIcon />,
+                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
+                  icon: <HashicorpIcon />,
                 },
                 {
                   title: 'Traefik & Microsoft',
@@ -262,18 +262,18 @@ const MainNav = () => {
                   badge: 'New!',
                 },
                 {
-                  title: 'Traefik & Oracle',
+                  title: 'Traefik & Nutanix',
+                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+                  external: true,
+                  description: 'A holistic solution for modern AI & API management.',
+                  icon: <NutanixIcon />,
+                },
+                {
+                  title: 'Traefik & Oracle OCI',
                   url: 'https://traefik.io/solutions/oracle-and-traefik/',
                   external: true,
                   description: 'Unmatched & modern API management without boundaries.',
                   icon: <OracleIcon />,
-                },
-                {
-                  title: 'Traefik & HashiCorp',
-                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
-                  external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <HashicorpIcon />,
                 },
               ]}
               bgImage={'https://containous.ghost.io/content/images/2025/05/gradient-left-glow.png'}
