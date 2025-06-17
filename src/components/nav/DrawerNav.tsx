@@ -90,12 +90,11 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
               Replace Ingress-NGINX <Badge>New!</Badge>
             </SubLink>
             <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCorp</SubLink>
-            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">
-              Traefik & Nutanix <Badge>New!</Badge>
+            <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">
+              Traefik & Microsoft <Badge>New!</Badge>
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">
-              Traefik & Oracle <Badge>New!</Badge>
-            </SubLink>
+            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
+            <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
           </div>
         </div>
 
