@@ -61,7 +61,7 @@ const MainNav = () => {
         <NavItem
           name="Products"
           hasSubmenu
-          position={{ left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '1050px' }}
+          position={{ left: '50%', transform: 'translateX(-50%)', width: '100%', maxWidth: '1160px' }}
         >
           <Grid>
             <NavHeader title="Traefik Runtime Platform" />
@@ -290,9 +290,9 @@ const MainNav = () => {
         <NavItem
           name="Learn"
           hasSubmenu
-          position={{ width: '100%', maxWidth: '1192px', left: '50%', transform: 'translateX(-50%)' }}
+          position={{ width: '100%', maxWidth: '1080px', left: '50%', transform: 'translateX(-50%)' }}
         >
-          <Grid sx={{ gridTemplateColumns: 'auto auto auto 288px', p: '24px', gap: '93px', lineHeight: 1.6 }}>
+          <Grid sx={{ gridTemplateColumns: '225px 225px 225px 1fr', p: '24px', gap: '12px', lineHeight: 1.6 }}>
             <MenuColumn.Column title="Learn">
               <MenuColumn.Item title="Blog" logo={<BlogIcon />} href="https://traefik.io/blog/" external />
               <MenuColumn.Item
@@ -325,7 +325,12 @@ const MainNav = () => {
                 external
               />
               <MenuColumn.Item title="Forum" logo={<ForumIcon />} href="https://community.traefik.io/" external />
-              <MenuColumn.Item title="Join the Community" logo={<CommunityIcon />} href="/community/" external />
+              <MenuColumn.Item
+                title="Join the Community"
+                logo={<CommunityIcon />}
+                href="https://traefik.io/community/"
+                external
+              />
             </MenuColumn.Column>
 
             <MenuColumn.Column title="Documentation">
