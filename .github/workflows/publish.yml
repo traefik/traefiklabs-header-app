@@ -8,6 +8,10 @@ on:
 env:
   REACT_APP_POLLING_INTERVAL: 300000
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   doc:
     name: Build and publish assets
@@ -39,3 +43,31 @@ jobs:
           build_dir: static-assets
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check out mkdocs
+        uses: actions/checkout@v4
+        with:
+          repository: traefik/mkdocs-material
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+          path: ${{ github.workspace }}/mkdocs-material
+
+      - name: Update mkdocs integrity hash
+        run: |
+          cd ${{ github.workspace }}/mkdocs-material
+          OLD_HASH=$(grep -A2 'src="https://traefik.github.io/traefiklabs-header-app/main-v1.js"' src/base.html | grep 'integrity=' | awk -F'sha384-' '{print $2}' | tr -d '"')
+          NEW_HASH=$(curl -s https://traefik.github.io/traefiklabs-header-app/main-v1.js | openssl dgst -sha384 -binary | openssl base64 -A)
+          sed -i -e "s|${OLD_HASH}|${NEW_HASH}|g" src/base.html
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          path: ${{ github.workspace }}/mkdocs-material
+          commit-message: "chore(deps): update SRI"
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+          branch: sri/update
+          delete-branch: true
+          title: "chore(deps): update SRI"
+          body: "Updates the SRI hash for the header app."
