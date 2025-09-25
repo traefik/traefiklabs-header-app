@@ -94,7 +94,7 @@ const MainNav = () => {
               <Product
                 links={[
                   {
-                    title: 'Traefik API Gateway →',
+                    title: 'Traefik Hub API Gateway →',
                     url: 'https://traefik.io/traefik-hub-api-gateway/',
                     external: true,
                     description: 'Seamless Upgrade from Traefik Proxy',
@@ -119,7 +119,7 @@ const MainNav = () => {
               <Product
                 links={[
                   {
-                    title: 'Traefik API Management →',
+                    title: 'Traefik Hub API Management →',
                     url: 'https://traefik.io/traefik-hub/',
                     external: true,
                     description: 'GitOps-Driven API Management',
