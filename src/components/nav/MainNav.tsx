@@ -16,6 +16,7 @@ import { ReactComponent as TraefikIcon } from '../../images/Traefik-Hub.svg'
 import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.svg'
 import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
 import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
+import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg'
 import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
@@ -150,9 +151,9 @@ const MainNav = () => {
           <Grid
             sx={{
               maxWidth: '1368px',
-              gap: '24px',
+              gap: '20px',
               paddingLeft: '16px',
-              gridTemplateColumns: 'repeat(3, 312px) 344px',
+              gridTemplateColumns: 'repeat(2, 312px) 324px 344px',
             }}
           >
             <Product
@@ -179,6 +180,7 @@ const MainNav = () => {
                   external: true,
                   description: 'Don’t wait for the next vulnerability. Migrate now!',
                   icon: <NginxIcon />,
+                  badge: 'New!',
                 },
               ]}
             />
@@ -191,7 +193,7 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/api-gateway/',
                   external: true,
                   description: 'Centralize security and routing in a single entry point for microservices deployments.',
-                  icon: <APIManagementIcon />,
+                  icon: <ApiGatewayIcon />,
                 },
                 {
                   title: 'Web Application Firewall',
@@ -221,7 +223,7 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/api-management/',
                   external: true,
                   description: 'Simplifies and Accelerates API lifecycle management.',
-                  icon: <ApiGatewayIcon />,
+                  icon: <APIManagementIcon />,
                 },
                 {
                   title: 'Runtime API Governance',
@@ -230,7 +232,16 @@ const MainNav = () => {
                   description:
                     'Enforce critical runtime API policies for secure, reliable, and compliant API management.',
                   icon: <ApiGovernanceIcon />,
+                },
+                {
+                  title: 'Air-Gapped API Management',
+                  url: 'https://traefik.io/solutions/air-gapped-ai-and-api-management/',
+                  external: true,
+                  description:
+                    'Air-gapped AI & API Platform with Policy-as-Code & Zero-Egress Ops.',
+                  icon: <OfflineApim />,
                   badge: 'New!',
+                  largeText: true
                 },
                 {
                   title: 'API Mocking',
@@ -238,7 +249,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
                   icon: <ApiMockingIcon />,
-                  badge: 'New!',
                 },
               ]}
             />
@@ -259,13 +269,13 @@ const MainNav = () => {
                   external: true,
                   description: 'Run your APIs and AI across any infrastructure, any Kubernetes.',
                   icon: <MicrosoftIcon />,
-                  badge: 'New!',
                 },
                 {
                   title: 'Traefik & Nutanix',
                   url: 'https://traefik.io/solutions/nutanix-and-traefik/',
                   external: true,
                   description: 'A holistic solution for modern AI & API management.',
+                  badge: 'New!',
                   icon: <NutanixIcon />,
                 },
                 {
