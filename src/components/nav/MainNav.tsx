@@ -265,7 +265,7 @@ const MainNav = () => {
                   title: 'Traefik & Nutanix',
                   url: 'https://traefik.io/solutions/nutanix-and-traefik/',
                   external: true,
-                  description: 'A holistic solution for modern AI & API management.',
+                  description: 'Unified Ingress for VMs and Containers',
                   icon: <NutanixIcon />,
                 },
                 {
