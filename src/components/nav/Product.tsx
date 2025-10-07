@@ -14,6 +14,7 @@ type NavProductProps = {
     description: string
     external: boolean
     badge?: string
+    largeText?: boolean
   }[]
   subLinks?: {
     title: string
@@ -85,7 +86,7 @@ const Product = ({ bgImage, title, description, padding, links, colors = {}, sub
             <NavbarLink external={link.external} url={link.url}>
               <NavLinkIcon>{link.icon}</NavLinkIcon>
               <div>
-                <NavLinkTitle color={colors.heading}>
+                <NavLinkTitle largeText={link.largeText} color={colors.heading}>
                   <span>{link.title}</span>
                   {link.badge && <NavLinkBadge>{link.badge}</NavLinkBadge>}
                 </NavLinkTitle>
@@ -207,18 +208,23 @@ const NavLinkBadge = styled.p`
   margin: 0 0 0 8px;
 `
 
-const NavLinkTitle = styled.div<{ color?: string }>`
+const NavLinkTitle = styled.div<{ color?: string; largeText?: boolean }>`
   display: flex;
-  gap: 2px;
   align-items: center;
   font-size: 16px;
   line-height: 1.38;
   font-weight: 500;
   color: ${(props) => props.color || '#03192d'};
+  white-space: ${(props) => (props.largeText ? 'nowrap' : 'normal')};
+  gap: ${(props) => (props.largeText ? '5px' : '2px')};
+  
+  ${NavLinkBadge} {
+    ${(props) => (props.largeText ? 'margin: 0' : '')};
+  }
 `
 
 const NavLinkDescription = styled.span<{ color?: string }>`
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.14;
   display: block;
   font-weight: 400;

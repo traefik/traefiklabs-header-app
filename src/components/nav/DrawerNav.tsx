@@ -75,14 +75,15 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </SubLink>
             <SubLink href="https://traefik.io/solutions/api-gateway/">Modern API Gateway</SubLink>
             <SubLink href="https://traefik.io/solutions/api-mocking/">
-              API Mocking <Badge>New!</Badge>
+              API Mocking
             </SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
+            <SubLink href="https://traefik.io/solutions/air-gapped-ai-and-api-management/">Air-Gapped API Management <Badge>New!</Badge></SubLink>
             <SubLink href="https://traefik.io/solutions/waf/">
               Web Application Firewall <Badge>New!</Badge>
             </SubLink>
             <SubLink href="https://traefik.io/solutions/api-governance/">
-              Runtime API Governance <Badge>New!</Badge>
+              Runtime API Governance
             </SubLink>
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
@@ -91,9 +92,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </SubLink>
             <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCorp</SubLink>
             <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">
-              Traefik & Microsoft <Badge>New!</Badge>
+              Traefik & Microsoft 
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
+            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix <Badge>New!</Badge></SubLink>
             <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
           </div>
         </div>
