@@ -135,6 +135,12 @@ const MainNav = () => {
                     url: 'https://traefik.io/solutions/api-governance/',
                   },
                   {
+                    title: 'Air-Gapped APIM',
+                    external: true,
+                    icon: <OfflineApim />,
+                    url: 'https://traefik.io/solutions/air-gapped-ai-and-api-management/',
+                  },
+                  {
                     title: 'API Mocking',
                     external: true,
                     icon: <IconsApiMocks />,
