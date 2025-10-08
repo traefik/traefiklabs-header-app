@@ -207,7 +207,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Protect your APIs from threats with speed and efficiency',
                   icon: <WafIcon />,
-                  badge: 'New!',
                 },
 
                 {
@@ -255,6 +254,7 @@ const MainNav = () => {
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
                   icon: <ApiMockingIcon />,
+                  badge: 'New!',
                 },
               ]}
             />
