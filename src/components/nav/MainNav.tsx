@@ -40,6 +40,7 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
@@ -208,13 +209,20 @@ const MainNav = () => {
                   description: 'Protect your APIs from threats with speed and efficiency',
                   icon: <WafIcon />,
                 },
-
                 {
                   title: 'AI Gateway',
                   url: 'https://traefik.io/solutions/ai-gateway/',
                   external: true,
                   description: 'Transform Traefik into a flexible egress gateway.',
                   icon: <AiGatewayIcon />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'MCP Gateway',
+                  url: 'https://traefik.io/solutions/mcp-gateway/',
+                  external: true,
+                  description: 'Govern how agents access MCP servers.',
+                  icon: <McpGatewayIcon />,
                   badge: 'New!',
                 },
               ]}
@@ -242,11 +250,10 @@ const MainNav = () => {
                   title: 'Air-Gapped API Management',
                   url: 'https://traefik.io/solutions/air-gapped-ai-and-api-management/',
                   external: true,
-                  description:
-                    'Air-gapped AI & API Platform with Policy-as-Code & Zero-Egress Ops.',
+                  description: 'Air-gapped AI & API Platform with Policy-as-Code & Zero-Egress Ops.',
                   icon: <OfflineApim />,
                   badge: 'New!',
-                  largeText: true
+                  largeText: true,
                 },
                 {
                   title: 'API Mocking',
