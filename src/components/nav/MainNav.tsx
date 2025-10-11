@@ -40,6 +40,7 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 
 import PostCard from './PostCard'
 import NavHeader from './NavHeader'
@@ -221,7 +222,7 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/mcp-gateway/',
                   external: true,
                   description: 'Govern how agents access MCP servers.',
-                  icon: <AiGatewayIcon />,
+                  icon: <McpGatewayIcon />,
                   badge: 'New!',
                 },
               ]}
