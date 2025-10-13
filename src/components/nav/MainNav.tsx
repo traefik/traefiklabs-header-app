@@ -213,7 +213,7 @@ const MainNav = () => {
                   title: 'AI Gateway',
                   url: 'https://traefik.io/solutions/ai-gateway/',
                   external: true,
-                  description: 'Transform Traefik into a flexible egress gateway.',
+                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
                   icon: <AiGatewayIcon />,
                   badge: 'New!',
                 },
