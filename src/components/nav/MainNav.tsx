@@ -116,6 +116,12 @@ const MainNav = () => {
                     icon: <IconAiGateway />,
                     url: 'https://traefik.io/solutions/ai-gateway/',
                   },
+                  {
+                    title: 'MCP Gateway',
+                    external: true,
+                    icon: <McpGatewayIcon />,
+                    url: 'https://traefik.io/solutions/mcp-gateway/',
+                  }
                 ]}
               />
               <Product
