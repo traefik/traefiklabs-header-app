@@ -101,26 +101,6 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
           </div>
         </div>
 
-        <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
-          <span className="menu-item menu-item--with-icon">
-            <span className="title">Learn</span>
-            <span className="icon">
-              <Chevron />
-            </span>
-          </span>
-          <div className="sub-menu">
-            <SubLink href="https://traefik.io/blog/">Blog</SubLink>
-            <SubLink href="https://traefik.io/resources/">Resource Library</SubLink>
-            <SubLink href="https://academy.traefik.io/">Traefik Academy</SubLink>
-            <SubLink href="https://traefik.io/success-stories/">Success Stories</SubLink>
-            <SubLink href="https://traefik.io/glossary/">Glossary</SubLink>
-            <SubLink href="https://traefik.io/events/">Events</SubLink>
-            <SubLink href="https://doc.traefik.io">Docs</SubLink>
-            <SubLink href="https://plugins.traefik.io/">Plugin Catalog</SubLink>
-            <SubLink href="https://community.traefik.io/">Forum</SubLink>
-            <SubLink href="https://traefik.io/community/">Community</SubLink>
-          </div>
-        </div>
 
         <div className="menu-item-wrapper menu-item-wrapper--expandable" onClick={(e) => toggleMenu(e)}>
           <span className="menu-item menu-item--with-icon">
@@ -141,14 +121,20 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
         </div>
 
         <div className="menu-item-wrapper">
-          <SubLink href="https://traefik.io/pricing/" className="menu-item">
-            Pricing
+          <SubLink href="https://community.traefik.io/" className="menu-item">
+            Forum
           </SubLink>
         </div>
 
         <div className="menu-item-wrapper">
-          <SubLink href="https://traefik.io/contact-us/" className="menu-item">
-            Get in Touch
+          <SubLink href="https://plugins.traefik.io/" className="menu-item">
+            Plugins
+          </SubLink>
+        </div>
+
+        <div className="menu-item-wrapper">
+          <SubLink href="https://traefik.io/blog/" className="menu-item">
+            Blog
           </SubLink>
         </div>
       </div>
