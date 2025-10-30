@@ -1,0 +1,34 @@
+<svg width="30" height="32" viewBox="0 0 30 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="menu_mcp_grad1">
+      <stop stop-color="#E5E8EA" offset="0%" />
+      <stop stop-color="#B3BAC0" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="menu_mcp_grad2">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <filter x="-35.7%" y="-19.6%" width="171.4%" height="165.2%" filterUnits="objectBoundingBox" id="menu_mcp_filter1">
+      <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none">
+    <path d="M3 1h24v24H3z" />
+    <g fill-rule="nonzero">
+      <g filter="url(#menu_mcp_filter1)" fill="#03192D" transform="translate(4.5 1.5)">
+        <path
+          d="M19.606 1.802A22.926 22.926 0 0 0 10.5.001a22.926 22.926 0 0 0-9.106 1.801A2.368 2.368 0 0 0 0 3.968v6.996c.076 5.126 3.308 9.669 8.114 11.404l1.03.373c.434.164.893.252 1.356.259a4.11 4.11 0 0 0 1.394-.25l1.021-.373c4.8-1.743 8.02-6.29 8.085-11.413V3.968a2.368 2.368 0 0 0-1.394-2.166z" />
+      </g>
+      <path
+        d="M14.08 4.469c.667.27 1.218.736 1.603 1.318.385.583.602 1.283.599 2.02a3.594 3.594 0 0 1-1.628 3.017 3.409 3.409 0 0 1-3.482.135L8.54 13.374l.654 1.01-1.347-.053.08 1.519-1.352-.033c-.373.188-.71.281-1.001.273a.854.854 0 0 1-.616-.259.875.875 0 0 1-.24-.595.873.873 0 0 1 .222-.596l4.722-4.847c-.328-.865-.43-1.722-.312-2.505.11-.732.413-1.396.903-1.935a3.46 3.46 0 0 1 1.781-1.048 3.398 3.398 0 0 1 2.046.164zm-1.398 1.48c-.512 0-.976.206-1.311.539a1.832 1.832 0 0 0 0 2.608 1.86 1.86 0 0 0 2.622 0 1.837 1.837 0 0 0 0-2.608 1.855 1.855 0 0 0-1.311-.54z"
+        stroke="url(#menu_mcp_grad2)" stroke-width=".436" fill="url(#menu_mcp_grad1)" transform="translate(4.5 1.5)" />
+    </g>
+  </g>
+</svg>

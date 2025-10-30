@@ -186,7 +186,7 @@ const Header = ({ product }: { product?: string }) => {
                     <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
                   </svg>
                 </NavIconButton> */}
-                <NavButton href="https://info.traefik.io/try-traefik-hub-platform">30-Day Trial</NavButton>
+                <NavButton href="https://traefik.io/pricing/">Get Pricing</NavButton>
                 <NavButtonPrimary href={demoLink}>Request Demo</NavButtonPrimary>
               </Flex>
               <Hamburger className="drawer">

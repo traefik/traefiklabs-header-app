@@ -16,7 +16,8 @@ import { ReactComponent as TraefikIcon } from '../../images/Traefik-Hub.svg'
 import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.svg'
 import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
 import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
-import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg'
+import { ReactComponent as ProductOfflineApim } from '../../images/product-OfflineApim.svg'
+import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg';
 import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
@@ -40,6 +41,7 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
 import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 
 import PostCard from './PostCard'
@@ -119,7 +121,7 @@ const MainNav = () => {
                   {
                     title: 'MCP Gateway',
                     external: true,
-                    icon: <McpGatewayIcon />,
+                    icon: <ProductMcpGatewayIcon />,
                     url: 'https://traefik.io/solutions/mcp-gateway/',
                   }
                 ]}
@@ -144,7 +146,7 @@ const MainNav = () => {
                   {
                     title: 'Air-Gapped APIM',
                     external: true,
-                    icon: <OfflineApim />,
+                    icon: <ProductOfflineApim />,
                     url: 'https://traefik.io/solutions/air-gapped-ai-and-api-management/',
                   },
                   {
@@ -315,78 +317,6 @@ const MainNav = () => {
           </Grid>
         </NavItem>
 
-        {/* Learn */}
-        <NavItem
-          name="Learn"
-          hasSubmenu
-          position={{ width: '100%', maxWidth: '1080px', left: '50%', transform: 'translateX(-50%)' }}
-        >
-          <Grid sx={{ gridTemplateColumns: '225px 225px 225px 1fr', p: '24px', gap: '12px', lineHeight: 1.6 }}>
-            <MenuColumn.Column title="Learn">
-              <MenuColumn.Item title="Blog" logo={<BlogIcon />} href="https://traefik.io/blog/" external />
-              <MenuColumn.Item
-                title="Resource Library"
-                logo={<ResourcesIcon />}
-                href="https://traefik.io/resources/"
-                external
-              />
-              <MenuColumn.Item
-                title="Traefik Academy"
-                logo={<TraefikAcademyIcon />}
-                href="https://academy.traefik.io/"
-                external
-              />
-              <MenuColumn.Item
-                title="Success Stories"
-                logo={<StarIcon />}
-                href="https://traefik.io/success-stories/"
-                external
-              />
-              <MenuColumn.Item title="Glossary" logo={<GlossaryIcon />} href="https://traefik.io/glossary/" external />
-              <MenuColumn.Item title="Events" logo={<EventsIcon />} href="https://traefik.io/events/" external />
-            </MenuColumn.Column>
-
-            <MenuColumn.Column title="Open Source">
-              <MenuColumn.Item
-                title="Plugin Catalog"
-                logo={<PluginIcon />}
-                href="https://plugins.traefik.io"
-                external
-              />
-              <MenuColumn.Item title="Forum" logo={<ForumIcon />} href="https://community.traefik.io/" external />
-              <MenuColumn.Item
-                title="Join the Community"
-                logo={<CommunityIcon />}
-                href="https://traefik.io/community/"
-                external
-              />
-            </MenuColumn.Column>
-
-            <MenuColumn.Column title="Documentation">
-              <MenuColumn.Item
-                title="Traefik Proxy"
-                logo={<ProxyIcon />}
-                href="https://doc.traefik.io/traefik/"
-                external
-              />
-              <MenuColumn.Item
-                title="Traefik Enterprise"
-                logo={<EnterpriseIcon />}
-                href="https://doc.traefik.io/traefik-enterprise/"
-                external
-              />
-              <MenuColumn.Item
-                title="Traefik Hub"
-                logo={<HubIcon />}
-                href="https://doc.traefik.io/traefik-hub/"
-                external
-              />
-            </MenuColumn.Column>
-
-            {lastPost && <PostCard post={lastPost} />}
-          </Grid>
-        </NavItem>
-
         <NavItem name="Compare" hasSubmenu>
           <Grid sx={{ gridTemplateColumns: '1fr', width: '304px', p: '24px' }}>
             <MenuColumn.Column title="Compare Traefik Hub">
@@ -418,11 +348,14 @@ const MainNav = () => {
           </Grid>
         </NavItem>
 
-        {/* Pricing */}
-        <NavItem name="Pricing" url="https://traefik.io/pricing/" />
+        {/* Forum */}
+        <NavItem name="Forum" url="https://community.traefik.io/" />
 
-        {/* Docs */}
-        <NavItem name="Docs" url="https://doc.traefik.io/" />
+        {/* Plugins */}
+        <NavItem name="Plugins" url="https://plugins.traefik.io/" />
+
+        {/* Blog */}
+        <NavItem name="Blog" url="https://traefik.io/blog/" />
       </Flex>
     </Wrapper>
   )
