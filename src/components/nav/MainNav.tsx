@@ -16,7 +16,8 @@ import { ReactComponent as TraefikIcon } from '../../images/Traefik-Hub.svg'
 import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.svg'
 import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
 import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
-import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg'
+import { ReactComponent as ProductOfflineApim } from '../../images/product-OfflineApim.svg'
+import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg';
 import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
@@ -40,6 +41,7 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
+import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
 import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 
 import PostCard from './PostCard'
@@ -119,7 +121,7 @@ const MainNav = () => {
                   {
                     title: 'MCP Gateway',
                     external: true,
-                    icon: <McpGatewayIcon />,
+                    icon: <ProductMcpGatewayIcon />,
                     url: 'https://traefik.io/solutions/mcp-gateway/',
                   }
                 ]}
@@ -144,7 +146,7 @@ const MainNav = () => {
                   {
                     title: 'Air-Gapped APIM',
                     external: true,
-                    icon: <OfflineApim />,
+                    icon: <ProductOfflineApim />,
                     url: 'https://traefik.io/solutions/air-gapped-ai-and-api-management/',
                   },
                   {
