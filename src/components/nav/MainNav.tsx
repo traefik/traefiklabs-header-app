@@ -4,7 +4,6 @@ import { Flex, Grid } from '@containous/faency'
 import NavItem from './NavItem'
 import Product from './Product'
 import * as MenuColumn from './MenuColumn'
-import useGetLastPost from 'hooks/use-get-last-post'
 import { ReactComponent as IconKubernetes } from '../../images/IconKubernetes.svg'
 import { ReactComponent as IconDockerSwarm } from '../../images/IconDockerSwarm.svg'
 import { ReactComponent as IconApiGovernance } from '../../images/IconApiGovernance.svg'
@@ -17,25 +16,13 @@ import { ReactComponent as TraefikProxyIcon } from '../../images/TraefikProxy.sv
 import { ReactComponent as ApiGatewayIcon } from '../../images/APIGateway.svg'
 import { ReactComponent as ApiGovernanceIcon } from '../../images/APIGovernance.svg'
 import { ReactComponent as ProductOfflineApim } from '../../images/product-OfflineApim.svg'
-import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg';
+import { ReactComponent as OfflineApim } from '../../images/OfflineApim.svg'
 import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
 import { ReactComponent as DockerSwarmIcon } from '../../images/DockerSwarmIngress.svg'
 import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress.svg'
-import { ReactComponent as BlogIcon } from '../../images/menu_icons_blog.svg'
-import { ReactComponent as ResourcesIcon } from '../../images/menu_icons_resources.svg'
-import { ReactComponent as TraefikAcademyIcon } from '../../images/menu_icons_academy.svg'
-import { ReactComponent as EventsIcon } from '../../images/menu_icons_events.svg'
 import { ReactComponent as MicrosoftIcon } from '../../images/menu_icons_microsoft.svg'
-import { ReactComponent as GlossaryIcon } from '../../images/menu_icons_list.svg'
-import { ReactComponent as StarIcon } from '../../images/menu_icons_star.svg'
-import { ReactComponent as ForumIcon } from '../../images/menu_icons_forum.svg'
-import { ReactComponent as PluginIcon } from '../../images/menu_icons_plugin.svg'
-import { ReactComponent as CommunityIcon } from '../../images/menu_icons_community.svg'
-import { ReactComponent as ProxyIcon } from '../../images/menu_icons_traefik_proxy.svg'
-import { ReactComponent as EnterpriseIcon } from '../../images/menu_icons_traefik_enterprise.svg'
-import { ReactComponent as HubIcon } from '../../images/menu_icons_traefik_hub.svg'
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
 import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
@@ -44,7 +31,6 @@ import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gate
 import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
 import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 
-import PostCard from './PostCard'
 import NavHeader from './NavHeader'
 
 const Wrapper = styled(Flex)`
@@ -56,8 +42,6 @@ const Wrapper = styled(Flex)`
 `
 
 const MainNav = () => {
-  const lastPost = useGetLastPost('blog')
-
   return (
     <Wrapper as="nav" style={{ height: '100%', alignItems: 'center', marginLeft: '65px' }} aria-label="Main menu">
       <Flex as="ul" sx={{ height: '100%', alignItems: 'center', p: 0, m: 0, listStyle: 'none' }}>
@@ -123,7 +107,7 @@ const MainNav = () => {
                     external: true,
                     icon: <ProductMcpGatewayIcon />,
                     url: 'https://traefik.io/solutions/mcp-gateway/',
-                  }
+                  },
                 ]}
               />
               <Product
