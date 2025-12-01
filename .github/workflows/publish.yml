@@ -7,6 +7,7 @@ on:
 
 env:
   REACT_APP_POLLING_INTERVAL: 300000
+  SAFE_CHAIN_MINIMUM_PACKAGE_AGE_HOURS: 360  # 15 days
 
 jobs:
   doc:
@@ -14,13 +15,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: '.nvmrc'
           cache: yarn
+
+      - name: Setup safe-chain
+        shell: bash
+        run: |
+          npm i -g @aikidosec/safe-chain
+          safe-chain setup-ci
 
       - name: Install dependencies
         run: make deps
