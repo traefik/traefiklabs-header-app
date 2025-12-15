@@ -1,0 +1,33 @@
+<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="solutions-grad-fill">
+      <stop stop-color="#E5E8EA" offset="0%" />
+      <stop stop-color="#B3BAC0" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="solutions-grad-stroke">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <filter x="-16.7%" y="-11.9%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox"
+      id="solutions-filter-shadow">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none">
+    <path d="M1 0h24v24H1z" />
+    <g filter="url(#solutions-filter-shadow)" fill-rule="evenodd" transform="translate(2.5 1.5)" fill="#03192D">
+      <circle cx="10.5" cy="10.5" r="10.5" />
+    </g>
+    <path
+      d="M13.116 6.343c0 .438-.45.811-1.022.811-.062 0-.15-.01-.264-.034a.635.635 0 0 0-.439.07L6.938 9.713a.426.426 0 0 0 .002.742l4.827 2.7a.635.635 0 0 0 .618 0l4.854-2.686a.426.426 0 0 0 .003-.744l-1.514-.856a.635.635 0 0 0-.62-.003l-1.599.883a.36.36 0 0 0-.184.277l-.002.027c0 .45-.45.823-1.022.823-.572 0-1.022-.374-1.022-.811 0-.438.45-.811 1.022-.811a.86.86 0 0 1 .07.003l.048.005.053.006a.634.634 0 0 0 .39-.073l2.364-1.306a.403.403 0 0 1 .377-.007l.02.011 3.298 1.864c.266.15.27.53.012.686l-.019.011-2.205 1.22a.426.426 0 0 0 .009.75l2.188 1.147c.28.146.286.542.011.698l-6.643 3.771a.403.403 0 0 1-.398 0L5.27 14.285a.397.397 0 0 1 .013-.7l2.212-1.148a.426.426 0 0 0 .011-.75l-2.238-1.251a.397.397 0 0 1-.016-.685l.018-.011 5.493-3.111a.633.633 0 0 0 .285-.34l.009-.028c.161-.478.515-.729 1.037-.729.554 0 1.022.383 1.022.811zm1.935 6.373-2.714 1.555-.02.01a.399.399 0 0 1-.375-.009l-2.706-1.519a.634.634 0 0 0-.602-.01l-1.56.813a.426.426 0 0 0-.014.748l4.765 2.715c.194.111.433.111.627 0l4.806-2.734a.426.426 0 0 0-.013-.748l-1.584-.832a.634.634 0 0 0-.61.011z"
+      stroke="url(#solutions-grad-stroke)" stroke-width=".44" fill="url(#solutions-grad-fill)"
+      transform="translate(1)" />
+  </g>
+</svg>

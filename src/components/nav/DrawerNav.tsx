@@ -69,9 +69,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </span>
           </div>
           <div className="sub-menu">
-            <SubLink href="https://traefik.io/solutions/gateway-api/">
-              Kubernetes Gateway API
-            </SubLink>
+            <SubLink href="https://traefik.io/solutions/gateway-api/">Kubernetes Gateway API</SubLink>
             <SubLink href="https://traefik.io/solutions/knative/">
               Knative Serving <Badge>New!</Badge>
             </SubLink>
@@ -95,6 +93,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
             <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
+            <SubLink href="https://traefik.io/solutions/oss-support">OSS Support</SubLink>
             <SubLink href="https://traefik.io/choose-traefik-oss/">
               Replace Ingress-NGINX <Badge>New!</Badge>
             </SubLink>

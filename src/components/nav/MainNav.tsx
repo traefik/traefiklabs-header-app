@@ -32,6 +32,8 @@ import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
 import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
+import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
+import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 
 import NavHeader from './NavHeader'
 
@@ -84,6 +86,12 @@ const MainNav = () => {
                     external: true,
                     icon: <ProductNginxIcon />,
                     url: 'https://traefik.io/choose-traefik-oss/',
+                  },
+                  {
+                    title: 'OSS Support',
+                    icon: <ProductMenuProxyIcon />,
+                    url: 'https://traefik.io/solutions/oss-support/',
+                    external: true,
                   },
                 ]}
               />
@@ -196,6 +204,13 @@ const MainNav = () => {
                   description: 'Don’t wait for the next vulnerability. Migrate now!',
                   icon: <NginxIcon />,
                   badge: 'New!',
+                },
+                {
+                  title: 'OSS Support',
+                  url: 'https://traefik.io/solutions/oss-support/',
+                  external: true,
+                  description: 'Access the engineers who built the code running your infrastructure.',
+                  icon: <IconProxy />,
                 },
               ]}
             />
