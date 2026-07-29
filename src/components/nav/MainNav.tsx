@@ -34,6 +34,7 @@ import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-me
 import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
 import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
+import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
 
 import NavHeader from './NavHeader'
 
@@ -195,7 +196,6 @@ const MainNav = () => {
                   external: true,
                   description: 'The universal Kubernetes gateway for all workloads.',
                   icon: <IconKnative />,
-                  badge: 'New!',
                 },
                 {
                   title: 'Ingress NGINX Provider',
@@ -238,7 +238,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
                   icon: <AiGatewayIcon />,
-                  badge: 'New!',
                 },
                 {
                   title: 'MCP Gateway',
@@ -246,6 +245,13 @@ const MainNav = () => {
                   external: true,
                   description: 'Govern how agents access MCP servers.',
                   icon: <McpGatewayIcon />,
+                },
+                {
+                  title: 'Hardened Secure Image',
+                  url: 'https://traefik.io/solutions/hardened-secure-image/',
+                  external: true,
+                  description: 'Distro Zero, memory-safe Go binary with FIPS 140-3',
+                  icon: <IconHardenedSecureImage />,
                   badge: 'New!',
                 },
               ]}
@@ -284,7 +290,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
                   icon: <ApiMockingIcon />,
-                  badge: 'New!',
                 },
               ]}
             />
@@ -310,7 +315,6 @@ const MainNav = () => {
                   title: 'Traefik & Nutanix',
                   url: 'https://traefik.io/solutions/nutanix-and-traefik/',
                   external: true,
-                  badge: 'New!',
                   description: 'Unified Ingress for VMs and Containers',
                   icon: <NutanixIcon />,
                 },
