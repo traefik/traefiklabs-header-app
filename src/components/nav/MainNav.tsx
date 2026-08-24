@@ -35,6 +35,7 @@ import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_ga
 import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
+import { ReactComponent as IconFips } from '../../images/IconFips.svg'
 
 import NavHeader from './NavHeader'
 
@@ -252,6 +253,14 @@ const MainNav = () => {
                   external: true,
                   description: 'Distro Zero, memory-safe Go binary with FIPS 140-3',
                   icon: <IconHardenedSecureImage />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'FIPS 140-3',
+                  url: 'https://traefik.io/solutions/application-level-fips-140-3/',
+                  external: true,
+                  description: 'Validated Module in a Compliant Application Out-of-the-Box',
+                  icon: <IconFips />,
                   badge: 'New!',
                 },
               ]}

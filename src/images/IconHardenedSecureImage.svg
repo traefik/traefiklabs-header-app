@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter x="-25%" y="-11.1%" width="150%" height="144.4%" filterUnits="objectBoundingBox" id="nitp8og2oa">
-      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1" />
-      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
-      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.364210009 0" in="shadowBlurOuter1"
-        result="shadowMatrixOuter1" />
+    <filter x="-10%" y="-5.1%" width="119.9%" height="119.8%" filterUnits="objectBoundingBox"
+      id="hardened-image-shadow">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
       <feMerge>
         <feMergeNode in="shadowMatrixOuter1" />
         <feMergeNode in="SourceGraphic" />
@@ -13,10 +14,9 @@
   </defs>
   <g fill="none">
     <path d="M0 0h24v24H0z" />
-    <g filter="url(#nitp8og2oa)" fill-rule="evenodd" transform="translate(4 3)" fill="#03192D">
-      <path opacity=".5" d="M8.016 8.994 0 4.542v9.043L8.016 18z" />
-      <path d="M16 4.557 8.016 8.995V18L16 13.61z" />
-      <path opacity=".2" d="M7.986 0 0 4.542l8.014 4.557L16 4.557z" />
+    <g filter="url(#hardened-image-shadow)" transform="translate(2.005 2)" fill-rule="nonzero" fill="#03192D">
+      <path
+        d="m11.704 0 2.232 5.02L15.82 0h-4.115zM12.903 8H7.087l2.908 9.45zM13.175 7 9.995.016 6.815 7zM4.171 0l1.883 5.02L8.286 0zM9.013 19.356 5.518 8H.495zM5.195 7 2.915.922.1 6.553A1 1 0 0 0 0 7h5.195zM14.795 7h5.191a1 1 0 0 0-.1-.447L17.076.922 14.795 7zM14.472 8l-3.495 11.356L19.495 8z" />
     </g>
   </g>
 </svg>
