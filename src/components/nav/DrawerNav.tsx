@@ -56,8 +56,8 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
               <span className="title">Solutions</span>
               <div className="icon-wrapper">
                 <svg width="10" height="10" viewBox="0 0 10 10">
-                  <g transform="translate(-502 -16)" stroke="#AABB39" fill="none" fill-rule="evenodd">
-                    <circle stroke-opacity=".5" stroke-width="2" fill="#D5EA48" cx="507" cy="21" r="4"></circle>
+                  <g transform="translate(-502 -16)" stroke="#AABB39" fill="none" fillRule="evenodd">
+                    <circle strokeOpacity=".5" strokeWidth="2" fill="#D5EA48" cx="507" cy="21" r="4"></circle>
                     <circle cx="507" cy="21" r="3.5"></circle>
                   </g>
                 </svg>
@@ -69,40 +69,34 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             </span>
           </div>
           <div className="sub-menu">
+            <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
             <SubLink href="https://traefik.io/solutions/gateway-api/">Kubernetes Gateway API</SubLink>
-            <SubLink href="https://traefik.io/solutions/knative/">
-              Knative Serving <Badge>New!</Badge>
+            <SubLink href="https://traefik.io/solutions/knative/">Knative Serving</SubLink>
+            <SubLink href="https://traefik.io/choose-traefik-oss/">
+              Ingress NGINX Provider <Badge>New!</Badge>
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/ai-gateway/">
-              AI Gateway
-              <Badge>New!</Badge>
-            </SubLink>
-            <SubLink href="https://traefik.io/solutions/mcp-gateway/">
-              MCP Gateway
-              <Badge>New!</Badge>
-            </SubLink>
+            <SubLink href="https://traefik.io/solutions/oss-support">OSS Support</SubLink>
             <SubLink href="https://traefik.io/solutions/api-gateway/">Modern API Gateway</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-mocking/">
-              API Mocking <Badge>New!</Badge>
+            <SubLink href="https://traefik.io/solutions/waf/">Web Application Firewall</SubLink>
+            <SubLink href="https://traefik.io/solutions/ai-gateway/">AI Gateway</SubLink>
+            <SubLink href="https://traefik.io/solutions/mcp-gateway/">MCP Gateway</SubLink>
+            <SubLink href="https://traefik.io/solutions/hardened-secure-image/">
+              Hardened Secure Image <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/application-level-fips-140-3">
+              FIPS 140-3 <Badge>New!</Badge>
             </SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
+            <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
             <SubLink href="https://traefik.io/solutions/air-gapped-ai-and-api-management/">
               Air-Gapped API Management <Badge>New!</Badge>
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/waf/">Web Application Firewall</SubLink>
-            <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
-            <SubLink href="https://traefik.io/solutions/kubernetes-ingress/">Kubernetes Ingress</SubLink>
-            <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
-            <SubLink href="https://traefik.io/solutions/oss-support">OSS Support</SubLink>
-            <SubLink href="https://traefik.io/choose-traefik-oss/">
-              Replace Ingress-NGINX <Badge>New!</Badge>
-            </SubLink>
+            <SubLink href="https://traefik.io/solutions/api-mocking/">API Mocking</SubLink>
             <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCorp</SubLink>
             <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">Traefik & Microsoft</SubLink>
-            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">
-              Traefik & Nutanix <Badge>New!</Badge>
-            </SubLink>
+            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
             <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
+            <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
           </div>
         </div>
 

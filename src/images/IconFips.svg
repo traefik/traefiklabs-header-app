@@ -1,0 +1,42 @@
+<svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="6pf86zdnnc">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="n3oftxuz2b">
+      <stop stop-color="#03192D" offset="0%" />
+      <stop stop-color="#03192D" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="ztfkmfx41e">
+      <stop stop-color="#E5E8EA" offset="0%" />
+      <stop stop-color="#B3BAC0" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="ss31xhp1od">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <filter x="-13.6%" y="-10.9%" width="127.3%" height="130.4%" filterUnits="objectBoundingBox" id="ygtnvubwqa">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none">
+    <path d="M1 1h24v24H1z" />
+    <g fill-rule="nonzero" stroke-width=".4">
+      <g filter="url(#ygtnvubwqa)" transform="translate(2 1.5)" fill="url(#n3oftxuz2b)" stroke="url(#6pf86zdnnc)">
+        <path
+          d="M20.026 1.986A2.167 2.167 0 0 1 21.3 3.968v6.996a12.1 12.1 0 0 1-7.953 11.225l-1.022.374a3.909 3.909 0 0 1-1.326.237 3.81 3.81 0 0 1-1.284-.246l-1.033-.375C3.954 20.473.775 16.004.7 10.961V3.968a2.168 2.168 0 0 1 1.276-1.983A22.722 22.722 0 0 1 10.998.2a22.73 22.73 0 0 1 9.028 1.785Z" />
+      </g>
+      <path
+        d="M13.98 7.247v1.959h.464c.475 0 .856.36.856.8V15.5c0 .439-.38.799-.856.799H7.056a.886.886 0 0 1-.612-.24.772.772 0 0 1-.244-.567v-5.488c0-.439.38-.799.856-.799h.464V7.247c0-1.68 1.444-3.047 3.23-3.047 1.787 0 3.23 1.367 3.23 3.047ZM8.8 12.75a1.95 1.95 0 1 0 3.9 0 1.95 1.95 0 0 0-3.9 0Zm-.097-5.503v1.5a.437.437 0 0 0 .133.325.471.471 0 0 0 .33.134h3.167a.457.457 0 0 0 .464-.45V7.247c0-1.078-.919-1.948-2.047-1.948-1.128 0-2.047.87-2.047 1.948Z"
+        stroke="url(#ss31xhp1od)" fill="url(#ztfkmfx41e)" transform="translate(2.5 1.5)" />
+    </g>
+  </g>
+</svg>
