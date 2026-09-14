@@ -36,6 +36,7 @@ import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-men
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
 import { ReactComponent as IconFips } from '../../images/IconFips.svg'
+import { ReactComponent as IconSovereignTrustPlane } from '../../images/IconSovereignTrustPlane.svg'
 
 import NavHeader from './NavHeader'
 
@@ -261,6 +262,14 @@ const MainNav = () => {
                   external: true,
                   description: 'Validated Module in a Compliant Application Out-of-the-Box',
                   icon: <IconFips />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'Sovereign Trust Plane',
+                  url: 'https://traefik.io/solutions/sovereign-trust-plane/',
+                  external: true,
+                  description: 'Prove what your agents did and do',
+                  icon: <IconSovereignTrustPlane />,
                   badge: 'New!',
                 },
               ]}
