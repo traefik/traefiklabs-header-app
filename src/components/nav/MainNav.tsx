@@ -268,7 +268,7 @@ const MainNav = () => {
                   title: 'Sovereign Trust Plane',
                   url: 'https://traefik.io/solutions/sovereign-trust-plane/',
                   external: true,
-                  description: 'Prove what your agents did and do',
+                  description: 'Prove what your agents did.',
                   icon: <IconSovereignTrustPlane />,
                   badge: 'New!',
                 },
