@@ -1,6 +1,6 @@
 <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter x="-10%" y="-5.1%" width="119.9%" height="119.8%" filterUnits="objectBoundingBox"
+    <filter x="-18.8%" y="-7.3%" width="137.6%" height="122.3%" filterUnits="objectBoundingBox"
       id="hardened-image-shadow">
       <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
       <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
@@ -14,9 +14,9 @@
   </defs>
   <g fill="none">
     <path d="M0 0h24v24H0z" />
-    <g filter="url(#hardened-image-shadow)" transform="translate(2.005 2)" fill-rule="nonzero" fill="#03192D">
+    <g filter="url(#hardened-image-shadow)" transform="translate(2.005 3)" fill="#03192D">
       <path
-        d="m11.704 0 2.232 5.02L15.82 0h-4.115zM12.903 8H7.087l2.908 9.45zM13.175 7 9.995.016 6.815 7zM4.171 0l1.883 5.02L8.286 0zM9.013 19.356 5.518 8H.495zM5.195 7 2.915.922.1 6.553A1 1 0 0 0 0 7h5.195zM14.795 7h5.191a1 1 0 0 0-.1-.447L17.076.922 14.795 7zM14.472 8l-3.495 11.356L19.495 8z" />
+        d="M8.092-.424h3.805l2.3 6.947H5.792l2.3-6.947Zm-1.568 0H3.268c-.816 0-1.567.445-1.959 1.16l-2.856 5.216a2.23 2.23 0 0 0-.218.57h6.041a2.727 2.727 0 0 1 .075-.386l2.173-6.56Zm-8.116 8.436c.099.201.23.39.39.558l9.188 9.587L4.507 8.012h-6.1Zm13.594 10.147 9.19-9.589c.16-.168.291-.357.39-.558h-6.1l-3.48 10.147Zm9.753-11.636h-6.042a2.717 2.717 0 0 0-.075-.387l-2.173-6.56h3.257c.816 0 1.567.445 1.959 1.16l2.857 5.216c.1.183.172.375.217.57Zm-11.76 12.9L6.08 8.013h7.827L9.994 19.424Z" />
     </g>
   </g>
 </svg>

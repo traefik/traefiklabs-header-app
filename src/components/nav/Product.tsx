@@ -5,6 +5,7 @@ import Link from 'components/Link'
 
 type NavProductProps = {
   title?: string
+  titleColor?: string
   description?: string
   padding?: string
   links?: {
@@ -36,7 +37,16 @@ type NavbarLinkProps = {
   styles?: any
 }
 
-const Product = ({ bgImage, title, description, padding, links, colors = {}, subLinks = [] }: NavProductProps) => (
+const Product = ({
+  bgImage,
+  title,
+  titleColor,
+  description,
+  padding,
+  links,
+  colors = {},
+  subLinks = [],
+}: NavProductProps) => (
   <Box sx={{ p: padding ? padding : title ? '24px' : '16px 16px 48px', backgroundColor: '#fff', position: 'relative' }}>
     {bgImage && (
       <img
@@ -61,7 +71,7 @@ const Product = ({ bgImage, title, description, padding, links, colors = {}, sub
           fontSize: '13px',
           variant: 'default',
           lineHeight: '1.23',
-          color: colors.heading || '#03192d',
+          color: titleColor || colors.heading || '#03192d',
           letterSpacing: '2.36px',
           fontWeight: '500',
           textTransform: 'uppercase',
@@ -190,7 +200,7 @@ const SubLinks = styled.ul`
 `
 
 const NavLinkIcon = styled.div`
-  margin-right: 16px;
+  margin-right: 8px;
   flex-shrink: 0;
   background-color: #ffffff;
   padding: 4px;

@@ -86,6 +86,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/application-level-fips-140-3">
               FIPS 140-3 <Badge>New!</Badge>
             </SubLink>
+            <SubLink href="https://traefik.io/solutions/sovereign-trust-plane/">
+              Sovereign Trust Plane <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
             <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
             <SubLink href="https://traefik.io/solutions/air-gapped-ai-and-api-management/">
