@@ -7,9 +7,9 @@ import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashico
 
 const partners = [
   {
-    title: 'Traefik & Nutanix',
-    url: 'https://traefik.io/solutions/nutanix-and-traefik/',
-    icon: <NutanixIcon />,
+    title: 'Traefik & HashiCorp',
+    url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+    icon: <HashicorpIcon />,
   },
   {
     title: 'Traefik & Microsoft',
@@ -17,14 +17,14 @@ const partners = [
     icon: <MicrosoftIcon />,
   },
   {
+    title: 'Traefik & Nutanix',
+    url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+    icon: <NutanixIcon />,
+  },
+  {
     title: 'Traefik & Oracle OCI',
     url: 'https://traefik.io/solutions/oracle-and-traefik/',
     icon: <OracleIcon />,
-  },
-  {
-    title: 'Traefik & HashiCorp',
-    url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
-    icon: <HashicorpIcon />,
   },
 ]
 
