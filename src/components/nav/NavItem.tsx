@@ -9,11 +9,12 @@ type NavItemProps = SpaceProps & {
   hasSubmenu?: boolean
   url?: string
   position?: React.CSSProperties
+  menuInnerStyle?: React.CSSProperties
   children?: React.ReactNode
   heighlight?: boolean
 }
 
-const NavItem = ({ name, hasSubmenu, url, children, position, heighlight, ...props }: NavItemProps) => {
+const NavItem = ({ name, hasSubmenu, url, children, position, menuInnerStyle, heighlight, ...props }: NavItemProps) => {
   if (hasSubmenu) {
     return (
       <Wrapper {...props}>
@@ -44,7 +45,7 @@ const NavItem = ({ name, hasSubmenu, url, children, position, heighlight, ...pro
           </Box>
         </Title>
         <Menu style={position}>
-          <MenuInner>{children}</MenuInner>
+          <MenuInner style={menuInnerStyle}>{children}</MenuInner>
         </Menu>
       </Wrapper>
     )

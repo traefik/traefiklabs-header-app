@@ -24,20 +24,18 @@ import { ReactComponent as ApiMockingIcon } from '../../images/APIMocking.svg'
 import { ReactComponent as APIManagementIcon } from '../../images/APIManagement.svg'
 import { ReactComponent as NginxIcon } from '../../images/Nginx.svg'
 import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress.svg'
-import { ReactComponent as MicrosoftIcon } from '../../images/menu_icons_microsoft.svg'
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
-import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
-import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.svg'
-import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
-import { ReactComponent as McpGatewayIcon } from '../../images/menu_icons_mcp_gateway.svg'
+import { ReactComponent as IconShieldLink } from '../../images/IconShieldLink.svg'
 import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
 import { ReactComponent as IconFips } from '../../images/IconFips.svg'
+import { ReactComponent as IconSovereignTrustPlane } from '../../images/IconSovereignTrustPlane.svg'
 
 import NavHeader from './NavHeader'
+import BetterTogether from './BetterTogether'
 
 const Wrapper = styled(Flex)`
   display: none;
@@ -164,18 +162,26 @@ const MainNav = () => {
         </NavItem>
 
         {/* Solutions */}
-        <NavItem name="Solutions" hasSubmenu position={{ marginLeft: '-25%' }} heighlight={true}>
+        <NavItem
+          name="Solutions"
+          hasSubmenu
+          position={{ marginLeft: '-25%' }}
+          menuInnerStyle={{ backgroundColor: 'transparent' }}
+          heighlight={true}
+        >
           <Grid
             sx={{
               maxWidth: '1368px',
-              gap: '20px',
-              paddingLeft: '16px',
-              gridTemplateColumns: 'repeat(2, 312px) 324px 344px',
+              gap: '24px',
+              p: '24px',
+              backgroundColor: '#fff',
+              gridTemplateColumns: 'repeat(4, minmax(0, 312px))',
             }}
           >
             <Product
               title="Application Proxy"
-              padding="24px 0"
+              titleColor="#818c96"
+              padding="0"
               links={[
                 {
                   icon: <IconKubernetesIngress />,
@@ -217,7 +223,8 @@ const MainNav = () => {
             />
             <Product
               title="API Gateway"
-              padding="24px 0"
+              titleColor="#818c96"
+              padding="0"
               links={[
                 {
                   title: 'Modern API Gateway',
@@ -232,20 +239,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Protect your APIs from threats with speed and efficiency',
                   icon: <WafIcon />,
-                },
-                {
-                  title: 'AI Gateway',
-                  url: 'https://traefik.io/solutions/ai-gateway/',
-                  external: true,
-                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
-                  icon: <AiGatewayIcon />,
-                },
-                {
-                  title: 'MCP Gateway',
-                  url: 'https://traefik.io/solutions/mcp-gateway/',
-                  external: true,
-                  description: 'Govern how agents access MCP servers.',
-                  icon: <McpGatewayIcon />,
                 },
                 {
                   title: 'Hardened Secure Image',
@@ -267,7 +260,8 @@ const MainNav = () => {
             />
             <Product
               title="API Management"
-              padding="24px 0"
+              titleColor="#818c96"
+              padding="0"
               links={[
                 {
                   title: 'GitOps-Driven API Management',
@@ -303,46 +297,36 @@ const MainNav = () => {
               ]}
             />
             <Product
-              title="BETTER TOGETHER"
-              padding="24px 16px"
+              title="AI & MCP Gateway"
+              titleColor="#818c96"
+              padding="0"
               links={[
                 {
-                  title: 'Traefik & HashiCorp',
-                  url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
+                  title: 'AI Gateway',
+                  url: 'https://traefik.io/solutions/ai-gateway/',
                   external: true,
-                  description: 'A comprehensive and powerful API Gateway for HashiCorp stack.',
-                  icon: <HashicorpIcon />,
+                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
+                  icon: <AiGatewayIcon />,
                 },
                 {
-                  title: 'Traefik & Microsoft',
-                  url: 'https://traefik.io/solutions/microsoft-and-traefik/',
+                  title: 'MCP Gateway',
+                  url: 'https://traefik.io/solutions/mcp-gateway/',
                   external: true,
-                  description: 'Run your APIs and AI across any infrastructure, any Kubernetes.',
-                  icon: <MicrosoftIcon />,
+                  description: 'Govern how agents access MCP servers.',
+                  icon: <IconShieldLink />,
                 },
                 {
-                  title: 'Traefik & Nutanix',
-                  url: 'https://traefik.io/solutions/nutanix-and-traefik/',
+                  title: 'Sovereign Trust Plane',
+                  url: 'https://traefik.io/solutions/sovereign-trust-plane/',
                   external: true,
-                  description: 'Unified Ingress for VMs and Containers',
-                  icon: <NutanixIcon />,
-                },
-                {
-                  title: 'Traefik & Oracle OCI',
-                  url: 'https://traefik.io/solutions/oracle-and-traefik/',
-                  external: true,
-                  description: 'Unmatched & modern API management without boundaries.',
-                  icon: <OracleIcon />,
+                  description: 'Prove what your agents did.',
+                  icon: <IconSovereignTrustPlane />,
+                  badge: 'New!',
                 },
               ]}
-              bgImage={'https://containous.ghost.io/content/images/2025/05/gradient-left-glow.png'}
-              colors={{
-                heading: '#f9fafa',
-                text: '#b3bac0',
-                bgColor: '#f4f5f659',
-              }}
             />
           </Grid>
+          <BetterTogether />
         </NavItem>
 
         <NavItem name="Compare" hasSubmenu>
