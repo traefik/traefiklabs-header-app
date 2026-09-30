@@ -83,11 +83,11 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/hardened-secure-image/">
               Hardened Secure Image <Badge>New!</Badge>
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/application-level-fips-140-3">
+            <SubLink href="https://traefik.io/solutions/application-level-fips-140-3/">
               FIPS 140-3 <Badge>New!</Badge>
             </SubLink>
-            <SubLink href="https://traefik.io/solutions/sovereign-trust-plane/">
-              Sovereign Trust Plane <Badge>New!</Badge>
+            <SubLink href="https://traefik.io/solutions/verifiable-agent-evidence/">
+              Verifiable Agent Evidence <Badge>New!</Badge>
             </SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
             <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>

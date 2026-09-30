@@ -316,8 +316,8 @@ const MainNav = () => {
                   icon: <IconShieldLink />,
                 },
                 {
-                  title: 'Sovereign Trust Plane',
-                  url: 'https://traefik.io/solutions/sovereign-trust-plane/',
+                  title: 'Verifiable Agent Evidence',
+                  url: 'https://traefik.io/solutions/verifiable-agent-evidence/',
                   external: true,
                   description: 'Prove what your agents did.',
                   icon: <IconSovereignTrustPlane />,
