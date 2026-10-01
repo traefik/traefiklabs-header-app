@@ -259,6 +259,35 @@ const MainNav = () => {
               ]}
             />
             <Product
+              title="AI & MCP Gateway"
+              titleColor="#818c96"
+              padding="0"
+              links={[
+                {
+                  title: 'AI Gateway',
+                  url: 'https://traefik.io/solutions/ai-gateway/',
+                  external: true,
+                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
+                  icon: <AiGatewayIcon />,
+                },
+                {
+                  title: 'MCP Gateway',
+                  url: 'https://traefik.io/solutions/mcp-gateway/',
+                  external: true,
+                  description: 'Govern how agents access MCP servers.',
+                  icon: <IconShieldLink />,
+                },
+                {
+                  title: 'Verifiable Agent Evidence',
+                  url: 'https://traefik.io/solutions/verifiable-agent-evidence/',
+                  external: true,
+                  description: 'Prove what your agents did.',
+                  icon: <IconSovereignTrustPlane />,
+                  badge: 'New!',
+                },
+              ]}
+            />
+            <Product
               title="API Management"
               titleColor="#818c96"
               padding="0"
@@ -293,35 +322,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
                   icon: <ApiMockingIcon />,
-                },
-              ]}
-            />
-            <Product
-              title="AI & MCP Gateway"
-              titleColor="#818c96"
-              padding="0"
-              links={[
-                {
-                  title: 'AI Gateway',
-                  url: 'https://traefik.io/solutions/ai-gateway/',
-                  external: true,
-                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
-                  icon: <AiGatewayIcon />,
-                },
-                {
-                  title: 'MCP Gateway',
-                  url: 'https://traefik.io/solutions/mcp-gateway/',
-                  external: true,
-                  description: 'Govern how agents access MCP servers.',
-                  icon: <IconShieldLink />,
-                },
-                {
-                  title: 'Verifiable Agent Evidence',
-                  url: 'https://traefik.io/solutions/verifiable-agent-evidence/',
-                  external: true,
-                  description: 'Prove what your agents did.',
-                  icon: <IconSovereignTrustPlane />,
-                  badge: 'New!',
                 },
               ]}
             />
