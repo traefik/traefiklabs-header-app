@@ -1,0 +1,76 @@
+<svg width="26" height="29" viewBox="0 0 26 29" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="rq6o3kb0ue">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%" />
+      <stop stop-color="#818C96" offset="100%" />
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="x1g1peq59d">
+      <stop stop-color="#03192D" offset="0%" />
+      <stop stop-color="#03192D" offset="100%" />
+    </linearGradient>
+    <filter x="-6%" y="-15.6%" width="112.1%" height="136%" filterUnits="objectBoundingBox" id="kpsngo0xrb">
+      <feMorphology radius="3.5" in="SourceAlpha" result="shadowSpreadOuter1" />
+      <feOffset dy="11" in="shadowSpreadOuter1" result="shadowOffsetOuter1" />
+      <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowInner" />
+      <feOffset dy="11" in="shadowInner" result="shadowInner" />
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" in="shadowBlurOuter1"
+        result="shadowMatrixOuter1" />
+      <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter2" />
+      <feOffset dy="9" in="shadowSpreadOuter2" result="shadowOffsetOuter2" />
+      <feMorphology radius="5" in="SourceAlpha" result="shadowInner" />
+      <feOffset dy="9" in="shadowInner" result="shadowInner" />
+      <feComposite in="shadowOffsetOuter2" in2="shadowInner" operator="out" result="shadowOffsetOuter2" />
+      <feGaussianBlur stdDeviation="23" in="shadowOffsetOuter2" result="shadowBlurOuter2" />
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" in="shadowBlurOuter2"
+        result="shadowMatrixOuter2" />
+      <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter3" />
+      <feOffset dy="24" in="shadowSpreadOuter3" result="shadowOffsetOuter3" />
+      <feMorphology radius="2.5" in="SourceAlpha" result="shadowInner" />
+      <feOffset dy="24" in="shadowInner" result="shadowInner" />
+      <feComposite in="shadowOffsetOuter3" in2="shadowInner" operator="out" result="shadowOffsetOuter3" />
+      <feGaussianBlur stdDeviation="19" in="shadowOffsetOuter3" result="shadowBlurOuter3" />
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.14 0" in="shadowBlurOuter3"
+        result="shadowMatrixOuter3" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="shadowMatrixOuter2" />
+        <feMergeNode in="shadowMatrixOuter3" />
+      </feMerge>
+    </filter>
+    <filter x="-16.8%" y="-10.4%" width="133.7%" height="129.2%" filterUnits="objectBoundingBox" id="71mver4t3c">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1" />
+      <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0"
+        in="shadowBlurOuter1" result="shadowMatrixOuter1" />
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <path
+      d="M25.6 0h1316.8c8.96 0 13.441 0 16.864 1.744a16 16 0 0 1 6.992 6.992C1368 12.16 1368 16.64 1368 25.6v419.8c0 8.96 0 13.441-1.744 16.864a16 16 0 0 1-6.992 6.992C1355.84 471 1351.36 471 1342.4 471H25.6c-8.96 0-13.441 0-16.864-1.744a16 16 0 0 1-6.992-6.992C0 458.84 0 454.36 0 445.4V25.6c0-8.96 0-13.441 1.744-16.864a16 16 0 0 1 6.992-6.992C12.16 0 16.64 0 25.6 0Z"
+      id="xw0balrt0a" />
+  </defs>
+  <g transform="translate(-1073 -425.5)" fill="none" fill-rule="evenodd">
+    <use fill="#000" filter="url(#kpsngo0xrb)" xlink:href="#xw0balrt0a" />
+    <path stroke-opacity=".201" stroke="#FFF"
+      d="m1358.495 1.928.542.261a15.5 15.5 0 0 1 6.774 6.774c1.473 2.892 1.689 5.536 1.689 16.637v419.8c0 11.1-.216 13.745-1.69 16.637a15.5 15.5 0 0 1-6.773 6.774c-2.892 1.473-5.536 1.689-16.637 1.689H25.6c-11.1 0-13.745-.216-16.637-1.69a15.5 15.5 0 0 1-6.774-6.773C.716 459.145.5 456.5.5 445.4V25.6c0-11.1.216-13.745 1.69-16.637A15.5 15.5 0 0 1 8.962 2.19C11.855.716 14.5.5 25.6.5h1316.8c10.407 0 13.382.19 16.095 1.428Z"
+      stroke-linejoin="square" />
+    <path d="M1074 427h24v24h-24z" />
+    <g filter="url(#71mver4t3c)" transform="translate(1075.5 427)" fill="url(#x1g1peq59d)" fill-rule="nonzero"
+      stroke="url(#rq6o3kb0ue)" stroke-width=".4">
+      <path d="M20.592 6.115v11.77l-10.2 5.884L.2 17.885V6.115L10.4.23Z" />
+    </g>
+    <g fill-rule="nonzero">
+      <path
+        d="M1092.624 444.036h-1.525a.214.214 0 0 1-.213-.214v-.77h1.472a.23.23 0 1 0 0-.458h-1.472v-.758c0-.118.096-.214.213-.214h1.525a.24.24 0 1 0 0-.48h-1.525a.695.695 0 0 0-.694.694v1.986c0 .383.312.694.694.694h1.525a.24.24 0 1 0 0-.48m-4.484-1.436c-.322-.058-.546-.126-.672-.206a.367.367 0 0 1-.188-.323c0-.146.064-.266.193-.36.13-.093.31-.14.545-.14.238 0 .428.046.57.138.077.05.147.115.21.197a.26.26 0 1 0 .401-.333 1.351 1.351 0 0 0-.394-.307 1.721 1.721 0 0 0-.792-.168c-.265 0-.497.046-.695.138-.198.091-.35.215-.456.371a.908.908 0 0 0-.158.52c0 .18.042.332.125.458a.93.93 0 0 0 .4.315c.183.085.43.157.738.214.309.058.525.124.65.199.123.075.185.173.185.295 0 .153-.069.27-.206.354-.138.083-.327.125-.568.125-.254 0-.467-.048-.639-.143a.972.972 0 0 1-.263-.216.259.259 0 0 0-.378-.01h-.001a.259.259 0 0 0-.013.356c.29.324.723.486 1.3.486.264 0 .497-.04.7-.12.201-.08.358-.194.47-.343a.841.841 0 0 0 .168-.52.821.821 0 0 0-.122-.46.91.91 0 0 0-.39-.31 3.002 3.002 0 0 0-.72-.207m-7.518.001c-.322-.058-.546-.126-.672-.206a.367.367 0 0 1-.188-.323c0-.146.064-.266.193-.36.13-.093.31-.14.545-.14.237 0 .427.046.57.138.077.05.147.115.21.197a.261.261 0 1 0 .4-.333 1.358 1.358 0 0 0-.394-.307 1.722 1.722 0 0 0-.791-.168c-.265 0-.497.046-.695.138-.199.091-.35.215-.456.371a.91.91 0 0 0-.158.52c0 .18.042.332.125.458a.93.93 0 0 0 .4.315c.183.085.43.157.738.214.309.058.525.124.65.199.123.074.185.173.185.295 0 .153-.069.27-.206.354-.138.083-.327.125-.568.125-.255 0-.467-.048-.639-.143a.966.966 0 0 1-.263-.216.26.26 0 0 0-.379-.01.259.259 0 0 0-.014.356c.291.324.724.486 1.3.486.265 0 .498-.04.7-.12.202-.08.359-.194.471-.343a.84.84 0 0 0 .168-.52.82.82 0 0 0-.122-.46.908.908 0 0 0-.39-.31 2.985 2.985 0 0 0-.72-.207m5.014-1.228v1.848c0 .441-.117.775-.351 1-.234.226-.575.339-1.023.339-.448 0-.79-.113-1.024-.338-.234-.226-.35-.56-.35-1v-1.849a.275.275 0 1 1 .55 0v1.782c0 .32.066.554.2.705.134.151.342.227.624.227.281 0 .49-.076.623-.227.134-.15.201-.386.201-.705v-1.782a.275.275 0 0 1 .55 0"
+        fill="#FFF" />
+      <path
+        d="M1092.215 434.672a.22.22 0 0 0-.317 0 .225.225 0 0 0 .282.346.225.225 0 0 0 .035-.346m-.29-.763a.83.83 0 1 0-.379 1.616.83.83 0 0 0 .379-1.616m-3.958 3.375c-.39-.144-.541-.115-1.04-.109-.347.005-.36-.007-.755-.007-.122 0-.167.585.275.706.193.054.402.087.547.236.065.066.101.165-.048.165h-1.096c-.192 0-.373.004-.52-.12-.221-.187-.324-.444-.435-.7a7.323 7.323 0 0 0-.385-.777c-.29-.498-.672-.948-1.185-1.223-.642-.344-1.73-.515-2.591.147-.908.697-.714 2.003.08 2.642.314.253.723.358 1.125.335.785-.046 1.364-.625 1.22-1.337a.88.88 0 0 0-.396-.588.99.99 0 0 0-.498-.118c-.186 0-.383.038-.516.167a.482.482 0 0 0-.058.602c.07.1.184.184.165.314a.216.216 0 0 1-.173.172c-.147.033-.282-.05-.381-.153a.968.968 0 0 1-.195-1.02c.184-.443.695-.687 1.174-.672.618.021 1.201.43 1.455.994.253.564.177 1.257-.172 1.768-.777 1.134-2.694 1-3.585.043-.558-.6-.862-1.183-.82-2.267.03-.767.473-1.522 1.037-2.053.919-.866 2.128-1.458 3.36-1.714a7.581 7.581 0 0 1 2.278-.114c.67.066 1.335.189 1.978.388.32.1.634.218.938.357.268.123.62.257.828.47 0-.385-.015-.808-.015-1.102 0-.112.118-.188.219-.14.435.202 1.466.689 2.154 1.003.922.422.987 1.415 1.02 2.296 0 .02.001.04-.008.058-.029.06-.184.044-.241.044-.11.002-.277 0-.387.006a6.83 6.83 0 0 1-.654-.006c-.407-.02-.8-.2-1.064-.421-.026-.022-.111-.047-.151-.005a.104.104 0 0 0-.005.133c.15.153.315.251.505.35.242.124.506.155.774.17.286.018.575.014.861-.016.239-.024.3-.04.065.135a2.487 2.487 0 0 1-.69.346c-.35.119-.719.178-1.087.188a4.29 4.29 0 0 1-.668-.035c-.114-.014-.228-.035-.343-.046-.094-.01-.19-.027-.283-.007a.373.373 0 0 0-.216.133c-.073.095-.098.356-.056.469.082.22.26.347.45.46.204.12.472.162.525.395.01.048-.424.05-.473.049h-.579s-.314.007-.437-.037l-.01-.005c-.067-.036-.096-.125-.119-.193a1.187 1.187 0 0 0-.157-.288c-.131-.187-.332-.39-.54-.468m4.38-2.567a.613.613 0 1 1-1.227 0 .613.613 0 0 1 1.227 0"
+        fill="#30BA78" />
+    </g>
+  </g>
+</svg>

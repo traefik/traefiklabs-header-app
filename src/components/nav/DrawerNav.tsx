@@ -89,6 +89,9 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/verifiable-agent-evidence/">
               Verifiable Agent Evidence <Badge>New!</Badge>
             </SubLink>
+            <SubLink href="https://traefik.io/solutions/traefik-mcp-server">
+              Traefik MCP Server <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/api-management/">GitOps-Driven API Management</SubLink>
             <SubLink href="https://traefik.io/solutions/api-governance/">Runtime API Governance</SubLink>
             <SubLink href="https://traefik.io/solutions/air-gapped-ai-and-api-management/">
@@ -99,6 +102,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">Traefik & Microsoft</SubLink>
             <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
             <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
+            <SubLink href="https://traefik.io/solutions/traefik-and-suse-ai-factory">Traefik & SUSE AI Factory</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
           </div>
         </div>

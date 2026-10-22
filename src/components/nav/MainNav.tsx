@@ -27,7 +27,8 @@ import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
-import { ReactComponent as IconShieldLink } from '../../images/IconShieldLink.svg'
+import { ReactComponent as IconMcpGateway } from '../../images/IconMcpGateway.svg'
+import { ReactComponent as IconMcpServer } from '../../images/IconMcpServer.svg'
 import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
@@ -275,7 +276,7 @@ const MainNav = () => {
                   url: 'https://traefik.io/solutions/mcp-gateway/',
                   external: true,
                   description: 'Govern how agents access MCP servers.',
-                  icon: <IconShieldLink />,
+                  icon: <IconMcpGateway />,
                 },
                 {
                   title: 'Verifiable Agent Evidence',
@@ -283,6 +284,14 @@ const MainNav = () => {
                   external: true,
                   description: 'Prove what your agents did.',
                   icon: <IconSovereignTrustPlane />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'Traefik MCP Server',
+                  url: 'https://traefik.io/solutions/traefik-mcp-server',
+                  external: true,
+                  description: 'Understand what happened and why',
+                  icon: <IconMcpServer />,
                   badge: 'New!',
                 },
               ]}
