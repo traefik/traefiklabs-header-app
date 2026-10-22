@@ -27,7 +27,8 @@ import { ReactComponent as KubernetesIcon } from '../../images/KubernetesIngress
 import { ReactComponent as WafIcon } from '../../images/menu_icons_waf.svg'
 import { ReactComponent as AiGatewayIcon } from '../../images/menu_icons_ai_gateway.svg'
 import { ReactComponent as ProductMcpGatewayIcon } from '../../images/product-menu_icons_mcp_gateway.svg'
-import { ReactComponent as IconShieldLink } from '../../images/IconShieldLink.svg'
+import { ReactComponent as IconMcpGateway } from '../../images/IconMcpGateway.svg'
+import { ReactComponent as IconMcpServer } from '../../images/IconMcpServer.svg'
 import { ReactComponent as ProductMenuProxyIcon } from '../../images/product-menu-proxy.svg'
 import { ReactComponent as IconProxy } from '../../images/solutions-menu-proxy.svg'
 import { ReactComponent as IconHardenedSecureImage } from '../../images/IconHardenedSecureImage.svg'
@@ -259,6 +260,43 @@ const MainNav = () => {
               ]}
             />
             <Product
+              title="AI & MCP Gateway"
+              titleColor="#818c96"
+              padding="0"
+              links={[
+                {
+                  title: 'AI Gateway',
+                  url: 'https://traefik.io/solutions/ai-gateway/',
+                  external: true,
+                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
+                  icon: <AiGatewayIcon />,
+                },
+                {
+                  title: 'MCP Gateway',
+                  url: 'https://traefik.io/solutions/mcp-gateway/',
+                  external: true,
+                  description: 'Govern how agents access MCP servers.',
+                  icon: <IconMcpGateway />,
+                },
+                {
+                  title: 'Verifiable Agent Evidence',
+                  url: 'https://traefik.io/solutions/verifiable-agent-evidence/',
+                  external: true,
+                  description: 'Prove what your agents did.',
+                  icon: <IconSovereignTrustPlane />,
+                  badge: 'New!',
+                },
+                {
+                  title: 'Traefik MCP Server',
+                  url: 'https://traefik.io/solutions/traefik-mcp-server',
+                  external: true,
+                  description: 'Understand what happened and why',
+                  icon: <IconMcpServer />,
+                  badge: 'New!',
+                },
+              ]}
+            />
+            <Product
               title="API Management"
               titleColor="#818c96"
               padding="0"
@@ -293,35 +331,6 @@ const MainNav = () => {
                   external: true,
                   description: 'Create, publish, and consume mock APIs with production-like UX and SLAs.',
                   icon: <ApiMockingIcon />,
-                },
-              ]}
-            />
-            <Product
-              title="AI & MCP Gateway"
-              titleColor="#818c96"
-              padding="0"
-              links={[
-                {
-                  title: 'AI Gateway',
-                  url: 'https://traefik.io/solutions/ai-gateway/',
-                  external: true,
-                  description: 'Enterprise AI Gateway with Built-In, Responsible AI Guardrails',
-                  icon: <AiGatewayIcon />,
-                },
-                {
-                  title: 'MCP Gateway',
-                  url: 'https://traefik.io/solutions/mcp-gateway/',
-                  external: true,
-                  description: 'Govern how agents access MCP servers.',
-                  icon: <IconShieldLink />,
-                },
-                {
-                  title: 'Verifiable Agent Evidence',
-                  url: 'https://traefik.io/solutions/verifiable-agent-evidence/',
-                  external: true,
-                  description: 'Prove what your agents did.',
-                  icon: <IconSovereignTrustPlane />,
-                  badge: 'New!',
                 },
               ]}
             />
