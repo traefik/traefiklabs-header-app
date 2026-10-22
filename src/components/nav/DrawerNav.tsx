@@ -99,6 +99,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">Traefik & Microsoft</SubLink>
             <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
             <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
+            <SubLink href="https://traefik.io/solutions/traefik-and-suse-ai-factory">Traefik & SUSE AI Factory</SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
           </div>
         </div>

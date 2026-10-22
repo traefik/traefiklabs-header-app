@@ -4,6 +4,7 @@ import { ReactComponent as NutanixIcon } from '../../images/menu_icons_nutanix.s
 import { ReactComponent as MicrosoftIcon } from '../../images/menu_icons_microsoft.svg'
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
+import { ReactComponent as IconSuse } from '../../images/menu_icons_suse.svg'
 
 const partners = [
   {
@@ -25,6 +26,11 @@ const partners = [
     title: 'Traefik & Oracle OCI',
     url: 'https://traefik.io/solutions/oracle-and-traefik/',
     icon: <OracleIcon />,
+  },
+  {
+    title: 'Traefik & SUSE AI Factory',
+    url: 'https://traefik.io/solutions/traefik-and-suse-ai-factory',
+    icon: <IconSuse />,
   },
 ]
 
