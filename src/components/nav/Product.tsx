@@ -25,6 +25,8 @@ type NavProductProps = {
     badge?: string
   }[]
   bgImage?: string
+  // Tighter link padding, used by the Platform and Partners menus
+  compact?: boolean
   colors?: {
     [color: string]: string
   }
@@ -46,6 +48,7 @@ const Product = ({
   links,
   colors = {},
   subLinks = [],
+  compact,
 }: NavProductProps) => (
   <Box sx={{ p: padding ? padding : title ? '24px' : '16px 16px 48px', backgroundColor: '#fff', position: 'relative' }}>
     {bgImage && (
@@ -93,7 +96,11 @@ const Product = ({
       {links &&
         links.map((link) => (
           <li key={title + link.title}>
-            <NavbarLink external={link.external} url={link.url}>
+            <NavbarLink
+              external={link.external}
+              url={link.url}
+              styles={{ textDecoration: 'none', padding: compact ? '4px' : '8px', borderRadius: '8px' }}
+            >
               <NavLinkIcon>{link.icon}</NavLinkIcon>
               <div>
                 <NavLinkTitle largeText={link.largeText} color={colors.heading}>
@@ -107,7 +114,7 @@ const Product = ({
         ))}
     </Links>
     {subLinks.length ? (
-      <SubLinks>
+      <SubLinks compact={compact}>
         {subLinks.map((link) => (
           <li key={title + link.title}>
             <NavbarLink external={link.external} url={link.url} styles={{ textDecoration: 'none', display: 'flex' }}>
@@ -170,10 +177,10 @@ const Links = styled.ul<{ bgColor?: string }>`
   }
 `
 
-const SubLinks = styled.ul`
+const SubLinks = styled.ul<{ compact?: boolean }>`
   list-style: none;
   padding: 0;
-  padding-left: 56px;
+  padding-left: ${(props) => (props.compact ? '44px' : '56px')};
   margin: 8px 0 0;
   position: relative;
 
@@ -202,6 +209,13 @@ const SubLinks = styled.ul`
 const NavLinkIcon = styled.div`
   margin-right: 8px;
   flex-shrink: 0;
+
+  svg {
+    display: block;
+    width: 24px;
+    height: auto;
+  }
+
   background-color: #ffffff;
   padding: 4px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
