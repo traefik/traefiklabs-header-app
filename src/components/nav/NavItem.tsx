@@ -53,7 +53,7 @@ const NavItem = ({ name, hasSubmenu, url, children, position, menuInnerStyle, he
 
   return (
     <Wrapper {...props}>
-      <a href={url} style={{ textDecoration: 'none' }}>
+      <a href={url} style={{ textDecoration: 'none', display: 'flex', height: '100%' }}>
         <Title as="span">
           <Text sx={{ fontSize: '14.5px', lineHeight: '14.5px', fontWeight: '500' }}>{name}</Text>
         </Title>
@@ -113,7 +113,7 @@ const Wrapper = styled.li`
   height: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 0 0 26px;
+  margin: 0 0 0 24px;
 
   &:first-child {
     margin-left: 0;

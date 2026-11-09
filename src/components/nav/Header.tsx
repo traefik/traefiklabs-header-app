@@ -29,23 +29,21 @@ const NavContainer = styled(FaencyNavContainer)<{ scrolled?: boolean }>`
   height: ${({ scrolled }) => (scrolled ? '52px' : '64px')};
 `
 
-const NavButton = styled.a`
+const SearchButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 9999px;
   color: ${theme.colors.dark};
-  font-weight: 500;
   text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid;
-  transition: all 0.2s;
-  padding: 7px 15px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 16px;
-  margin-left: 16px;
+  transition: background-color 0.2s;
 
   &:hover {
-    background-color: ${theme.colors.blues[7]};
-    border-color: ${theme.colors.blues[7]};
-    color: ${theme.colors.menuBg};
+    background-color: #f4f5f6;
   }
 
   @media (max-width: 700px) {
@@ -53,49 +51,29 @@ const NavButton = styled.a`
   }
 `
 
-const NavButtonPrimary = styled.a`
-  background-color: ${theme.colors.blues[7]};
-  color: ${theme.colors.menuBg};
+const DemoButton = styled.a`
+  background-color: #03192d;
+  color: #fff;
+  font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid;
-  border-color: ${theme.colors.blues[7]};
-  transition: all 0.2s;
-  padding: 7px 15px;
+  line-height: 14px;
   text-align: center;
-  font-size: 16px;
-  line-height: 16px;
-  margin-left: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 2px solid #03192d;
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.2s;
 
   &:hover {
-    background-color: ${theme.colors.blues[7]};
-    border-color: ${theme.colors.blues[7]};
-    color: ${theme.colors.menuBg};
+    background-color: #1c3245;
+    border-color: #1c3245;
   }
 
   @media (max-width: 700px) {
     display: none;
   }
 `
-
-/* Temporary disabled */
-/*
-const NavIconButton = styled.a`
-  padding: 7px;
-  border: none;
-  background: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  color: ${theme.colors.dark};
-
-  &:hover {
-    color: rgb(3, 25, 45);
-    background: rgb(248, 250, 255);
-  }
-`
-*/
 
 // HACK: Menu component is adding inline styles to the body avoiding to use onMouseEnter event correctly
 // Side effect: Menu component is now stateless, DropdownMenu is not working anymore (stateful component)
@@ -157,17 +135,15 @@ const Header = ({ product }: { product?: string }) => {
               padding: ['0 20px', '0 25px'],
             }}
           >
-            <Flex sx={{ alignItems: 'center', height: '100%' }}>
-              <Box>
-                <Link href="https://traefik.io" aria-label="Traefik Labs">
-                  <Logo traefikLabs />
-                </Link>
-              </Box>
-              <MainNav />
-            </Flex>
+            <Box>
+              <Link href="https://traefik.io" aria-label="Traefik Labs">
+                <Logo traefikLabs />
+              </Link>
+            </Box>
+            <MainNav />
             <Flex sx={{ alignItems: 'center', height: '100%' }}>
               <Flex sx={{ alignItems: 'center' }}>
-                {/* <NavIconButton href="https://traefik.io/search/">
+                <SearchButton href="https://traefik.io/search" title="Search" aria-label="Search">
                   <svg
                     height="22"
                     width="22"
@@ -180,14 +156,12 @@ const Header = ({ product }: { product?: string }) => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    className="StyledIconBase-ea9ulj-0 jZGNBW"
                   >
                     <circle cx="11" cy="11" r="8"></circle>
                     <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
                   </svg>
-                </NavIconButton> */}
-                <NavButton href="https://traefik.io/pricing/">Get Pricing</NavButton>
-                <NavButtonPrimary href={demoLink}>Request Demo</NavButtonPrimary>
+                </SearchButton>
+                <DemoButton href={demoLink}>Request Demo</DemoButton>
               </Flex>
               <Hamburger className="drawer">
                 <Box
