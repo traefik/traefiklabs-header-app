@@ -1,0 +1,28 @@
+<svg width="24" height="24" viewBox="32 523 24 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter x="-9.6%" y="-4.2%" width="119.2%" height="116.7%" filterUnits="objectBoundingBox" id="vmware-shadow">
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation=".5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0.00784313725 0 0 0 0 0.0784313725 0 0 0 0 0.141176471 0 0 0 0.6 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient x1="50%" y1="21.348%" x2="50%" y2="86.706%" id="vmware-stroke">
+      <stop stop-color="#818C96" stop-opacity="0" offset="0%"/>
+      <stop stop-color="#818C96" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="86.637%" id="vmware-fill">
+      <stop stop-color="#03192D" offset="0%"/>
+      <stop stop-color="#03192D" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M32 523h24v24H32z"/>
+    <g filter="url(#vmware-shadow)" transform="translate(33.5 523)" fill="url(#vmware-fill)" stroke="url(#vmware-stroke)">
+      <path d="M20.692 6.057v11.886l-10.35 5.97L.1 17.943V6.057L10.45.087Z" stroke-width=".2" fill-rule="nonzero"/>
+    </g>
+    <path d="M38.35 532.708a.756.756 0 0 0-1.017-.378.742.742 0 0 0-.372 1.016l1.706 3.7c.268.58.55.885 1.08.885.567 0 .815-.332 1.082-.885l1.502-3.266c.016-.035.063-.139.215-.139a.237.237 0 0 1 .235.24v3.163c0 .487.271.887.792.887.522 0 .802-.4.802-.887v-2.588c0-.499.359-.822.847-.822s.813.334.813.822v2.588c0 .487.272.887.792.887s.803-.4.803-.887v-2.588c0-.499.357-.822.845-.822s.813.334.813.822v2.588c0 .487.271.887.792.887.522 0 .803-.4.803-.887v-2.946c0-1.083-.87-1.841-1.92-1.841-1.049 0-1.704.725-1.704.725-.349-.451-.83-.724-1.644-.724-.859 0-1.61.724-1.61.724-.35-.451-.943-.724-1.435-.724-.76 0-1.365.333-1.732 1.176l-1.09 2.563-1.398-3.29" fill="#FFF"/>
+  </g>
+</svg>

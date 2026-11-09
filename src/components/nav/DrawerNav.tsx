@@ -100,9 +100,20 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             <SubLink href="https://traefik.io/solutions/api-mocking/">API Mocking</SubLink>
             <SubLink href="https://traefik.io/solutions/hashicorp-and-traefik/">Traefik & HashiCorp</SubLink>
             <SubLink href="https://traefik.io/solutions/microsoft-and-traefik/">Traefik & Microsoft</SubLink>
-            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix</SubLink>
+            <SubLink href="https://traefik.io/solutions/nutanix-and-traefik/">Traefik & Nutanix for Enterprises</SubLink>
+            <SubLink href="https://traefik.io/solutions/traefik-hub-and-nutanix-for-service-providers">
+              Traefik & Nutanix for Service Providers <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/oracle-and-traefik/">Traefik & Oracle OCI</SubLink>
-            <SubLink href="https://traefik.io/solutions/traefik-and-suse-ai-factory">Traefik & SUSE AI Factory</SubLink>
+            <SubLink href="https://traefik.io/solutions/traefik-and-suse-ai-factory">
+              Traefik & SUSE AI Factory <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/spectro-cloud-paletteai-and-traefik-hub">
+              Traefik & Spectro Cloud PaletteAI <Badge>New!</Badge>
+            </SubLink>
+            <SubLink href="https://traefik.io/solutions/vmware-and-traefik/">
+              Traefik & VMware VCF <Badge>New!</Badge>
+            </SubLink>
             <SubLink href="https://traefik.io/solutions/docker-swarm-ingress/">Docker Swarm Ingress</SubLink>
           </div>
         </div>

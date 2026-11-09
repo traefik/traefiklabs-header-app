@@ -5,32 +5,60 @@ import { ReactComponent as MicrosoftIcon } from '../../images/menu_icons_microso
 import { ReactComponent as OracleIcon } from '../../images/menu_icons_oracle.svg'
 import { ReactComponent as HashicorpIcon } from '../../images/menu_icons_hashicorp.svg'
 import { ReactComponent as IconSuse } from '../../images/menu_icons_suse.svg'
+import { ReactComponent as SpectroCloudIcon } from '../../images/menu_icons_spectro_cloud.svg'
+import { ReactComponent as VmwareIcon } from '../../images/menu_icons_vmware.svg'
 
-const partners = [
+type Partner = {
+  title: string
+  url: string
+  icon: React.ReactNode
+  badge?: string
+}
+
+const partners: Partner[] = [
   {
-    title: 'Traefik & HashiCorp',
+    title: 'HashiCorp',
     url: 'https://traefik.io/solutions/hashicorp-and-traefik/',
     icon: <HashicorpIcon />,
   },
   {
-    title: 'Traefik & Microsoft',
+    title: 'Microsoft',
     url: 'https://traefik.io/solutions/microsoft-and-traefik/',
     icon: <MicrosoftIcon />,
   },
   {
-    title: 'Traefik & Nutanix',
+    title: 'Nutanix for Enterprises',
     url: 'https://traefik.io/solutions/nutanix-and-traefik/',
     icon: <NutanixIcon />,
   },
   {
-    title: 'Traefik & Oracle OCI',
+    title: 'Nutanix for Service Providers',
+    url: 'https://traefik.io/solutions/traefik-hub-and-nutanix-for-service-providers',
+    icon: <NutanixIcon />,
+    badge: 'New!',
+  },
+  {
+    title: 'Oracle OCI',
     url: 'https://traefik.io/solutions/oracle-and-traefik/',
     icon: <OracleIcon />,
   },
   {
-    title: 'Traefik & SUSE AI Factory',
+    title: 'SUSE AI Factory',
     url: 'https://traefik.io/solutions/traefik-and-suse-ai-factory',
     icon: <IconSuse />,
+    badge: 'New!',
+  },
+  {
+    title: 'Spectro Cloud PaletteAI',
+    url: 'https://traefik.io/solutions/spectro-cloud-paletteai-and-traefik-hub',
+    icon: <SpectroCloudIcon />,
+    badge: 'New!',
+  },
+  {
+    title: 'VMware VCF',
+    url: 'https://traefik.io/solutions/vmware-and-traefik/',
+    icon: <VmwareIcon />,
+    badge: 'New!',
   },
 ]
 
@@ -43,6 +71,7 @@ const BetterTogether = () => (
           <a href={partner.url}>
             <PartnerIcon>{partner.icon}</PartnerIcon>
             <span>{partner.title}</span>
+            {partner.badge && <Badge>{partner.badge}</Badge>}
           </a>
         </li>
       ))}
@@ -69,9 +98,11 @@ const Title = styled.p`
   opacity: 0.6;
 `
 
+// Four columns, so the eight partners sit on two rows
 const Partners = styled.ul`
-  display: flex;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 12px 28px;
   list-style: none;
   margin: 0;
   padding: 4px 0;
@@ -102,6 +133,17 @@ const PartnerIcon = styled.i`
     width: 24px;
     height: 24px;
   }
+`
+
+const Badge = styled.span`
+  padding: 1px 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #03192d;
+  background-color: #d5ea48;
+  border-radius: 9999px;
+  white-space: nowrap;
 `
 
 export default BetterTogether
