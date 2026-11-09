@@ -10,7 +10,7 @@ const Links = styled.ul`
   margin: 0;
 
   li {
-    margin: 0 0 13px;
+    margin: 0 0 16px;
     padding: 0;
 
     &:last-child {
@@ -19,10 +19,12 @@ const Links = styled.ul`
   }
 
   a {
+    display: inline-flex;
+    align-items: center;
     font-size: 16px;
     line-height: 1.38;
     font-weight: 500;
-    color: #354757;
+    color: #03192d;
     text-decoration: none;
 
     svg {
@@ -58,11 +60,11 @@ const Links = styled.ul`
     font-size: 16px;
     height: 40px;
     border-radius: 8px;
-    display: inline-block;
+    white-space: nowrap;
     background: rgb(244, 245, 246);
 
-    i svg {
-      opacity: 1;
+    i {
+      display: none;
     }
   }
 
@@ -80,24 +82,27 @@ const Links = styled.ul`
 type MenuColumnProps = {
   title: string
   children: React.ReactNode
+  // Extra content shown under the links (e.g. a featured card)
+  footer?: React.ReactNode
 }
 
-export const Column: React.FC<MenuColumnProps> = ({ title, children }) => (
+export const Column: React.FC<MenuColumnProps> = ({ title, children, footer }) => (
   <Box>
     <Text
       as="p"
       sx={{
-        mb: '24px',
-        fontSize: '11px',
+        mb: '16px',
+        fontSize: '12px',
         fontWeight: 500,
         lineHeight: 1.33,
-        color: '#03192d',
-        letterSpacing: '2.75px',
+        color: '#818c96',
+        letterSpacing: '2.18px',
       }}
     >
       {title.toUpperCase()}
     </Text>
     <Links>{children}</Links>
+    {footer}
   </Box>
 )
 
