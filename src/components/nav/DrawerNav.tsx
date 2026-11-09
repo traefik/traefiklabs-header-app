@@ -147,7 +147,7 @@ const DrawerNav = ({ isDrawerOpen }: Props) => {
             },
             {
               title: 'Spectro Cloud PaletteAI',
-              href: 'https://traefik.io/solutions/spectro-cloud-paletteai-and-traefik-hub',
+              href: 'https://traefik.io/solutions/traefik-hub-spectro-cloud-paletteai',
               badge: 'New!',
             },
             { title: 'VMware VCF', href: 'https://traefik.io/solutions/vmware-and-traefik/', badge: 'New!' },

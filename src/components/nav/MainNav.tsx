@@ -387,7 +387,7 @@ const MainNav = () => {
                 },
                 {
                   title: 'Spectro Cloud PaletteAI',
-                  url: 'https://traefik.io/solutions/spectro-cloud-paletteai-and-traefik-hub',
+                  url: 'https://traefik.io/solutions/traefik-hub-spectro-cloud-paletteai',
                   external: true,
                   description: 'Inference anywhere. Governance everywhere.',
                   icon: <SpectroCloudIcon />,
