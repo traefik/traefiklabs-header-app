@@ -457,6 +457,8 @@ const MainNav = () => {
         {/* Docs */}
         <NavItem name="Docs" url="https://doc.traefik.io/" />
 
+        {/* Pricing */}
+        <NavItem name="Pricing" url="https://traefik.io/pricing" />
       </Flex>
     </Wrapper>
   )

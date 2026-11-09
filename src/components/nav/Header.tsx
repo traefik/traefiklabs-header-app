@@ -29,23 +29,21 @@ const NavContainer = styled(FaencyNavContainer)<{ scrolled?: boolean }>`
   height: ${({ scrolled }) => (scrolled ? '52px' : '64px')};
 `
 
-const NavButton = styled.a`
+const SearchButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 9999px;
   color: ${theme.colors.dark};
-  font-weight: 500;
   text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid;
-  transition: all 0.2s;
-  padding: 7px 15px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 16px;
-  margin-left: 16px;
+  transition: background-color 0.2s;
 
   &:hover {
-    background-color: ${theme.colors.blues[7]};
-    border-color: ${theme.colors.blues[7]};
-    color: ${theme.colors.menuBg};
+    background-color: #f4f5f6;
   }
 
   @media (max-width: 700px) {
@@ -56,16 +54,15 @@ const NavButton = styled.a`
 const DemoButton = styled.a`
   background-color: #03192d;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 14px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
   border: 2px solid #03192d;
   border-radius: 8px;
-  padding: 7px 15px;
-  margin-left: 16px;
+  padding: 8px 16px;
   transition: all 0.2s;
 
   &:hover {
@@ -146,7 +143,24 @@ const Header = ({ product }: { product?: string }) => {
             <MainNav />
             <Flex sx={{ alignItems: 'center', height: '100%' }}>
               <Flex sx={{ alignItems: 'center' }}>
-                <NavButton href="https://traefik.io/pricing/">Get Pricing</NavButton>
+                <SearchButton href="https://traefik.io/search" title="Search" aria-label="Search">
+                  <svg
+                    height="22"
+                    width="22"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" x2="16.65" y1="21" y2="16.65"></line>
+                  </svg>
+                </SearchButton>
                 <DemoButton href={demoLink}>Request Demo</DemoButton>
               </Flex>
               <Hamburger className="drawer">
